@@ -19,11 +19,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup JDK 21
+      # Kotlin Compose 编译器插件 (Kotlin 2.1.20) 运行时需要 JetBrains Runtime (JBR) 21
+      # 工具链 (vendor=JetBrains, implementation=vendor-specific)。foojay 无法下载该
+      # vendor-specific JBR，因此直接安装 JBR 21，Gradle 会自动探测并匹配该工具链。
+      - name: Setup JDK 21 (JetBrains Runtime)
         uses: actions/setup-java@v4
         with:
           java-version: "21"
-          distribution: "temurin"
+          distribution: "jetbrains"
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
