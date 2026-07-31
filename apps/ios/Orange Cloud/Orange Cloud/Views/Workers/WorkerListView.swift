@@ -17,10 +17,17 @@ struct WorkerListView: View {
     @Query private var cachedScripts: [CachedWorkerScript]
 
     @State private var viewModel: WorkerListViewModel
+    @State private var uploadViewModel: WorkerUploadViewModel
     @State private var searchText = ""
     @State private var tailTarget: CachedWorkerScript?
     @State private var showTailDenied = false
-    @Namespace private var namespace
+    @State private var showCreate = false
+    @State private var createDenied = false
+    @State private var deleteTarget: CachedWorkerScript?
+    @State private var deleteDenied = false
+    @AppStorage("workerListSort") private var sort: ResourceSort = .name
+
+    private var canWrite: Bool { auth.hasScope("workers-scripts.write") }
 
     init(session: SessionStore) {
         // 只读当前账号的脚本（多账号切换后缓存里会留有别的账号的条目）。
@@ -31,15 +38,23 @@ struct WorkerListView: View {
             sort: \CachedWorkerScript.id
         )
         _viewModel = State(initialValue: WorkerListViewModel(workerService: session.workerService))
+        _uploadViewModel = State(initialValue: WorkerUploadViewModel(service: session.workerService, accountId: accountId))
     }
 
     private var filteredScripts: [CachedWorkerScript] {
-        guard !searchText.isEmpty else { return cachedScripts }
-        return cachedScripts.filter { $0.id.localizedCaseInsensitiveContains(searchText) }
+        let scripts = searchText.isEmpty
+            ? Array(cachedScripts)
+            : cachedScripts.filter { $0.id.localizedCaseInsensitiveContains(searchText) }
+        return sort.sorted(scripts, created: \.createdOn, modified: \.modifiedOn)
     }
 
     var body: some View {
-        NavigationStack {
+        // 复用宿主（开发者平台 / 旧 Tab）的单一 NavigationStack，本视图不自带 stack：
+        //  · 自带 stack → 嵌套栈，点击行进详情会回弹到上级（开发者 Tab）；
+        //  · 在「被 push 的子视图」上挂 .navigationDestination 又会失灵（导航栏切了、内容不切）。
+        // 故详情走「行内 NavigationLink(destination:)」直接 push 进宿主栈，实时日志改用 .sheet，均不依赖 .navigationDestination。
+        // iOS 17 整页卡死 / iOS 26 秒级卡顿的根因是宿主 eager 急切构造本页，已在 PermissionGatedNavigationLink 用 LazyView 解决。
+        Group {
             Group {
                 if cachedScripts.isEmpty && viewModel.isLoading {
                     SkeletonList(rows: 8, trailing: true)
@@ -54,14 +69,20 @@ struct WorkerListView: View {
             .background { SkyBackground() }
             .navigationTitle("Workers")
             .searchable(text: $searchText, prompt: "搜索脚本")
-            .navigationDestination(for: CachedWorkerScript.self) { script in
-                WorkerDetailView(script: script, session: session)
-                    .zoomNavigationTransition(sourceID: script.key, in: namespace)
-            }
-            .navigationDestination(item: $tailTarget) { script in
-                WorkerTailView(accountId: script.accountId, scriptName: script.id, session: session)
+            .sheet(item: $tailTarget) { script in
+                NavigationStack {
+                    WorkerTailView(accountId: script.accountId, scriptName: script.id, session: session)
+                }
             }
             .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    ResourceSortMenu(sort: $sort)
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("新建 Worker", systemImage: "plus") {
+                        if canWrite { showCreate = true } else { createDenied = true }
+                    }
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     RefreshButton(
                         isLoading: viewModel.isLoading,
@@ -70,6 +91,16 @@ struct WorkerListView: View {
                     )
                 }
             }
+            .sheet(isPresented: $showCreate) {
+                WorkerUploadView(mode: .create, viewModel: uploadViewModel) {
+                    Task { await refresh() }
+                }
+            }
+            .sheet(item: $deleteTarget) { script in
+                WorkerDeleteConfirmView(script: script, viewModel: viewModel, accountId: script.accountId)
+            }
+            .sensoryFeedback(.success, trigger: uploadViewModel.didUpload)
+            .sensoryFeedback(.success, trigger: viewModel.didDelete)
             .task {
                 await refresh()
             }
@@ -77,6 +108,16 @@ struct WorkerListView: View {
                 Button("好", role: .cancel) {}
             } message: {
                 Text("当前授权未包含实时日志权限（workers-tail.read）。\n请在设置中退出登录后重新授权以启用此功能。")
+            }
+            .alert("权限不足", isPresented: $createDenied) {
+                Button("好", role: .cancel) {}
+            } message: {
+                Text("当前授权未包含 Workers 写权限（workers-scripts.write）。\n请在设置中退出登录后重新授权以启用此功能。")
+            }
+            .alert("权限不足", isPresented: $deleteDenied) {
+                Button("好", role: .cancel) {}
+            } message: {
+                Text("当前授权未包含 Workers 写权限（workers-scripts.write）。\n请在设置中退出登录后重新授权以启用此功能。")
             }
         }
     }
@@ -88,8 +129,12 @@ struct WorkerListView: View {
                     NavigationLink(value: script) {
                         WorkerRow(script: script)
                     }
-                    .zoomTransitionSource(id: script.key, in: namespace)
                     .swipeActions(edge: .trailing) {
+                        Button(role: .destructive) {
+                            if canWrite { deleteTarget = script } else { deleteDenied = true }
+                        } label: {
+                            Label("删除", systemImage: "trash")
+                        }
                         Button {
                             if auth.hasScope("workers-tail.read") {
                                 tailTarget = script
@@ -105,7 +150,7 @@ struct WorkerListView: View {
             } header: {
                 Text("\(cachedScripts.count) 个 Worker")
             } footer: {
-                Label("向左滑动查看实时日志 · 点按查看详情", systemImage: "hand.draw")
+                Label("向左滑动查看实时日志或删除 · 点按查看详情", systemImage: "hand.draw")
                     .font(.caption)
             }
             .glassRow()

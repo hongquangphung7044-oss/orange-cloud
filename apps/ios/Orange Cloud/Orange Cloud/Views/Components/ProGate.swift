@@ -12,8 +12,11 @@ import SwiftUI
 /// 触发付费墙的场景，决定付费墙头部与锁定态文案
 nonisolated enum ProFeature: String, Identifiable, Sendable {
     case multiAccount, storage, workerTail, waf, tunnel, analyticsRange, snippets
-    case workerSecrets, workerTriggers, workerRoutes, cacheRules, pages, loadBalancing, bulkRedirects
-    case auditLog, emailRouting, rateLimit, zeroTrust
+    case workerSecrets, workerTriggers, workerRoutes, workerEdit, cacheRules, pages, loadBalancing, bulkRedirects
+    case auditLog, emailRouting, rateLimit, zeroTrust, trafficMap
+    case aiInsights, aiDNS, filesApp
+    case queues, aiGateway, durableObjects, workersAI, hyperdrive
+    case zoneRules
 
     var id: String { rawValue }
 
@@ -29,6 +32,7 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .workerSecrets:  String(localized: "变量与密钥需要 Pro")
         case .workerTriggers: String(localized: "触发器管理需要 Pro")
         case .workerRoutes:   String(localized: "域名管理需要 Pro")
+        case .workerEdit:     String(localized: "更新代码需要 Pro")
         case .cacheRules:     String(localized: "缓存规则需要 Pro")
         case .pages:          String(localized: "Cloudflare Pages 需要 Pro")
         case .loadBalancing:  String(localized: "负载均衡需要 Pro")
@@ -37,6 +41,16 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .emailRouting:   String(localized: "Email Routing 需要 Pro")
         case .rateLimit:      String(localized: "限速规则需要 Pro")
         case .zeroTrust:      String(localized: "Zero Trust 需要 Pro")
+        case .trafficMap:     String(localized: "全球流量地图需要 Pro")
+        case .aiInsights:     String(localized: "智能流量摘要需要 Pro")
+        case .aiDNS:          String(localized: "AI 添加记录需要 Pro")
+        case .filesApp:       String(localized: "在『文件』中访问需要 Pro")
+        case .queues:         String(localized: "Queues 需要 Pro")
+        case .aiGateway:      String(localized: "AI Gateway 需要 Pro")
+        case .durableObjects: String(localized: "Durable Objects 需要 Pro")
+        case .workersAI:      String(localized: "Workers AI 需要 Pro")
+        case .hyperdrive:     String(localized: "Hyperdrive 需要 Pro")
+        case .zoneRules:      String(localized: "规则管理需要 Pro")
         }
     }
 
@@ -52,6 +66,7 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .workerSecrets:  String(localized: "管理 Workers 的环境变量与密钥属于 Orange Cloud Pro。")
         case .workerTriggers: String(localized: "管理 Workers 的 Cron 定时触发器属于 Orange Cloud Pro。")
         case .workerRoutes:   String(localized: "管理 Workers 的子域、自定义域与路由属于 Orange Cloud Pro。")
+        case .workerEdit:     String(localized: "在 App 内更新 Workers 代码（上传新版本、从 .js 文件导入后重新部署）属于 Orange Cloud Pro。")
         case .cacheRules:     String(localized: "按 URL 自定义边缘/浏览器缓存 TTL、绕过缓存等缓存规则属于 Orange Cloud Pro。")
         case .pages:          String(localized: "查看与管理 Cloudflare Pages 项目和部署（重试 / 回滚 / 删除、构建配置）属于 Orange Cloud Pro。")
         case .loadBalancing:  String(localized: "负载均衡器、源站池与健康监测的查看与管理属于 Orange Cloud Pro。")
@@ -60,6 +75,16 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .emailRouting:   String(localized: "管理域名的邮件路由规则与目的地址属于 Orange Cloud Pro。")
         case .rateLimit:      String(localized: "查看与管理限速规则属于 Orange Cloud Pro。")
         case .zeroTrust:      String(localized: "查看 Zero Trust Access 应用与 Gateway 策略属于 Orange Cloud Pro。")
+        case .trafficMap:     String(localized: "按国家/地区在世界地图上查看请求与威胁的地理分布属于 Orange Cloud Pro。")
+        case .aiInsights:     String(localized: "用设备端 AI 一句话总结本期流量的增长、异常与主要来源（离线、免费、不出设备）属于 Orange Cloud Pro。")
+        case .aiDNS:          String(localized: "用自然语言一句话生成 DNS 记录（如「给 blog 加个指向 1.2.3.4 的 A 记录」），设备端离线属于 Orange Cloud Pro。")
+        case .filesApp:       String(localized: "把 R2 存储桶挂进系统『文件』App，像 iCloud 云盘一样浏览、读写、用任意 App 打开，属于 Orange Cloud Pro。")
+        case .queues:         String(localized: "查看与管理 Cloudflare Queues（新建 / 删除、暂停投递、清空消息、改保留期与延迟）属于 Orange Cloud Pro。")
+        case .aiGateway:      String(localized: "查看与管理 AI Gateway（新建 / 删除网关，配置缓存、限速与日志）属于 Orange Cloud Pro。")
+        case .durableObjects: String(localized: "查看 Durable Objects 命名空间，并浏览其中的对象实例属于 Orange Cloud Pro。")
+        case .workersAI:      String(localized: "浏览 Workers AI 模型目录，并试运行文本生成模型属于 Orange Cloud Pro。")
+        case .hyperdrive:     String(localized: "查看与管理 Hyperdrive 数据库加速配置（缓存设置、改源连接、新建 / 删除）属于 Orange Cloud Pro。")
+        case .zoneRules:      String(localized: "单条重定向、源站 / 配置 / 压缩规则、自定义错误与 Page Rules 的查看、启停与删除属于 Orange Cloud Pro。")
         }
     }
 
@@ -75,6 +100,7 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .workerSecrets:  "key"
         case .workerTriggers: "clock"
         case .workerRoutes:   "globe"
+        case .workerEdit:     "arrow.up.doc"
         case .cacheRules:     "bolt.horizontal"
         case .pages:          "doc.richtext"
         case .loadBalancing:  "arrow.left.arrow.right"
@@ -83,6 +109,16 @@ nonisolated enum ProFeature: String, Identifiable, Sendable {
         case .emailRouting:   "envelope"
         case .rateLimit:      "gauge.with.dots.needle.bottom.50percent"
         case .zeroTrust:      "lock.shield"
+        case .trafficMap:     "globe.americas"
+        case .aiInsights:     "sparkles"
+        case .aiDNS:          "sparkles"
+        case .filesApp:       "folder.badge.gearshape"
+        case .queues:         "tray.2"
+        case .aiGateway:      "brain.head.profile"
+        case .durableObjects: "cube.transparent"
+        case .workersAI:      "brain"
+        case .hyperdrive:     "bolt.horizontal.circle"
+        case .zoneRules:      "list.bullet.rectangle"
         }
     }
 }
@@ -122,6 +158,52 @@ struct ProGatedNavigationLink<Destination: View>: View {
                 tint: tint,
                 showsChevron: showsChevron,
                 destination: destination
+            )
+        } else {
+            Button {
+                paywallPresented = true
+            } label: {
+                HStack(spacing: 12) {
+                    TintIcon(systemImage: systemImage, color: tint)
+                    Text(label)
+                        .foregroundStyle(.primary)
+                    Spacer()
+                    ProBadge()
+                }
+            }
+            .foregroundStyle(.primary)
+            .sheet(isPresented: $paywallPresented) {
+                PaywallView(feature: feature)
+            }
+        }
+    }
+}
+
+/// 行级 Pro 闸门（值式导航版）：目的页自身还要继续 push 的入口用它——eager
+/// `NavigationLink(destination:)` 构造的目的页内部再 push 在 iOS 17.0 会卡死
+/// （详见 PermissionGatedValueLink / DevHubRoute 注释），值式 + 宿主栈根 navdest 才安全。
+struct ProGatedValueLink<V: Hashable>: View {
+
+    let label:         String
+    let systemImage:   String
+    let requiredScope: String
+    let feature:       ProFeature
+    var tint: Color = .ocOrange
+    var showsChevron: Bool = false
+    let value:         V
+
+    @Environment(EntitlementStore.self) private var entitlements
+    @State private var paywallPresented = false
+
+    var body: some View {
+        if entitlements.isPro {
+            PermissionGatedValueLink(
+                label: label,
+                systemImage: systemImage,
+                requiredScope: requiredScope,
+                tint: tint,
+                showsChevron: showsChevron,
+                value: value
             )
         } else {
             Button {

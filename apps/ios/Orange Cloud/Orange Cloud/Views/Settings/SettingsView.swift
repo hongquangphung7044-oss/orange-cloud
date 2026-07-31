@@ -28,6 +28,7 @@ struct SettingsView: View {
 
     @AppStorage(AppAppearance.storageKey) private var appearanceRaw = AppAppearance.system.rawValue
     @AppStorage(AppLanguage.storageKey)   private var languageRaw   = AppLanguage.system.rawValue
+    @AppStorage(AppMotion.storageKey)     private var reduceAnimations = false
 
     var body: some View {
         NavigationStack {
@@ -141,10 +142,17 @@ struct SettingsView: View {
                             Text("语言")
                         }
                     }
+
+                    Toggle(isOn: $reduceAnimations) {
+                        HStack(spacing: 12) {
+                            TintIcon(systemImage: "wand.and.rays.inverse", color: .purple)
+                            Text("减少动画")
+                        }
+                    }
                 } header: {
                     Text("外观与语言")
                 } footer: {
-                    Text("语言默认跟随系统。更改语言后需重新打开 App 生效。")
+                    Text("语言默认跟随系统，更改后需重新打开 App 生效。开启「减少动画」后，页面切换与界面变化将省去过渡动画，操作更跟手。")
                 }
                 .onChange(of: languageRaw) {
                     (AppLanguage(rawValue: languageRaw) ?? .system).apply()
@@ -153,6 +161,27 @@ struct SettingsView: View {
 
                 // ── 通知 ──
                 NotificationSettingsSection()
+
+                // ── 推送中心（免登录可用；登录后可联动 CF 告警）──
+                Section {
+                    NavigationLink {
+                        PushCenterView()
+                    } label: {
+                        HStack(spacing: 12) {
+                            TintIcon(systemImage: "bell.badge.fill", color: .ocOrange)
+                            VStack(alignment: .leading, spacing: 2) {
+                                Text("推送中心")
+                                    .foregroundStyle(.primary)
+                                Text("推送端点 · CF 告警直推")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                } footer: {
+                    Text("给自己的端点 curl 即推到手机；登录后还能把 Cloudflare 告警的 webhook 指过来。")
+                }
+                .glassRow()
 
                 // ── 服务状态 ──
                 Section {
@@ -168,6 +197,28 @@ struct SettingsView: View {
                     Text("服务状态")
                 } footer: {
                     Text("来自 cloudflarestatus.com 的官方服务状态与事件。")
+                }
+                .glassRow()
+
+                // ── 开发者工具箱（免登录可用）──
+                Section {
+                    Button {
+                        AppRouter.shared.presentToolbox = true
+                    } label: {
+                        HStack(spacing: 12) {
+                            TintIcon(systemImage: "wrench.and.screwdriver", color: .ocOrange)
+                            Text("开发者工具箱")
+                                .foregroundStyle(.primary)
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.caption.weight(.semibold))
+                                .foregroundStyle(.tertiary)
+                        }
+                    }
+                } header: {
+                    Text("工具")
+                } footer: {
+                    Text("DNS、SSL、HTTP、WHOIS、CIDR 等随身工具，无需 CF 账号。")
                 }
                 .glassRow()
 
@@ -234,6 +285,19 @@ struct SettingsView: View {
                     Text("帮助与反馈")
                 } footer: {
                     Text("反馈通过邮件发送给我们，可附带本地诊断日志（不含你的令牌或密钥）便于排查问题。")
+                }
+                .glassRow()
+
+                // ── 体验者计划（opt-in 遥测）──
+                Section {
+                    Toggle(isOn: Bindable(TelemetryStore.shared).isOptedIn) {
+                        HStack(spacing: 12) {
+                            TintIcon(systemImage: "waveform.path.ecg", color: .teal)
+                            Text("体验者计划")
+                        }
+                    }
+                } footer: {
+                    Text("开启后上报匿名诊断日志与崩溃信息（不含令牌、账号数据或任何个人信息），帮助我们更快定位登录与稳定性问题。")
                 }
                 .glassRow()
 

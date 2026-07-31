@@ -229,6 +229,82 @@
         }
       }
     },
+    "D1 查询自动记录最近 12 条，常用语句可收藏（按数据库分别保存）；查询结果一键导出 CSV，表详情还能查看索引。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 keeps your last 12 queries and lets you favorite the ones you reuse (saved per database). Results export to CSV in a tap, and table details now list indexes."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 查詢會自動記錄最近 12 筆，常用語句可收藏（依資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還能檢視索引。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 查詢會自動記錄最近 12 條，常用語句可收藏（按資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還可查看索引。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 は直近 12 件のクエリを自動で記録し、よく使う文はお気に入りに登録できます（データベースごとに保存）。結果はワンタップで CSV に書き出せ、テーブル詳細ではインデックスも確認できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 guarda tus últimas 12 consultas y te deja marcar como favoritas las que más usas (por base de datos). Los resultados se exportan a CSV con un toque y el detalle de la tabla ya muestra los índices."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1이 최근 12개의 쿼리를 자동으로 기록하고, 자주 쓰는 문장은 즐겨찾기에 담을 수 있습니다(데이터베이스별로 저장). 결과는 한 번에 CSV로 내보낼 수 있고, 테이블 상세에서 인덱스도 볼 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O D1 guarda suas últimas 12 consultas e deixa favoritar as que você mais usa (salvas por banco). Os resultados viram CSV com um toque e o detalhe da tabela agora mostra os índices."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O D1 guarda as suas últimas 12 consultas e permite marcar como favoritas as mais usadas (guardadas por base de dados). Os resultados exportam para CSV com um toque e o detalhe da tabela mostra agora os índices."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 merkt sich die letzten 12 Abfragen, häufig genutzte lassen sich als Favorit sichern (je Datenbank getrennt). Ergebnisse exportierst du mit einem Tippen als CSV, und die Tabellendetails zeigen jetzt auch Indizes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 conserve vos 12 dernières requêtes et permet de mettre en favori celles que vous réutilisez (par base de données). Les résultats s’exportent en CSV d’un geste, et le détail d’une table affiche désormais les index."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يحتفظ D1 بآخر 12 استعلامًا تلقائيًا، ويمكنك إضافة العبارات المتكررة إلى المفضلة (تُحفظ لكل قاعدة بيانات على حدة). صدّر النتائج إلى CSV بنقرة، وتعرض تفاصيل الجدول الآن الفهارس أيضًا."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 son 12 sorgunuzu otomatik saklar, sık kullandıklarınızı favorilere ekleyebilirsiniz (her veritabanı için ayrı). Sonuçlar tek dokunuşla CSV olarak dışa aktarılır, tablo ayrıntılarında artık dizinler de görünür."
+          }
+        }
+      }
+    },
     "Email Routing": {
       "localizations": {
         "en": {
@@ -381,6 +457,310 @@
         }
       }
     },
+    "Pages 支持「直接上传」部署（粘贴代码或选取文件 / ZIP）；Workers 可新建并整体更新代码，变量与密钥支持 JSON 批量导入。受 OAuth 限制无法读取源码，更新为整体替换。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages supports Direct Upload deploys (paste code or pick files/ZIP); Workers can be created and updated whole-script, with bulk JSON import for vars and secrets. OAuth can't read source, so an update replaces the whole script."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 支援「直接上傳」部署（貼上程式碼或選取檔案 / ZIP）；Workers 可建立並整體更新程式碼，變數與密鑰支援 JSON 批次匯入。受 OAuth 限制無法讀取原始碼，更新為整體取代。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 支援「直接上傳」部署（貼上程式碼或選取檔案 / ZIP）；Workers 可建立並整體更新程式碼，變數與密鑰支援 JSON 批次匯入。受 OAuth 限制無法讀取原始碼，更新為整體取代。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages は「直接アップロード」デプロイ（コードを貼り付け、またはファイル/ZIP を選択）に対応。Workers は新規作成とスクリプト全体の更新ができ、変数とシークレットは JSON で一括インポートできます。OAuth ではソースを読めないため、更新は全体置換になります。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages admite despliegues con Carga directa (pega código o elige archivos/ZIP); los Workers se pueden crear y actualizar por completo, con importación masiva de variables y secretos por JSON. OAuth no puede leer el código, así que la actualización reemplaza todo el script."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages는 직접 업로드 배포(코드 붙여넣기 또는 파일/ZIP 선택)를 지원하고, Workers는 새로 만들거나 스크립트 전체를 업데이트할 수 있으며 변수와 시크릿을 JSON으로 일괄 가져올 수 있습니다. OAuth로는 소스를 읽을 수 없어 업데이트는 전체 교체 방식입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Pages aceita deploys por Upload direto (cole o código ou escolha arquivos/ZIP); os Workers podem ser criados e atualizados por completo, com importação em massa de variáveis e segredos via JSON. O OAuth não lê o código-fonte, então a atualização substitui o script inteiro."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Pages aceita implementações por Carregamento direto (cole o código ou escolha ficheiros/ZIP); os Workers podem ser criados e atualizados na íntegra, com importação em massa de variáveis e segredos via JSON. O OAuth não lê o código-fonte, por isso a atualização substitui todo o script."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages unterstützt Direct-Upload-Deploys (Code einfügen oder Dateien/ZIP wählen); Workers lassen sich anlegen und als ganzes Skript aktualisieren, Variablen und Secrets per JSON im Stapel importieren. OAuth kann den Quellcode nicht lesen, daher ersetzt ein Update das gesamte Skript."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages prend en charge le déploiement par Téléversement direct (collez le code ou choisissez des fichiers/ZIP) ; les Workers peuvent être créés et mis à jour intégralement, avec import JSON en masse des variables et secrets. OAuth ne peut pas lire le code source, la mise à jour remplace donc tout le script."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يدعم Pages النشر عبر الرفع المباشر (ألصق الشيفرة أو اختر ملفات/ZIP)؛ ويمكن إنشاء Workers وتحديث النص البرمجي بالكامل، مع استيراد المتغيّرات والأسرار دفعةً واحدة عبر JSON. لا يستطيع OAuth قراءة الشيفرة المصدرية، لذا يستبدل التحديثُ النصَّ بأكمله."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages, Doğrudan Yükleme dağıtımlarını destekler (kodu yapıştırın ya da dosya/ZIP seçin); Workers oluşturulabilir ve betiğin tamamı güncellenebilir, değişkenler ile gizli anahtarlar JSON ile toplu içe aktarılabilir. OAuth kaynağı okuyamadığından güncelleme tüm betiği değiştirir."
+          }
+        }
+      }
+    },
+    "Pages 自定义域名": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages custom domains"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 自訂網域"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 自訂域名"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages カスタムドメイン"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dominios personalizados de Pages"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 사용자 지정 도메인"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domínios personalizados do Pages"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domínios personalizados do Pages"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benutzerdefinierte Domains für Pages"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domaines personnalisés Pages"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نطاقات Pages المخصصة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages özel alan adları"
+          }
+        }
+      }
+    },
+    "Pages 项目现可直接管理自定义域名：添加、删除、重新验证并检查解析状态；域名在当前账号时，还能一键添加指向项目的 CNAME 记录。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manage custom domains right inside a Pages project: add, remove, re-validate, and check DNS status — with one-tap CNAME setup when the domain’s zone is on your account."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 專案現可直接管理自訂網域：新增、刪除、重新驗證並檢查解析狀態；網域在目前帳號時，還能一鍵新增指向專案的 CNAME 記錄。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 項目現可直接管理自訂域名：新增、刪除、重新驗證並檢查解析狀態；域名在當前帳戶時，還能一鍵新增指向項目的 CNAME 記錄。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages プロジェクト内でカスタムドメインを直接管理：追加・削除・再検証と DNS 状態の確認に対応。ドメインが現在のアカウントにある場合は、プロジェクトへ向ける CNAME レコードをワンタップで追加できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Administra dominios personalizados dentro de un proyecto de Pages: agregar, eliminar, revalidar y comprobar el estado del DNS; si la zona del dominio está en tu cuenta, agrega el registro CNAME con un toque."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages 프로젝트에서 사용자 지정 도메인을 직접 관리하세요: 추가·삭제·재확인과 DNS 상태 확인을 지원하며, 도메인이 현재 계정에 있으면 프로젝트를 가리키는 CNAME 레코드를 한 번에 추가할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerencie domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o status do DNS — com criação do registro CNAME em um toque quando a zona do domínio está na sua conta."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faça a gestão de domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o estado do DNS — com criação do registo CNAME num toque quando a zona do domínio está na sua conta."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwalte benutzerdefinierte Domains direkt im Pages-Projekt: hinzufügen, entfernen, erneut validieren und DNS-Status prüfen – mit Ein-Tipp-CNAME, wenn die Zone der Domain in deinem Konto liegt."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gérez les domaines personnalisés directement dans un projet Pages : ajout, suppression, revalidation et vérification du DNS — avec création du CNAME en un geste quand la zone du domaine est sur votre compte."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدر النطاقات المخصصة داخل مشروع Pages مباشرة: إضافة وحذف وإعادة تحقق وفحص حالة DNS — مع إضافة سجل CNAME بلمسة واحدة عندما تكون منطقة النطاق ضمن حسابك."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özel alan adlarını doğrudan Pages projesi içinde yönetin: ekleme, silme, yeniden doğrulama ve DNS durumu kontrolü — alan adının bölgesi hesabınızdaysa tek dokunuşla CNAME kaydı ekleyin."
+          }
+        }
+      }
+    },
+    "Queues 现可暂停/恢复投递、清空消息、调整保留期与延迟；Hyperdrive 可编辑查询缓存与源数据库连接；Durable Objects 可浏览对象实例；Workers AI 能直接在 App 内试运行文本生成模型，缺权限时可一键补授权、无需退出登录。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues can now pause/resume delivery, purge messages, and adjust retention and delay; Hyperdrive lets you edit query caching and the origin database connection; Durable Objects can browse object instances; and Workers AI runs text-generation models right in the app — with one-tap permission top-up, no sign-out needed."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues 現可暫停／恢復投遞、清空訊息、調整保留期與延遲；Hyperdrive 可編輯查詢快取與來源資料庫連線；Durable Objects 可瀏覽物件實例；Workers AI 能直接在 App 內試執行文字生成模型，缺權限時可一鍵補授權、無需登出。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues 現可暫停／恢復投遞、清空訊息、調整保留期與延遲；Hyperdrive 可編輯查詢緩存與來源資料庫連線；Durable Objects 可瀏覽物件實例；Workers AI 能直接在 App 內試執行文字生成模型，缺權限時可一鍵補授權、無需登出。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues は配信の一時停止／再開、メッセージの消去、保持期間と遅延の調整に対応。Hyperdrive はクエリキャッシュとオリジンDB接続を編集可能。Durable Objects はオブジェクトインスタンスを閲覧可能。Workers AI はテキスト生成モデルをアプリ内で試せます（権限はワンタップで追加、サインアウト不要）。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues ahora puede pausar/reanudar la entrega, vaciar mensajes y ajustar la retención y el retraso; Hyperdrive permite editar el caché de consultas y la conexión a la base de datos de origen; Durable Objects puede explorar instancias de objetos; y Workers AI ejecuta modelos de generación de texto dentro de la app, con permisos añadidos en un toque y sin cerrar sesión."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이제 Queues에서 전송 일시중지/재개, 메시지 비우기, 보존 기간 및 지연 조정이 가능합니다. Hyperdrive에서는 쿼리 캐시와 원본 데이터베이스 연결을 편집할 수 있고, Durable Objects에서는 객체 인스턴스를 둘러볼 수 있으며, Workers AI에서는 앱 안에서 바로 텍스트 생성 모델을 실행할 수 있습니다(권한은 한 번의 탭으로 추가, 로그아웃 불필요)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Queues agora pode pausar/retomar a entrega, limpar mensagens e ajustar retenção e atraso; o Hyperdrive permite editar o cache de consultas e a conexão com o banco de dados de origem; o Durable Objects pode navegar pelas instâncias de objeto; e o Workers AI executa modelos de geração de texto dentro do app, com permissão concedida em um toque e sem sair da conta."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Queues passa a poder pausar/retomar a entrega, limpar mensagens e ajustar retenção e atraso; o Hyperdrive permite editar a cache de consultas e a ligação à base de dados de origem; o Durable Objects pode navegar pelas instâncias de objeto; e o Workers AI executa modelos de geração de texto dentro da app, com permissão concedida num toque e sem terminar sessão."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues kann jetzt die Zustellung pausieren/fortsetzen, Nachrichten leeren sowie Aufbewahrung und Verzögerung anpassen; bei Hyperdrive lassen sich Query-Caching und die Verbindung zur Ursprungsdatenbank bearbeiten; Durable Objects kann Objektinstanzen durchsuchen; und Workers AI führt Textgenerierungsmodelle direkt in der App aus – Berechtigung per Tipp ergänzt, ohne Abmelden."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues peut désormais suspendre/reprendre la distribution, purger les messages et ajuster la rétention et le délai ; Hyperdrive permet de modifier le cache de requêtes et la connexion à la base de données d'origine ; Durable Objects permet de parcourir les instances d'objet ; et Workers AI exécute des modèles de génération de texte directement dans l'app — autorisation ajoutée en un geste, sans déconnexion."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن الآن في Queues إيقاف/استئناف التسليم مؤقتًا، ومسح الرسائل، وضبط مدة الاحتفاظ والتأخير؛ ويتيح Hyperdrive تعديل التخزين المؤقت للاستعلامات والاتصال بقاعدة البيانات المصدر؛ ويمكن في Durable Objects تصفّح مثيلات الكائنات؛ ويشغّل Workers AI نماذج توليد النص داخل التطبيق مباشرةً — مع إضافة الإذن بنقرة واحدة دون تسجيل الخروج."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Queues artık teslimatı duraklatıp/sürdürebilir, mesajları temizleyebilir, saklama ve gecikmeyi ayarlayabilir; Hyperdrive sorgu önbelleğini ve kaynak veritabanı bağlantısını düzenlemenize olanak tanır; Durable Objects nesne örneklerine göz atabilir; ve Workers AI metin üretme modellerini doğrudan uygulamada çalıştırır — izin tek dokunuşla eklenir, oturum kapatmak gerekmez."
+          }
+        }
+      }
+    },
     "R2 存储升级": {
       "localizations": {
         "en": {
@@ -529,6 +909,82 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rate Limiting"
+          }
+        }
+      }
+    },
+    "SQL 历史与收藏": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL history and favorites"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL 記錄與收藏"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL 記錄與收藏"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL の履歴とお気に入り"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial y favoritos de SQL"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL 기록과 즐겨찾기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Histórico e favoritos de SQL"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Histórico e favoritos de SQL"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL-Verlauf und Favoriten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique et favoris SQL"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجل SQL والمفضلة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SQL geçmişi ve favoriler"
           }
         }
       }
@@ -913,6 +1369,538 @@
         }
       }
     },
+    "WAF 可视化规则构建器": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visual WAF rule builder"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 視覺化規則建構器"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 視覺化規則建構器"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF のビジュアルルールビルダー"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Constructor visual de reglas WAF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 시각적 규칙 빌더"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construtor visual de regras WAF"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Construtor visual de regras WAF"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visueller WAF-Regelbaukasten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Générateur visuel de règles WAF"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أداة بناء قواعد WAF المرئية"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görsel WAF kural oluşturucu"
+          }
+        }
+      }
+    },
+    "WAF 自定义防火墙规则现在支持编辑：点按任意规则即可修改动作、表达式、名称与启用状态，无需再删除后重建。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF custom firewall rules can now be edited: tap any rule to change its action, expression, name and enabled state — no need to delete and recreate it."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 自訂防火牆規則現在支援編輯：點按任一規則即可修改動作、運算式、名稱與啟用狀態，不必再刪除後重建。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 自訂防火牆規則現在支援編輯：點按任一規則即可修改動作、運算式、名稱與啟用狀態，無需再刪除後重建。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF のカスタムファイアウォールルールを編集できるようになりました。任意のルールをタップして、アクション・式・名前・有効状態を変更でき、削除して作り直す必要はありません。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahora puedes editar las reglas de firewall personalizadas de WAF: toca cualquier regla para cambiar su acción, expresión, nombre y estado, sin tener que eliminarla y volver a crearla."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이제 WAF 사용자 지정 방화벽 규칙을 편집할 수 있습니다. 규칙을 탭해 동작, 표현식, 이름, 사용 여부를 변경할 수 있어 삭제 후 다시 만들 필요가 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agora é possível editar as regras de firewall personalizadas do WAF: toque em qualquer regra para alterar ação, expressão, nome e estado, sem precisar excluir e recriar."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agora é possível editar as regras de firewall personalizadas do WAF: toque em qualquer regra para alterar ação, expressão, nome e estado, sem ter de eliminar e recriar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF-eigene Firewall-Regeln lassen sich jetzt bearbeiten: Tippe auf eine Regel, um Aktion, Ausdruck, Name und Aktivierungsstatus zu ändern – ohne sie löschen und neu anlegen zu müssen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les règles de pare-feu personnalisées WAF sont désormais modifiables : touchez une règle pour changer son action, son expression, son nom et son état, sans avoir à la supprimer puis à la recréer."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنك الآن تعديل قواعد جدار الحماية المخصّصة في WAF: انقر على أي قاعدة لتغيير إجرائها وتعبيرها واسمها وحالة تفعيلها، دون الحاجة إلى حذفها وإعادة إنشائها."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artık WAF özel güvenlik duvarı kurallarını düzenleyebilirsiniz: bir kurala dokunarak eylemini, ifadesini, adını ve etkin durumunu değiştirin; silip yeniden oluşturmanıza gerek yok."
+          }
+        }
+      }
+    },
+    "Worker 实时日志支持关键词搜索与级别筛选；长按复制整行，轻点展开完整详情并选取片段。「暂停」现在只冻结画面、日志照常接收，恢复后能看到完整记录。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live Worker logs now support keyword search and level filtering; long-press to copy a whole line, tap to expand the full detail and select any part of it. Pause now only freezes the view — logs keep arriving, so nothing is missing when you resume."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 即時日誌支援關鍵字搜尋與等級篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後能看到完整記錄。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 實時日誌支援關鍵字搜尋與級別篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後可看到完整記錄。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker のリアルタイムログでキーワード検索とレベル絞り込みができるようになりました。長押しで 1 行コピー、タップで詳細を開いて一部を選択できます。「一時停止」は表示を止めるだけになり、ログは受信し続けるため再開後もすべて確認できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los registros en vivo de Worker ahora tienen búsqueda por palabra clave y filtro por nivel; mantén presionada una línea para copiarla o tócala para ver el detalle completo y seleccionar fragmentos. Pausar solo congela la vista: los registros siguen llegando y no se pierde nada."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 실시간 로그에서 키워드 검색과 레벨 필터를 쓸 수 있습니다. 길게 눌러 한 줄을 복사하고, 탭하면 전체 내용을 펼쳐 일부만 선택할 수도 있습니다. 일시정지는 이제 화면만 멈추고 로그는 계속 수신되어 재개하면 빠짐없이 확인할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os logs ao vivo do Worker agora têm busca por palavra-chave e filtro por nível; segure para copiar a linha inteira ou toque para abrir o detalhe completo e selecionar trechos. Pausar apenas congela a tela — os logs continuam chegando e nada se perde."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os registos em direto do Worker têm agora pesquisa por palavra-chave e filtro por nível; toque sem soltar para copiar a linha ou toque para abrir o detalhe completo e selecionar excertos. Pausar apenas congela o ecrã — os registos continuam a chegar e nada se perde."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Live-Logs eines Workers lassen sich jetzt nach Stichwort durchsuchen und nach Level filtern; langes Tippen kopiert die ganze Zeile, kurzes Tippen öffnet das vollständige Detail zum Markieren. Die Pause friert nur die Ansicht ein – Logs laufen weiter ein, beim Fortsetzen fehlt nichts."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les journaux en direct d’un Worker acceptent désormais la recherche par mot-clé et le filtre par niveau ; appui long pour copier toute la ligne, appui simple pour ouvrir le détail complet et en sélectionner un extrait. La pause ne fige que l’affichage : les journaux continuent d’arriver, rien ne manque à la reprise."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صارت سجلات Worker المباشرة تدعم البحث بالكلمات المفتاحية والتصفية حسب المستوى؛ اضغط مطوّلًا لنسخ السطر كاملًا، أو انقر لعرض التفاصيل كاملة وتحديد جزء منها. ولم يعد الإيقاف المؤقت سوى تجميد للعرض — تستمر السجلات في الوصول فلا يفوتك شيء عند المتابعة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker canlı günlüklerinde artık anahtar kelime araması ve seviye filtresi var; uzun basınca satırın tamamı kopyalanır, dokununca tüm ayrıntı açılır ve içinden seçim yapılabilir. Duraklatma yalnızca görüntüyü dondurur; günlükler gelmeye devam eder, devam ettiğinizde hiçbir şey eksik olmaz."
+          }
+        }
+      }
+    },
+    "Worker 开启 workers.dev 子域后，直接显示完整访问地址，点一下即可打开。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When a Worker’s workers.dev subdomain is on, its full URL now shows right there — tap to open."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker の workers.dev サブドメインを有効にすると、完全な URL が表示され、タップして開けます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando el subdominio workers.dev de un Worker está activo, ahora se muestra su URL completa: tócala para abrir."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker의 workers.dev 서브도메인을 켜면 전체 주소가 바로 표시되며, 탭하면 열립니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando o subdomínio workers.dev de um Worker está ativo, a URL completa aparece ali — toque para abrir."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando o subdomínio workers.dev de um Worker está ativo, o URL completo aparece ali — toque para abrir."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ist die workers.dev-Subdomain eines Workers aktiv, wird jetzt die vollständige URL angezeigt – zum Öffnen tippen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque le sous-domaine workers.dev d’un Worker est activé, son URL complète s’affiche : touchez pour l’ouvrir."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند تفعيل نطاق workers.dev الفرعي لأحد Workers، يظهر عنوانه الكامل الآن — انقر لفتحه."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir Worker’ın workers.dev alt alan adı açıkken tam adresi artık orada görünür; açmak için dokunun."
+          }
+        }
+      }
+    },
+    "Worker 部署历史": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker deployment history"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 部署歷史"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 部署歷史"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker のデプロイ履歴"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historial de despliegues de Worker"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker 배포 기록"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Histórico de implantações do Worker"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Histórico de implementações do Worker"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker-Bereitstellungsverlauf"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique des déploiements Worker"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجل عمليات نشر Worker"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker dağıtım geçmişi"
+          }
+        }
+      }
+    },
+    "Workers AI 文生图": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generate images with Workers AI"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers AI 文字生圖"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers AI 文字生圖"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers AI で画像生成"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genera imágenes con Workers AI"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers AI로 이미지 생성"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gere imagens com Workers AI"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gere imagens com Workers AI"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilder mit Workers AI erzeugen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Générer des images avec Workers AI"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توليد الصور عبر Workers AI"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers AI ile görsel üretin"
+          }
+        }
+      }
+    },
+    "Workers 与 Pages 列表新增排序：默认（名称）、创建日期、最近更新，选择会被记住。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers and Pages lists can now be sorted by name (default), date created, or recently updated — your choice is remembered."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers 與 Pages 清單新增排序：預設（名稱）、建立日期、最近更新，選擇會被記住。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers 與 Pages 列表新增排序：默認（名稱）、創建日期、最近更新，選擇會被記住。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers と Pages のリストを名前（デフォルト）・作成日・最近の更新で並べ替えられるようになりました。選択は記憶されます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las listas de Workers y Pages ahora se pueden ordenar por nombre (predeterminado), fecha de creación o actualización reciente; tu elección se recuerda."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers와 Pages 목록을 이름(기본), 생성일, 최근 업데이트로 정렬할 수 있습니다. 선택은 기억됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As listas de Workers e Pages agora podem ser ordenadas por nome (padrão), data de criação ou atualização recente — sua escolha é lembrada."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As listas de Workers e Pages podem agora ser ordenadas por nome (predefinição), data de criação ou atualização recente — a sua escolha é lembrada."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers- und Pages-Listen lassen sich jetzt nach Name (Standard), Erstellungsdatum oder letzter Aktualisierung sortieren – die Auswahl wird gemerkt."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les listes Workers et Pages peuvent désormais être triées par nom (par défaut), date de création ou mise à jour récente — votre choix est mémorisé."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن الآن ترتيب قوائم Workers و Pages حسب الاسم (افتراضي) أو تاريخ الإنشاء أو آخر تحديث — ويُحفظ اختيارك."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers ve Pages listeleri artık ada (varsayılan), oluşturma tarihine veya son güncellemeye göre sıralanabilir; seçiminiz hatırlanır."
+          }
+        }
+      }
+    },
     "Zero Trust": {
       "localizations": {
         "en": {
@@ -985,6 +1973,234 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zero Trust"
+          }
+        }
+      }
+    },
+    "Zero Trust 编辑器": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust editing"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust 編輯器"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust 編輯器"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust エディタ"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edición de Zero Trust"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust 편집기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edição de Zero Trust"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edição de Zero Trust"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero-Trust-Editor"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Édition Zero Trust"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محرّر Zero Trust"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zero Trust düzenleme"
+          }
+        }
+      }
+    },
+    "workers.dev 子域直达": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One-tap workers.dev URL"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "workers.dev 子網域直達"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "workers.dev 子網域直達"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "workers.dev サブドメインに直接アクセス"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso directo al subdominio workers.dev"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "workers.dev 서브도메인 바로 열기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso direto ao subdomínio workers.dev"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso direto ao subdomínio workers.dev"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Direkter workers.dev-Zugriff"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès direct au sous-domaine workers.dev"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وصول مباشر إلى نطاق workers.dev الفرعي"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "workers.dev alt alan adına doğrudan erişim"
+          }
+        }
+      }
+    },
+    "一处搜遍所有资源": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search everything from one place"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一處搜遍所有資源"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一處搜遍所有資源"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのリソースをまとめて検索"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busca todo desde un solo lugar"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 리소스를 한 곳에서 검색"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busque tudo em um só lugar"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesquise tudo num só lugar"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles an einer Stelle suchen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout chercher au même endroit"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابحث في كل شيء من مكان واحد"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her şeyi tek yerden arayın"
           }
         }
       }
@@ -1141,6 +2357,158 @@
         }
       }
     },
+    "体验与稳定性改进": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Experience & stability improvements"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "體驗與穩定性改進"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "體驗與穩定性改進"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体験と安定性の改善"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejoras de experiencia y estabilidad"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용 경험 및 안정성 개선"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorias de experiência e estabilidade"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorias de experiência e estabilidade"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbesserungen bei Erlebnis und Stabilität"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorations de l’expérience et de la stabilité"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسينات في التجربة والاستقرار"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deneyim ve kararlılık iyileştirmeleri"
+          }
+        }
+      }
+    },
+    "体验者计划": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insider Program"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "體驗者計畫"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "體驗者計劃"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "インサイダープログラム"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programa Insider"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인사이더 프로그램"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programa Insider"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programa Insider"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insider-Programm"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programme Insider"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "برنامج تحسين التطبيق"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insider Programı"
+          }
+        }
+      }
+    },
     "修复了 App 在部分 iOS 17 设备上一启动就闪退的问题。": {
       "localizations": {
         "en": {
@@ -1293,6 +2661,234 @@
         }
       }
     },
+    "免登录开发者工具箱": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No-login developer toolbox"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免登入開發者工具箱"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免登入開發者工具箱"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン不要の開発者ツールボックス"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caja de herramientas para desarrolladores sin iniciar sesión"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 없는 개발자 도구 모음"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caixa de ferramentas do desenvolvedor sem login"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caixa de ferramentas do programador sem início de sessão"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entwickler-Toolbox ohne Anmeldung"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boîte à outils développeur sans connexion"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صندوق أدوات المطوّر بدون تسجيل دخول"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Girişsiz geliştirici araç kutusu"
+          }
+        }
+      }
+    },
+    "全新「开发者平台」": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A new Developer Platform"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全新「開發者平台」"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全新「開發者平台」"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい「開発者プラットフォーム」"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nueva plataforma para desarrolladores"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로운 개발자 플랫폼"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nova plataforma do desenvolvedor"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nova plataforma do programador"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neue Entwicklerplattform"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouvelle plateforme développeur"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منصة مطوّرين جديدة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni Geliştirici Platformu"
+          }
+        }
+      }
+    },
+    "全球流量地图": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Global traffic map"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全球流量地圖"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全球流量地圖"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "グローバルトラフィックマップ"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapa de tráfico global"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글로벌 트래픽 지도"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapa de tráfego global"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mapa de tráfego global"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Globale Traffic-Karte"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carte du trafic mondial"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خريطة حركة المرور العالمية"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Küresel trafik haritası"
+          }
+        }
+      }
+    },
     "全面无障碍": {
       "localizations": {
         "en": {
@@ -1365,6 +2961,310 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tamamen erişilebilir"
+          }
+        }
+      }
+    },
+    "内置推送服务：拿到一个专属端点，用 curl 或脚本就能把消息推到这台设备，支持标题、分组、铃声与端到端加密。无需登录 Cloudflare 即可使用。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A built-in push service: get your own endpoint and send messages to this device with a simple curl or script — with titles, groups, sounds and end-to-end encryption. No Cloudflare sign-in required."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這台裝置，支援標題、分組、鈴聲與端對端加密。無需登入 Cloudflare 即可使用。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這部裝置，支援標題、分組、鈴聲與端對端加密。無需登入 Cloudflare 即可使用。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プッシュ機能を内蔵。専用エンドポイントを取得すれば、curl やスクリプトでこの端末にメッセージを送れます。タイトル、グループ、サウンドと端末間暗号化に対応。Cloudflare へのサインインは不要です。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servicio de notificaciones integrado: obtén tu propio endpoint y envía mensajes a este dispositivo con un simple curl o script, con título, grupo, sonido y cifrado de extremo a extremo. No requiere iniciar sesión en Cloudflare."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "푸시 기능 내장: 전용 엔드포인트를 받아 curl이나 스크립트로 이 기기에 메시지를 보낼 수 있습니다. 제목, 그룹, 사운드와 종단 간 암호화를 지원합니다. Cloudflare 로그인이 필요 없습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serviço de push integrado: obtenha seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo, som e criptografia de ponta a ponta. Não exige login na Cloudflare."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serviço de push integrado: obtenha o seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo, som e encriptação de ponta a ponta. Não exige iniciar sessão na Cloudflare."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Integrierter Push-Dienst: Hol dir deinen eigenen Endpunkt und sende Nachrichten per curl oder Skript an dieses Gerät – mit Titel, Gruppe, Ton und Ende-zu-Ende-Verschlüsselung. Keine Cloudflare-Anmeldung nötig."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Service de push intégré : obtenez votre propre point de terminaison et envoyez des messages à cet appareil avec un simple curl ou script — avec titre, groupe, son et chiffrement de bout en bout. Aucune connexion Cloudflare requise."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خدمة دفع مدمجة: احصل على نقطة نهاية خاصة بك وأرسل الرسائل إلى هذا الجهاز باستخدام curl أو سكربت بسيط — مع عنوان ومجموعة وصوت وتشفير من طرف إلى طرف. لا يتطلب تسجيل الدخول إلى Cloudflare."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yerleşik push hizmeti: kendi uç noktanızı alın ve basit bir curl veya betikle bu cihaza mesaj gönderin — başlık, grup, ses ve uçtan uca şifreleme ile. Cloudflare oturumu gerekmez."
+          }
+        }
+      }
+    },
+    "列表排序": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "List sorting"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "清單排序"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "列表排序"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リストの並べ替え"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orden de listas"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "목록 정렬"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordenação de listas"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordenação de listas"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listensortierung"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tri des listes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترتيب القوائم"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste sıralama"
+          }
+        }
+      }
+    },
+    "创建资源，不止于查看": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create resources, not just view them"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建立資源，不只是檢視"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建立資源，不只是檢視"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見るだけでなく、作成も"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea recursos, no solo los veas"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보기만 하지 않고 직접 생성까지"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie recursos, não só visualize"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie recursos, não apenas os veja"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ressourcen erstellen, nicht nur ansehen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créez des ressources, pas seulement les consulter"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنشئ الموارد، لا تكتفِ بعرضها"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca görüntüleme değil, oluşturma"
+          }
+        }
+      }
+    },
+    "删除 D1 数据表": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete D1 tables"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除 D1 資料表"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刪除 D1 資料表"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 テーブルを削除"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar tablas de D1"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 테이블 삭제"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Excluir tabelas do D1"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminar tabelas do D1"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1-Tabellen löschen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer des tables D1"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف جداول D1"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 tablolarını silme"
           }
         }
       }
@@ -1597,6 +3497,158 @@
         }
       }
     },
+    "可视化增删改 Access 自托管应用与策略，以及 Gateway 的 DNS / HTTP / 网络策略，内置带选择器调色板的表达式编辑器。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create, edit and remove Access self-hosted apps and policies, plus Gateway DNS / HTTP / network policies — with an expression editor and a per-type selector palette."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可視化新增、編輯、刪除 Access 自託管應用與政策，以及 Gateway 的 DNS / HTTP / 網路政策，內建附選擇器調色盤的運算式編輯器。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可視化新增、編輯、刪除 Access 自託管應用與政策，以及 Gateway 的 DNS / HTTP / 網路政策，內建附選擇器調色盤的運算式編輯器。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access のセルフホスト型アプリとポリシー、Gateway の DNS / HTTP / ネットワークポリシーを視覚的に作成・編集・削除。種類別のセレクタパレットを備えた式エディタ付きです。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea, edita y elimina apps autoalojadas y políticas de Access, además de las políticas DNS / HTTP / de red de Gateway, con un editor de expresiones y una paleta de selectores por tipo."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access 자체 호스팅 앱과 정책, Gateway의 DNS / HTTP / 네트워크 정책을 시각적으로 만들고 편집·삭제할 수 있습니다. 유형별 선택기 팔레트가 있는 표현식 편집기를 갖췄습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie, edite e remova apps auto-hospedados e políticas do Access, além das políticas de DNS / HTTP / rede do Gateway, com um editor de expressões e uma paleta de seletores por tipo."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie, edite e remova apps auto-alojadas e políticas do Access, além das políticas de DNS / HTTP / rede do Gateway, com um editor de expressões e uma paleta de seletores por tipo."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erstelle, bearbeite und lösche selbstgehostete Access-Apps und -Richtlinien sowie Gateway-Richtlinien für DNS / HTTP / Netzwerk – mit Ausdruckseditor und typabhängiger Selektor-Palette."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créez, modifiez et supprimez les applications auto-hébergées et les politiques Access, ainsi que les politiques DNS / HTTP / réseau de Gateway, avec un éditeur d'expressions et une palette de sélecteurs par type."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنشئ وعدّل واحذف تطبيقات Access ذاتية الاستضافة وسياساتها، إضافةً إلى سياسات DNS / HTTP / الشبكة في Gateway، مع محرّر تعبيرات ولوحة محدِّدات حسب النوع."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access'in kendi barındırılan uygulamalarını ve ilkelerini, ayrıca Gateway'in DNS / HTTP / ağ ilkelerini görsel olarak oluşturun, düzenleyin ve silin; türüne göre seçici paleti olan bir ifade düzenleyici içerir."
+          }
+        }
+      }
+    },
+    "告警中心": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alert center"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "告警中心"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "告警中心"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アラートセンター"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de alertas"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "알림 센터"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central de alertas"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de alertas"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Warnungszentrale"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centre d’alertes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مركز التنبيهات"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarı merkezi"
+          }
+        }
+      }
+    },
     "在 App 里把已注册的域名加入账号，并拿到要去注册商处配置的名称服务器。": {
       "localizations": {
         "en": {
@@ -1669,6 +3721,234 @@
           "stringUnit": {
             "state": "translated",
             "value": "Zaten sahip olduğunuz bir alan adını hesabınıza ekleyin ve kayıt kuruluşunuzda ayarlamanız gereken ad sunucularını alın."
+          }
+        }
+      }
+    },
+    "在「文件」App 中打开 R2": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open R2 in the Files app"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「檔案」App 中開啟 R2"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「檔案」App 中開啟 R2"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「ファイル」App で R2 を開く"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre R2 en la app Archivos"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일 앱에서 R2 열기"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abra o R2 no app Arquivos"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abra o R2 na app Ficheiros"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 in der Dateien-App öffnen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir R2 dans l’app Fichiers"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح R2 في تطبيق الملفات"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2’yi Dosyalar uygulamasında aç"
+          }
+        }
+      }
+    },
+    "在世界地图上按国家/地区查看请求量与威胁分布，一眼看清流量来自哪里。Pro 功能。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See where your traffic comes from at a glance — requests and threats plotted by country on a world map. A Pro feature."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在世界地圖上依國家/地區檢視請求量與威脅分佈，一眼看清流量來自哪裡。Pro 功能。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在世界地圖上按國家/地區查看請求量與威脅分佈，一眼看清流量來自哪裡。Pro 功能。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リクエストと脅威を世界地図上に国・地域別でプロット。トラフィックの発信元がひと目で分かります。Pro 機能。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ve de un vistazo de dónde viene tu tráfico: solicitudes y amenazas trazadas por país en un mapa mundial. Función Pro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "트래픽이 어디에서 오는지 한눈에 확인하세요. 요청과 위협을 세계 지도에 국가별로 표시합니다. Pro 기능입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja de onde vem o seu tráfego num relance: solicitações e ameaças mapeadas por país em um mapa-múndi. Recurso Pro."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja de onde vem o seu tráfego num ápice: pedidos e ameaças mapeados por país num mapa-múndi. Funcionalidade Pro."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieh auf einen Blick, woher dein Traffic kommt – Anfragen und Bedrohungen nach Land auf einer Weltkarte. Eine Pro-Funktion."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voyez d’où vient votre trafic en un coup d’œil : requêtes et menaces représentées par pays sur une carte du monde. Fonction Pro."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اعرف مصدر حركة المرور لديك بلمحة — الطلبات والتهديدات موزّعة حسب الدولة على خريطة العالم. ميزة Pro."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trafiğinizin nereden geldiğini bir bakışta görün; istekler ve tehditler dünya haritasında ülkelere göre işaretlenir. Pro özelliği."
+          }
+        }
+      }
+    },
+    "在变量与密钥页直接把现有 D1 数据库或 KV 命名空间绑定到 Worker，也能一键解除。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bind an existing D1 database or KV namespace to a Worker right from the bindings page — and unbind just as easily."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "変数とシークレットのページから、既存の D1 データベースや KV ネームスペースを Worker にバインドでき、解除も簡単です。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincula una base de datos D1 o un espacio de nombres KV existente a un Worker desde la página de vínculos, y desvincúlalos con la misma facilidad."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변수·시크릿 페이지에서 기존 D1 데이터베이스나 KV 네임스페이스를 Worker에 바인딩하고, 해제도 간편합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule um banco de dados D1 ou namespace KV existente a um Worker direto na página de vínculos — e desvincule com a mesma facilidade."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule uma base de dados D1 ou namespace KV existente a um Worker diretamente na página de ligações — e desvincule com a mesma facilidade."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binde eine vorhandene D1-Datenbank oder einen KV-Namespace direkt auf der Bindungsseite an einen Worker – und löse die Bindung ebenso einfach."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liez une base de données D1 ou un espace de noms KV existant à un Worker depuis la page des liaisons, et dissociez-les tout aussi facilement."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اربط قاعدة بيانات D1 أو مساحة أسماء KV موجودة بأحد Workers مباشرة من صفحة الروابط، وألغِ الربط بالسهولة نفسها."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mevcut bir D1 veritabanını veya KV ad alanını bağlamalar sayfasından doğrudan bir Worker’a bağlayın; bağlantıyı kaldırmak da aynı kolaylıkta."
           }
         }
       }
@@ -1825,6 +4105,82 @@
         }
       }
     },
+    "在查询控制台长按任意表即可删除，需输入表名二次确认。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Long-press any table in the query console to drop it, with a type-the-name confirmation."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在查詢主控台長按任一表即可刪除，需輸入表名二次確認。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在查詢控制台長按任一表即可刪除，需輸入表名二次確認。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クエリコンソールでテーブルを長押しすると削除できます。テーブル名の入力による確認付きです。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantén pulsada cualquier tabla en la consola de consultas para eliminarla, con confirmación escribiendo su nombre."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "쿼리 콘솔에서 테이블을 길게 눌러 삭제할 수 있으며 이름을 입력해 확인합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque e segure qualquer tabela no console de consultas para excluí-la, com confirmação digitando o nome."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque sem soltar em qualquer tabela na consola de consultas para a eliminar, com confirmação escrevendo o nome."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Halte in der Abfragekonsole eine Tabelle gedrückt, um sie zu löschen – mit Bestätigung durch Eingabe des Namens."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appuyez longuement sur une table dans la console de requêtes pour la supprimer, avec confirmation en saisissant son nom."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط مطوّلاً على أي جدول في وحدة الاستعلام لحذفه، مع تأكيد بكتابة الاسم."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sorgu konsolunda bir tabloya uzun basarak silin; adını yazarak onaylayın."
+          }
+        }
+      }
+    },
     "域名与路由": {
       "localizations": {
         "en": {
@@ -1897,6 +4253,158 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alan adları ve Rotalar"
+          }
+        }
+      }
+    },
+    "域名详情新增「规则」统一入口：单条重定向、源站、配置、压缩与自定义错误五类规则支持查看、启停、新建、编辑与删除；Page Rules 与 URL 正规化支持查看与启停。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domain details gain a unified “Rules” entry: Single Redirects, Origin, Configuration, Compression and Custom Error rules with view, toggle, create, edit and delete; Page Rules and URL Normalization support view and toggle."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "網域詳情新增「規則」統一入口：單條重新導向、來源、組態、壓縮與自訂錯誤五類規則支援檢視、啟停、新增、編輯與刪除；Page Rules 與 URL 正規化支援檢視與啟停。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "域名詳情新增「規則」統一入口：單條重新導向、源站、配置、壓縮與自訂錯誤五類規則支援查看、啟停、新增、編輯與刪除；Page Rules 與 URL 正規化支援查看與啟停。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドメイン詳細に「ルール」の統一入口を追加。単一リダイレクト、オリジン、設定、圧縮、カスタムエラーの 5 種類のルールで表示・オン/オフ・作成・編集・削除に対応し、Page Rules と URL 正規化は表示とオン/オフに対応します。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los detalles del dominio incorporan una entrada unificada de «Reglas»: redirecciones individuales, origen, configuración, compresión y errores personalizados admiten ver, activar/desactivar, crear, editar y eliminar; Page Rules y la normalización de URL admiten ver y activar/desactivar."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도메인 상세에 '규칙' 통합 입구가 추가되었습니다. 단일 리디렉션, 오리진, 구성, 압축, 사용자 지정 오류 다섯 가지 규칙에서 보기·켜기/끄기·생성·편집·삭제를 지원하며, Page Rules와 URL 정규화는 보기와 켜기/끄기를 지원합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os detalhes do domínio ganham uma entrada unificada de “Regras”: redirecionamentos individuais, origem, configuração, compressão e erros personalizados com ver, ativar/desativar, criar, editar e excluir; Page Rules e normalização de URL permitem ver e ativar/desativar."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os detalhes do domínio ganham uma entrada unificada de «Regras»: redirecionamentos individuais, origem, configuração, compressão e erros personalizados com ver, ativar/desativar, criar, editar e eliminar; Page Rules e normalização de URL permitem ver e ativar/desativar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Domain-Details erhalten einen einheitlichen Bereich „Regeln“: Einzelweiterleitungen, Origin-, Konfigurations-, Komprimierungs- und benutzerdefinierte Fehlerregeln mit Anzeigen, Ein/Aus, Erstellen, Bearbeiten und Löschen; Page Rules und URL-Normalisierung unterstützen Anzeigen und Ein/Aus."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les détails du domaine gagnent une entrée unifiée « Règles » : redirections unitaires, règles d’origine, de configuration, de compression et d’erreurs personnalisées avec affichage, activation, création, modification et suppression ; les Page Rules et la normalisation d’URL prennent en charge l’affichage et l’activation."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحصل تفاصيل النطاق على مدخل موحّد «القواعد»: قواعد إعادة التوجيه الفردية والمصدر والتهيئة والضغط والأخطاء المخصصة مع العرض والتفعيل والإنشاء والتحرير والحذف؛ وتدعم Page Rules وتطبيع عناوين URL العرض والتفعيل."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alan adı ayrıntılarına birleşik \"Kurallar\" girişi eklendi: tekil yönlendirme, kaynak, yapılandırma, sıkıştırma ve özel hata kuralları görüntüleme, açma/kapatma, oluşturma, düzenleme ve silmeyi destekler; Page Rules ve URL normalleştirme görüntüleme ile açma/kapatmayı destekler."
+          }
+        }
+      }
+    },
+    "存储与流量单位在所有语言下统一显示为国际通用符号（KB / MB / GB），不再随语言翻译。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storage and traffic sizes now always use the universal unit symbols (KB / MB / GB) in every language, instead of localized unit names."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "儲存與流量單位在所有語言下統一顯示為國際通用符號（KB / MB / GB），不再隨語言翻譯。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "儲存與流量單位在所有語言下統一顯示為國際通用符號（KB / MB / GB），不再隨語言翻譯。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ストレージや通信量の単位を、どの言語でも国際的な表記（KB / MB / GB）で統一しました。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los tamaños de almacenamiento y tráfico ahora usan siempre los símbolos universales (KB / MB / GB) en todos los idiomas."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "저장 용량과 트래픽 단위를 모든 언어에서 국제 공용 기호(KB / MB / GB)로 통일했습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os tamanhos de armazenamento e tráfego agora usam sempre os símbolos universais (KB / MB / GB) em todos os idiomas."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os tamanhos de armazenamento e tráfego usam agora sempre os símbolos universais (KB / MB / GB) em todos os idiomas."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speicher- und Traffic-Größen verwenden jetzt in allen Sprachen einheitlich die universellen Einheitensymbole (KB / MB / GB)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les tailles de stockage et de trafic utilisent désormais les symboles universels (KB / MB / GB) dans toutes les langues."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أحجام التخزين وحركة المرور تُعرض الآن دائمًا بالرموز العالمية (KB / MB / GB) في جميع اللغات."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depolama ve trafik boyutları artık tüm dillerde evrensel birim simgeleriyle (KB / MB / GB) gösteriliyor."
           }
         }
       }
@@ -1977,6 +4485,158 @@
         }
       }
     },
+    "实时日志更好用": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Better live logs"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "即時日誌更好用"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "實時日誌更好用"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リアルタイムログが使いやすく"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registros en vivo mejorados"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실시간 로그 개선"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logs ao vivo melhores"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registos em direto melhorados"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bessere Live-Logs"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Journaux en direct améliorés"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجلات مباشرة أفضل"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha iyi canlı günlükler"
+          }
+        }
+      }
+    },
+    "就地编辑与删除 Worker": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit and delete Workers in place"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就地編輯與刪除 Worker"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "就地編輯與刪除 Worker"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker をその場で編集・削除"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edita y elimina Workers directamente"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker를 바로 편집·삭제"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edite e exclua Workers diretamente"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edite e elimine Workers diretamente"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker direkt bearbeiten und löschen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier et supprimer des Workers sur place"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل وحذف Workers مباشرةً"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Worker’ları yerinde düzenleyin ve silin"
+          }
+        }
+      }
+    },
     "开关域名的邮件路由，增删改转发规则，并管理账号内的已验证目的地址。": {
       "localizations": {
         "en": {
@@ -2049,6 +4709,462 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alan adının e-posta yönlendirmesini açıp kapatın, iletme kuralları oluşturup düzenleyin ve hesabınızın doğrulanmış hedef adreslerini yönetin."
+          }
+        }
+      }
+    },
+    "开发者平台更进一步": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Developer Platform goes further"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開發者平台更進一步"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開發者平台更進一步"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開発者プラットフォームがさらに進化"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plataforma para desarrolladores va más allá"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 걸음 더 나아간 개발자 플랫폼"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A plataforma do desenvolvedor vai além"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A plataforma do programador vai mais longe"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Entwicklerplattform geht weiter"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plateforme développeur va plus loin"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "منصة المطوّرين تتقدّم خطوة أخرى"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geliştirici Platformu daha da ileride"
+          }
+        }
+      }
+    },
+    "快速绑定 D1 / KV": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quickly bind D1 / KV"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速綁定 D1 / KV"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速綁定 D1 / KV"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 / KV をすばやくバインド"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincula D1 / KV rápidamente"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 / KV 빠른 바인딩"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule D1 / KV rapidamente"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule D1 / KV rapidamente"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 / KV schnell binden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lier rapidement D1 / KV"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ربط D1 / KV بسرعة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "D1 / KV’yi hızlıca bağla"
+          }
+        }
+      }
+    },
+    "快速绑定 R2 存储桶": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quickly bind R2 buckets"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速綁定 R2 儲存桶"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速綁定 R2 儲存桶"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 バケットをすばやくバインド"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincula buckets R2 rápidamente"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 버킷 빠른 바인딩"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule buckets R2 rapidamente"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vincule buckets R2 rapidamente"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2-Buckets schnell binden"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lier rapidement des buckets R2"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ربط حاويات R2 بسرعة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 bucket’larını hızlıca bağla"
+          }
+        }
+      }
+    },
+    "把 Cloudflare 告警推到手机": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare alerts on your phone"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把 Cloudflare 告警推到手機"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把 Cloudflare 告警推到手機"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare のアラートをスマホへ"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alertas de Cloudflare en tu teléfono"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴대폰으로 받는 Cloudflare 경고"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alertas da Cloudflare no seu celular"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alertas da Cloudflare no seu telemóvel"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare-Warnungen auf deinem Handy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les alertes Cloudflare sur votre téléphone"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تنبيهات Cloudflare على هاتفك"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare uyarıları telefonunuzda"
+          }
+        }
+      }
+    },
+    "把 R2 存储桶挂进系统「文件」App，像 iCloud 云盘一样浏览、上传、下载、重命名，并用任意 App 直接打开。Pro 功能。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mount an R2 bucket right inside the system Files app — browse, upload, download and rename like iCloud Drive, and open files in any app. A Pro feature."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將 R2 儲存桶掛進系統「檔案」App，像 iCloud 雲端硬碟一樣瀏覽、上傳、下載、重新命名，並用任何 App 直接開啟。Pro 功能。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將 R2 儲存桶掛進系統「檔案」App，像 iCloud 雲端硬碟一樣瀏覽、上傳、下載、重新命名，並用任何 App 直接開啟。Pro 功能。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 バケットをシステムの「ファイル」App に直接マウント。iCloud Drive のように閲覧・アップロード・ダウンロード・名称変更ができ、任意の App で開けます。Pro 機能。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monta un bucket R2 directamente en la app Archivos: explora, sube, descarga y renombra como en iCloud Drive, y ábrelo con cualquier app. Función Pro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 버킷을 시스템 파일 앱에 바로 마운트하세요. iCloud Drive처럼 탐색·업로드·다운로드·이름 변경이 가능하고 어떤 앱으로든 열 수 있습니다. Pro 기능입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monte um bucket R2 direto no app Arquivos: navegue, envie, baixe e renomeie como no iCloud Drive e abra em qualquer app. Recurso Pro."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monte um bucket R2 diretamente na app Ficheiros: navegue, carregue, descarregue e mude o nome como no iCloud Drive e abra em qualquer app. Funcionalidade Pro."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binde einen R2-Bucket direkt in die Dateien-App ein – durchsuchen, hochladen, herunterladen und umbenennen wie in iCloud Drive und in jeder App öffnen. Eine Pro-Funktion."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Montez un bucket R2 directement dans l’app Fichiers : parcourez, importez, téléchargez et renommez comme sur iCloud Drive, et ouvrez vos fichiers dans n’importe quelle app. Fonction Pro."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ثبّت حاوية R2 مباشرةً داخل تطبيق الملفات — تصفّح وارفع ونزّل وأعد التسمية كما في iCloud Drive، وافتح الملفات بأي تطبيق. ميزة Pro."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir R2 paketini doğrudan sistemin Dosyalar uygulamasına bağlayın; iCloud Drive gibi gözatın, yükleyin, indirin ve yeniden adlandırın, dosyaları herhangi bir uygulamada açın. Pro özelliği."
+          }
+        }
+      }
+    },
+    "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收进一个按「计算 / 数据与消息 / AI」分组的 Tab，对齐 Cloudflare 的产品布局。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI and AI Gateway now share one tab, grouped into Compute / Data & Messaging / AI to mirror Cloudflare's own layout."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收進一個依「運算 / 資料與訊息 / AI」分組的分頁，對齊 Cloudflare 的產品配置。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收進一個依「運算 / 資料與訊息 / AI」分組的分頁，對齊 Cloudflare 的產品配置。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway を、Cloudflare の構成に合わせて「コンピュート / データとメッセージング / AI」に分類した 1 つのタブにまとめました。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI y AI Gateway ahora comparten una sola pestaña, agrupados en Cómputo / Datos y mensajería / IA, igual que en Cloudflare."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI, AI Gateway를 컴퓨팅 / 데이터·메시징 / AI로 묶어 하나의 탭에 모았습니다. Cloudflare 구성과 동일합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI e AI Gateway agora ficam em uma única aba, agrupados em Computação / Dados e mensageria / IA, como na Cloudflare."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI e AI Gateway passam a partilhar um único separador, agrupados em Computação / Dados e mensagens / IA, tal como na Cloudflare."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI und AI Gateway teilen sich jetzt einen Tab – gruppiert nach Compute / Daten & Messaging / KI, passend zu Cloudflares eigener Struktur."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI et AI Gateway partagent désormais un seul onglet, regroupés en Calcul / Données et messagerie / IA, comme chez Cloudflare."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجتمع الآن Workers وPages وQueues وDurable Objects وHyperdrive وWorkers AI وAI Gateway في علامة تبويب واحدة، مُجمَّعة ضمن الحوسبة / البيانات والمراسلة / الذكاء الاصطناعي، على غرار تنظيم Cloudflare."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI ve AI Gateway artık tek bir sekmeyi paylaşıyor; Cloudflare'in kendi düzenine uygun olarak İşlem / Veri ve Mesajlaşma / Yapay Zekâ olarak gruplandı."
           }
         }
       }
@@ -2357,6 +5473,462 @@
         }
       }
     },
+    "授权更省心": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easier authorization"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授權更省心"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授權更省心"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認可がもっと簡単に"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorización más simple"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 간편한 권한 부여"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorização mais simples"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorização mais simples"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einfachere Autorisierung"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation simplifiée"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تفويض أسهل"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha kolay yetkilendirme"
+          }
+        }
+      }
+    },
+    "授权页新增「全部只读 / 全部读写 / 仅必选」快捷预设。本版新增 Queues、AI Gateway、Workers AI 等模块，需重新授权才会点亮对应入口。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The authorization screen adds quick presets — all read-only, all read-write, or required-only. New modules like Queues, AI Gateway and Workers AI need a fresh authorization to light up."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授權頁新增「全部唯讀 / 全部讀寫 / 僅必選」快捷預設。本版新增 Queues、AI Gateway、Workers AI 等模組，需重新授權才會點亮對應入口。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "授權頁新增「全部唯讀 / 全部讀寫 / 僅必選」快捷預設。本版新增 Queues、AI Gateway、Workers AI 等模組，需重新授權才會點亮對應入口。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "認可画面に「すべて読み取り専用 / すべて読み書き / 必須のみ」のクイックプリセットを追加。今回追加の Queues、AI Gateway、Workers AI などの新モジュールは、再認可すると表示されます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pantalla de autorización añade ajustes rápidos: todo de solo lectura, todo de lectura y escritura, o solo lo necesario. Los nuevos módulos como Queues, AI Gateway y Workers AI requieren autorizar de nuevo para activarse."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "권한 부여 화면에 빠른 프리셋(모두 읽기 전용 / 모두 읽기·쓰기 / 필수만)이 추가됐습니다. Queues, AI Gateway, Workers AI 같은 새 모듈은 다시 권한을 부여해야 표시됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A tela de autorização ganha predefinições rápidas: tudo somente leitura, tudo leitura e escrita ou apenas o necessário. Os novos módulos, como Queues, AI Gateway e Workers AI, precisam de nova autorização para aparecer."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O ecrã de autorização ganha predefinições rápidas: tudo só de leitura, tudo de leitura e escrita ou apenas o necessário. Os novos módulos, como Queues, AI Gateway e Workers AI, precisam de nova autorização para aparecer."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Autorisierungs-Bildschirm bekommt Schnellvorlagen – alles nur lesen, alles lesen und schreiben oder nur das Nötigste. Neue Module wie Queues, AI Gateway und Workers AI erscheinen erst nach erneuter Autorisierung."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'écran d'autorisation ajoute des préréglages rapides : tout en lecture seule, tout en lecture-écriture ou strictement nécessaire. Les nouveaux modules comme Queues, AI Gateway et Workers AI nécessitent une nouvelle autorisation pour apparaître."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تضيف شاشة التفويض إعداداتٍ سريعة: الكل للقراءة فقط، أو الكل للقراءة والكتابة، أو الضروري فقط. وتحتاج الوحدات الجديدة مثل Queues وAI Gateway وWorkers AI إلى تفويض جديد لتظهر."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yetkilendirme ekranına hızlı ön ayarlar eklendi: tümü salt okunur, tümü okuma-yazma veya yalnızca gerekli. Queues, AI Gateway ve Workers AI gibi yeni modüllerin görünmesi için yeniden yetkilendirme gerekir."
+          }
+        }
+      }
+    },
+    "推送中心": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push Center"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "推送中心"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "推送中心"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プッシュセンター"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de notificaciones"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "푸시 센터"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central de Push"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de Push"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push-Center"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centre de push"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مركز الإشعارات"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Push Merkezi"
+          }
+        }
+      }
+    },
+    "数据单位显示": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data unit display"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "數據單位顯示"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "數據單位顯示"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "データ単位の表示"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unidades de datos"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데이터 단위 표시"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unidades de dados"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unidades de dados"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anzeige von Dateneinheiten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affichage des unités"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض وحدات البيانات"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veri birimi gösterimi"
+          }
+        }
+      }
+    },
+    "新增「减少动画」开关让界面更跟手，优化多账号切换的稳定性，并在后台预热数据，切回前台更快看到最新内容。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A new “Reduce Animations” toggle makes the interface feel snappier, multi-account switching is more reliable, and data is pre-warmed in the background so you see the latest content faster when you return."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增「減少動畫」開關讓介面更跟手，優化多帳戶切換的穩定性，並在背景預先載入資料，切回前景更快看到最新內容。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增「減少動畫」開關讓介面更跟手，優化多帳戶切換的穩定性，並在背景預先載入資料，切回前景更快看到最新內容。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい「アニメーションを減らす」スイッチで操作がより軽快に。複数アカウントの切り替えも安定し、バックグラウンドでデータを事前読み込みするため、戻ったときに最新の内容をすばやく表示します。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un nuevo interruptor «Reducir animaciones» hace la interfaz más ágil, el cambio entre varias cuentas es más estable y los datos se precargan en segundo plano para que veas el contenido más reciente más rápido al volver."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로운 ‘애니메이션 줄이기’ 스위치로 화면이 더 빠릿해지고, 여러 계정 전환이 더 안정적이며, 백그라운드에서 데이터를 미리 불러와 돌아왔을 때 최신 내용을 더 빨리 볼 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um novo botão “Reduzir animações” deixa a interface mais ágil, a troca entre várias contas ficou mais estável e os dados são pré-carregados em segundo plano para você ver o conteúdo mais recente mais rápido ao voltar."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um novo botão “Reduzir animações” torna a interface mais ágil, a mudança entre várias contas ficou mais estável e os dados são pré-carregados em segundo plano para ver o conteúdo mais recente mais depressa ao regressar."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein neuer Schalter „Animationen reduzieren“ lässt die Oberfläche flüssiger wirken, der Wechsel zwischen mehreren Konten ist zuverlässiger, und Daten werden im Hintergrund vorgeladen, damit du nach der Rückkehr schneller die neuesten Inhalte siehst."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un nouveau réglage « Réduire les animations » rend l’interface plus réactive, le passage d’un compte à l’autre est plus fiable, et les données sont préchargées en arrière-plan pour afficher le contenu le plus récent plus vite à votre retour."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مفتاح جديد «تقليل الحركات» يجعل الواجهة أكثر سلاسة، والتبديل بين الحسابات المتعددة أصبح أكثر ثباتًا، ويتم تحميل البيانات مسبقًا في الخلفية لتشاهد أحدث المحتوى بسرعة عند عودتك."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni “Animasyonları Azalt” anahtarı arayüzü daha akıcı yapar, çoklu hesap geçişi daha kararlı hale gelir ve veriler arka planda önceden yüklenir; böylece geri döndüğünüzde en güncel içeriği daha hızlı görürsünüz."
+          }
+        }
+      }
+    },
+    "新增可随时开关的体验者计划：默认关闭，加入后才会匿名上报诊断信息，帮助我们更快定位闪退与登录问题；不收集任何个人身份数据。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New opt-in Insider Program, off by default: join to share anonymous diagnostics that help us pinpoint crashes and sign-in issues faster. No personal data is collected."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增可隨時開關的體驗者計畫：預設關閉，加入後才會匿名回報診斷資訊，協助我們更快定位閃退與登入問題；不收集任何個人身分資料。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增可隨時開關的體驗者計劃：預設關閉，加入後才會匿名上報診斷資訊，協助我們更快定位閃退與登入問題；不收集任何個人身份資料。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "任意参加のインサイダープログラムを追加しました。既定ではオフで、参加した場合のみ匿名の診断情報を送信し、クラッシュやログイン問題の特定に役立てます。個人を特定できるデータは収集しません。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo programa Insider opcional, desactivado de forma predeterminada: al unirte, se envían diagnósticos anónimos que nos ayudan a localizar más rápido los cierres inesperados y problemas de inicio de sesión. No se recopilan datos personales."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "언제든 켜고 끌 수 있는 인사이더 프로그램이 추가되었습니다. 기본은 꺼짐이며, 참여할 때만 익명 진단 정보를 전송해 앱 종료와 로그인 문제를 더 빠르게 파악하도록 돕습니다. 개인 식별 데이터는 수집하지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novo Programa Insider opcional, desativado por padrão: ao participar, diagnósticos anônimos nos ajudam a localizar falhas e problemas de login mais rápido. Nenhum dado pessoal é coletado."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novo Programa Insider opcional, desativado por predefinição: ao aderir, diagnósticos anónimos ajudam-nos a localizar falhas e problemas de sessão mais depressa. Não são recolhidos dados pessoais."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neues Insider-Programm zum Mitmachen, standardmäßig aus: Nach dem Beitritt helfen anonyme Diagnosedaten, Abstürze und Anmeldeprobleme schneller einzugrenzen. Es werden keine personenbezogenen Daten erfasst."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau programme Insider facultatif, désactivé par défaut : en le rejoignant, des diagnostics anonymes nous aident à localiser plus vite les plantages et problèmes de connexion. Aucune donnée personnelle n’est collectée."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "برنامج تحسين التطبيق الجديد اختياري ومعطّل افتراضيًا: عند الانضمام تُرسل بيانات تشخيصية مجهولة تساعدنا على تحديد الانهيارات ومشكلات تسجيل الدخول بشكل أسرع، ولا تُجمع أي بيانات شخصية."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İsteğe bağlı yeni Insider Programı, varsayılan olarak kapalı: katıldığınızda anonim tanılama verileri çökmeleri ve oturum açma sorunlarını daha hızlı bulmamıza yardımcı olur. Hiçbir kişisel veri toplanmaz."
+          }
+        }
+      }
+    },
     "新增德语、法语、阿拉伯语与土耳其语；并改进崩溃诊断，帮助更快定位疑难问题。": {
       "localizations": {
         "en": {
@@ -2585,6 +6157,82 @@
         }
       }
     },
+    "新建自定义防护规则时，可在「书写规则」与「表达式编辑器」之间随时切换，更快写出想要的条件。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When writing a custom rule, switch any time between a guided rule builder and the raw expression editor to craft conditions faster."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增自訂防護規則時，可隨時在「書寫規則」與「運算式編輯器」之間切換，更快寫出想要的條件。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新增自訂防護規則時，可隨時在「書寫規則」與「運算式編輯器」之間切換，更快寫出想要的條件。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カスタムルールの作成時に、ガイド付きのルールビルダーと式エディタをいつでも切り替えて、条件をすばやく組み立てられます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al crear una regla personalizada, alterna en cualquier momento entre el generador guiado y el editor de expresiones para definir condiciones más rápido."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자 지정 규칙을 만들 때 가이드형 규칙 빌더와 표현식 편집기를 언제든 전환하며 조건을 더 빠르게 작성할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao criar uma regra personalizada, alterne quando quiser entre o construtor guiado e o editor de expressões para definir condições mais rápido."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao criar uma regra personalizada, alterne quando quiser entre o construtor guiado e o editor de expressões para definir condições mais depressa."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wechsle beim Erstellen einer eigenen Regel jederzeit zwischen geführtem Regelbaukasten und Ausdruckseditor, um Bedingungen schneller zu formulieren."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lors de la création d'une règle personnalisée, basculez à tout moment entre le générateur guidé et l'éditeur d'expressions pour définir vos conditions plus vite."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند إنشاء قاعدة مخصّصة، بدّل في أي وقت بين أداة البناء الموجَّهة ومحرّر التعبيرات لصياغة الشروط بسرعة أكبر."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özel bir kural yazarken, koşulları daha hızlı oluşturmak için rehberli kural oluşturucu ile ifade düzenleyici arasında istediğiniz zaman geçiş yapın."
+          }
+        }
+      }
+    },
     "无需清空整站，指定单个或多个 URL 精准刷新缓存；并新增性能与缓存设置页。": {
       "localizations": {
         "en": {
@@ -2657,6 +6305,82 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tüm siteyi temizlemeden belirli URL'lerin önbelleğini yenileyin; ayrıca yeni bir performans ve önbellek ayarları sayfası eklendi."
+          }
+        }
+      }
+    },
+    "无需登录即可使用一组常用网络工具：DNS 查询、SSL 证书检查、HTTP 头、WHOIS、IP 归属、CIDR 计算与 Cloudflare trace。打开 App 在登录页就能直接进入。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A set of handy network tools you can use without signing in: DNS lookup, SSL certificate inspection, HTTP headers, WHOIS, IP geolocation, a CIDR calculator and Cloudflare trace — reachable right from the login screen."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログインせずに使える定番のネットワークツール群：DNS 検索、SSL 証明書チェック、HTTP ヘッダー、WHOIS、IP 位置情報、CIDR 計算、Cloudflare trace。ログイン画面からそのまま開けます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un conjunto de herramientas de red prácticas que puedes usar sin iniciar sesión: consulta DNS, inspección de certificados SSL, encabezados HTTP, WHOIS, geolocalización de IP, calculadora CIDR y Cloudflare trace, accesibles desde la pantalla de inicio de sesión."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 없이 사용할 수 있는 유용한 네트워크 도구 모음: DNS 조회, SSL 인증서 검사, HTTP 헤더, WHOIS, IP 위치, CIDR 계산기, Cloudflare trace. 로그인 화면에서 바로 열 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um conjunto de ferramentas de rede úteis que você pode usar sem fazer login: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis direto na tela de login."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um conjunto de ferramentas de rede úteis que pode usar sem iniciar sessão: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis a partir do ecrã de início de sessão."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Praktische Netzwerk-Tools, die du ohne Anmeldung nutzen kannst: DNS-Abfrage, SSL-Zertifikatsprüfung, HTTP-Header, WHOIS, IP-Geolokalisierung, ein CIDR-Rechner und Cloudflare-Trace – direkt vom Anmeldebildschirm aus erreichbar."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un ensemble d'outils réseau pratiques utilisables sans connexion : requête DNS, inspection de certificat SSL, en-têtes HTTP, WHOIS, géolocalisation IP, calculateur CIDR et Cloudflare trace — accessibles depuis l'écran de connexion."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مجموعة من أدوات الشبكة العملية التي يمكنك استخدامها دون تسجيل الدخول: استعلام DNS، فحص شهادة SSL، ترويسات HTTP، WHOIS، تحديد موقع IP، حاسبة CIDR، وCloudflare trace — يمكن الوصول إليها مباشرةً من شاشة تسجيل الدخول."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum açmadan kullanabileceğiniz pratik ağ araçları: DNS sorgusu, SSL sertifikası incelemesi, HTTP başlıkları, WHOIS, IP konumu, CIDR hesaplayıcı ve Cloudflare trace — giriş ekranından doğrudan erişilebilir."
           }
         }
       }
@@ -2809,6 +6533,82 @@
           "stringUnit": {
             "state": "translated",
             "value": "Daha fazla dil ve kararlılık"
+          }
+        }
+      }
+    },
+    "有多个 Cloudflare 账号时，App 会记住你上次选中的那一个，下次打开直接进入它，不再固定回到列表里的第一个。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With more than one Cloudflare account, the app now remembers the one you picked last and opens straight into it, instead of always falling back to the first in the list."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到清單裡的第一個。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到列表裡的第一個。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare アカウントが複数ある場合、最後に選んだアカウントを記憶し、次に開いたときはそのアカウントで始まります。常に一覧の先頭に戻ることはありません。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si tienes varias cuentas de Cloudflare, la app recuerda la última que elegiste y abre directamente en ella, en lugar de volver siempre a la primera de la lista."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloudflare 계정이 여러 개일 때 마지막으로 선택한 계정을 기억해, 다음에 열면 바로 그 계정으로 시작합니다. 더 이상 목록의 첫 번째 계정으로 돌아가지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com mais de uma conta Cloudflare, o app passa a lembrar a última que você escolheu e abre direto nela, em vez de sempre voltar para a primeira da lista."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com mais do que uma conta Cloudflare, a app passa a memorizar a última que escolheu e abre diretamente nela, em vez de voltar sempre à primeira da lista."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei mehreren Cloudflare-Konten merkt sich die App das zuletzt gewählte Konto und startet direkt damit – statt immer auf das erste Konto der Liste zurückzufallen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec plusieurs comptes Cloudflare, l’app retient celui que vous avez choisi en dernier et s’ouvre directement dessus, au lieu de revenir toujours au premier de la liste."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند وجود أكثر من حساب Cloudflare، يتذكّر التطبيق الحساب الذي اخترته آخر مرة ويفتح عليه مباشرة بدلاً من العودة دائمًا إلى أول حساب في القائمة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birden fazla Cloudflare hesabı varsa uygulama en son seçtiğiniz hesabı hatırlar ve doğrudan onunla açılır; artık her seferinde listedeki ilk hesaba dönmez."
           }
         }
       }
@@ -3193,6 +6993,462 @@
         }
       }
     },
+    "查看每个 Worker 的历次部署记录，并可删除不再需要的旧部署。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See every past deployment of a Worker and delete older ones you no longer need."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "檢視每個 Worker 的歷次部署記錄，並可刪除不再需要的舊部署。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看每個 Worker 的歷次部署記錄，並可刪除不再需要的舊部署。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "各 Worker の過去のデプロイを確認し、不要になった古いデプロイを削除できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consulta cada despliegue anterior de un Worker y elimina los que ya no necesites."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "각 Worker의 과거 배포를 확인하고 더 이상 필요 없는 이전 배포를 삭제할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja todas as implantações anteriores de um Worker e exclua as antigas que não precisa mais."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja todas as implementações anteriores de um Worker e elimine as antigas de que já não precisa."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieh dir alle bisherigen Bereitstellungen eines Workers an und lösche nicht mehr benötigte alte Bereitstellungen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consultez tous les déploiements passés d’un Worker et supprimez les anciens dont vous n’avez plus besoin."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اطّلع على كل عمليات نشر Worker السابقة واحذف القديمة التي لم تعد بحاجة إليها."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir Worker’ın geçmiş tüm dağıtımlarını görün ve artık ihtiyaç duymadığınız eskileri silin."
+          }
+        }
+      }
+    },
+    "根治 iOS 17.0 上概览页、资源列表与域名详情的多处闪退与冻结；同时修复 Tunnel 页面卡死与冷启动请求翻倍的问题。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixes multiple crashes and freezes on iOS 17.0 across Overview, resource lists and domain details, plus the Tunnel page hanging and doubled requests on cold launch."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根治 iOS 17.0 上總覽頁、資源列表與網域詳情的多處閃退與凍結；同時修復 Tunnel 頁面卡死與冷啟動請求翻倍的問題。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根治 iOS 17.0 上概覽頁、資源列表與域名詳情的多處閃退與凍結；同時修復 Tunnel 頁面卡死與冷啟動請求翻倍的問題。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17.0 における概要ページ、リソース一覧、ドメイン詳細での複数のクラッシュとフリーズを根本から修正。Tunnel ページのフリーズや、コールド起動時にリクエストが倍増する問題も修正しました。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige de raíz varios cierres inesperados y bloqueos en iOS 17.0 en Resumen, las listas de recursos y los detalles del dominio; también soluciona el bloqueo de la página de Tunnel y las solicitudes duplicadas al iniciar en frío."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17.0에서 개요 페이지, 리소스 목록, 도메인 상세의 여러 앱 종료·멈춤 문제를 근본적으로 해결했습니다. Tunnel 페이지 멈춤과 콜드 시작 시 요청이 두 배로 발생하는 문제도 수정했습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige na raiz várias falhas e travamentos no iOS 17.0 na Visão geral, nas listas de recursos e nos detalhes do domínio; também resolve o travamento da página de Tunnel e as solicitações duplicadas na inicialização a frio."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige na raiz várias falhas e bloqueios no iOS 17.0 na Vista geral, nas listas de recursos e nos detalhes do domínio; resolve ainda o bloqueio da página de Tunnel e os pedidos duplicados no arranque a frio."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behebt mehrere Abstürze und Einfrieren unter iOS 17.0 in der Übersicht, in Ressourcenlisten und in den Domain-Details; außerdem hängt die Tunnel-Seite nicht mehr und beim Kaltstart werden Anfragen nicht mehr doppelt gesendet."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige à la racine plusieurs plantages et blocages sous iOS 17.0 dans l’aperçu, les listes de ressources et les détails du domaine ; corrige aussi le blocage de la page Tunnel et le doublement des requêtes au démarrage à froid."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعالج جذريًا عدة انهيارات وتجمّدات على iOS 17.0 في النظرة العامة وقوائم الموارد وتفاصيل النطاق؛ كما يصلح تجمّد صفحة Tunnel وتضاعف الطلبات عند التشغيل البارد."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17.0'da Genel Bakış, kaynak listeleri ve alan adı ayrıntılarındaki birden çok çökme ve donmayı kökten düzeltir; ayrıca Tunnel sayfasının donması ve soğuk başlatmada isteklerin ikiye katlanması sorunlarını giderir."
+          }
+        }
+      }
+    },
+    "根治部分用户「自动退出账号」的问题：授权流程补齐长期凭证，登录状态不再随令牌到期而失效；若授权仍失效，概览页会提供「一键重新授权」引导。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fixes the root cause of being signed out unexpectedly: the authorization flow now obtains long-lived credentials, so your session no longer lapses when the token expires. If authorization does become invalid, Overview offers one-tap re-authorization."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根治部分使用者「自動登出帳號」的問題：授權流程補齊長期憑證，登入狀態不再隨權杖到期而失效；若授權仍失效，總覽頁會提供「一鍵重新授權」引導。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根治部分用戶「自動登出帳戶」的問題：授權流程補齊長期憑證，登入狀態不再隨令牌到期而失效；若授權仍失效，概覽頁會提供「一鍵重新授權」引導。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一部のユーザーで発生していた「自動的にログアウトされる」問題を根本から修正しました。認証フローが長期資格情報を取得するようになり、トークンの期限切れでセッションが失われることはありません。認証が無効になった場合は、概要ページにワンタップ再認証の案内を表示します。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige de raíz el cierre de sesión inesperado: el flujo de autorización ahora obtiene credenciales de larga duración, por lo que la sesión ya no caduca con el token. Si la autorización deja de ser válida, Resumen ofrece reautorizar con un toque."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 사용자의 '자동 로그아웃' 문제를 근본적으로 해결했습니다. 인증 과정에서 장기 자격 증명을 받아 토큰이 만료되어도 로그인 상태가 유지됩니다. 인증이 무효화된 경우에는 개요 페이지에서 원탭 재인증 안내를 제공합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige na raiz o problema de desconexão inesperada: o fluxo de autorização agora obtém credenciais de longa duração, e a sessão não expira mais com o token. Se a autorização ficar inválida, a Visão geral oferece reautorização com um toque."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige na raiz o problema de fim de sessão inesperado: o fluxo de autorização passa a obter credenciais de longa duração, pelo que a sessão já não expira com o token. Se a autorização ficar inválida, a Vista geral oferece reautorização com um toque."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behebt die Ursache unerwarteter Abmeldungen: Der Autorisierungsablauf holt jetzt langlebige Anmeldedaten ein, sodass die Sitzung nicht mehr mit dem Token abläuft. Wird die Autorisierung dennoch ungültig, bietet die Übersicht eine Neuautorisierung mit einem Tipp."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrige à la racine les déconnexions inattendues : le flux d’autorisation obtient désormais des identifiants de longue durée, la session n’expire donc plus avec le jeton. Si l’autorisation devient invalide, l’aperçu propose une réautorisation en un geste."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعالج جذريًا مشكلة «تسجيل الخروج التلقائي» لدى بعض المستخدمين: يحصل تدفق التفويض الآن على بيانات اعتماد طويلة الأمد، فلا تنتهي الجلسة بانتهاء صلاحية الرمز. وإذا أصبح التفويض غير صالح، تعرض النظرة العامة إعادة التفويض بنقرة واحدة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bazı kullanıcıların beklenmedik şekilde oturumdan çıkarılması sorununu kökten çözer: yetkilendirme akışı artık uzun ömürlü kimlik bilgileri alır, bu yüzden oturum belirteç süresi dolunca kapanmaz. Yetki yine geçersiz olursa Genel Bakış tek dokunuşla yeniden yetkilendirme sunar."
+          }
+        }
+      }
+    },
+    "概览页新增告警卡片，汇总需要注意的资源——未启用的域名、状态异常的隧道等，点一下直达。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The overview now gathers what needs attention — inactive domains, tunnels in a bad state and more — into a single card. Tap an item to jump right to it."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "總覽頁新增告警卡片，彙整需要留意的資源——未啟用的網域、狀態異常的通道等，點一下直達。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "概覽頁新增告警卡片，彙整需要留意的資源——未啟用的域名、狀態異常的隧道等，點一下直達。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "概要ページに、注意が必要なリソース（有効になっていないドメイン、状態が異常なトンネルなど）をまとめるカードを追加しました。タップするとその場所へ移動します。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pantalla de resumen reúne en una tarjeta lo que necesita atención: dominios sin activar, túneles con estado anómalo y más. Toca uno para ir directo."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개요 화면에 주의가 필요한 리소스(활성화되지 않은 도메인, 상태가 비정상인 터널 등)를 모아 보여주는 카드가 추가되었습니다. 탭하면 바로 이동합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A visão geral agora reúne num cartão o que precisa de atenção: domínios não ativados, túneis com estado anormal e mais. Toque para ir direto."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A descrição geral reúne agora num cartão o que precisa de atenção: domínios não ativados, túneis com estado anómalo e mais. Toque para ir direto."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Übersicht bündelt jetzt in einer Karte, was Aufmerksamkeit braucht – nicht aktivierte Domains, Tunnel in auffälligem Zustand und mehr. Ein Tippen führt direkt hin."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’aperçu regroupe désormais dans une carte ce qui mérite votre attention : domaines non activés, tunnels en état anormal, etc. Touchez pour y accéder."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجمع صفحة النظرة العامة الآن في بطاقة واحدة ما يحتاج انتباهك: النطاقات غير المفعّلة، والأنفاق ذات الحالة غير الطبيعية وغيرها. انقر على البند للانتقال إليه مباشرة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genel bakış artık dikkat gerektirenleri tek kartta topluyor: etkinleştirilmemiş alan adları, durumu bozuk tüneller ve daha fazlası. Dokununca doğrudan açılır."
+          }
+        }
+      }
+    },
+    "概览页顶栏的放大镜可一次搜索域名、Worker、R2 存储桶、D1 数据库、KV 命名空间与隧道，点一下直达；任意资源都能星标固定到概览页。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The magnifier on the overview searches domains, Workers, R2 buckets, D1 databases, KV namespaces and tunnels at once — tap a result to go straight there. And any resource can now be starred to the overview."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "總覽頁頂端的放大鏡可一次搜尋網域、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與通道，點一下直達；任何資源都能加上星號固定到總覽頁。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "概覽頁頂部的放大鏡可一次搜尋域名、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與隧道，點一下直達；任何資源都可以加星固定到概覽頁。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "概要ページの虫めがねから、ドメイン・Worker・R2 バケット・D1 データベース・KV ネームスペース・トンネルをまとめて検索でき、タップですぐ移動できます。どのリソースもスターを付けて概要ページに固定できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La lupa de la pantalla de resumen busca a la vez dominios, Workers, buckets R2, bases de datos D1, espacios de nombres KV y túneles; toca un resultado para ir directo. Además, ahora puedes fijar cualquier recurso al resumen con una estrella."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개요 화면 상단의 돋보기로 도메인, Worker, R2 버킷, D1 데이터베이스, KV 네임스페이스, 터널을 한 번에 검색하고 바로 이동할 수 있습니다. 이제 어떤 리소스든 별표로 개요 화면에 고정할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A lupa na tela de visão geral busca de uma vez domínios, Workers, buckets R2, bancos D1, namespaces KV e túneis — toque para ir direto. E agora dá para fixar qualquer recurso na visão geral com uma estrela."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A lupa no ecrã de descrição geral pesquisa de uma vez domínios, Workers, buckets R2, bases de dados D1, namespaces KV e túneis — toque para ir direto. E agora pode fixar qualquer recurso com uma estrela."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über die Lupe in der Übersicht durchsuchst du Domains, Workers, R2-Buckets, D1-Datenbanken, KV-Namespaces und Tunnel auf einmal – ein Tippen führt direkt hin. Und jede Ressource lässt sich per Stern an die Übersicht heften."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La loupe de l’aperçu recherche d’un coup les domaines, Workers, buckets R2, bases D1, espaces de noms KV et tunnels : touchez un résultat pour y aller. Et n’importe quelle ressource peut désormais être épinglée à l’aperçu."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبحث العدسة في صفحة النظرة العامة دفعة واحدة في النطاقات وWorkers وحاويات R2 وقواعد بيانات D1 ومساحات أسماء KV والأنفاق، وانقر على النتيجة للانتقال مباشرة. ويمكن الآن تثبيت أي مورد في الصفحة بنجمة."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genel bakıştaki büyüteç; alan adlarını, Worker’ları, R2 bucket’larını, D1 veritabanlarını, KV ad alanlarını ve tünelleri tek seferde arar, dokununca doğrudan açar. Artık her kaynağı yıldızlayıp genel bakışa sabitleyebilirsiniz."
+          }
+        }
+      }
+    },
+    "模型试运行新增文生图：输入提示词直接出图，可分享保存。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The model playground now covers text-to-image models — type a prompt, get a picture, then share or save it."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模型試執行新增文字生圖：輸入提示詞直接產生圖片，可分享或儲存。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "模型試執行新增文字生圖：輸入提示詞直接生成圖片，可分享或儲存。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モデルの試し実行が画像生成モデルに対応。プロンプトを入力するだけで画像ができ、共有や保存もできます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La prueba de modelos ahora incluye los de texto a imagen: escribe un prompt, obtén la imagen y compártela o guárdala."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모델 시험 실행이 이미지 생성 모델을 지원합니다. 프롬프트를 입력하면 바로 이미지가 만들어지고, 공유하거나 저장할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O teste de modelos agora inclui os de texto para imagem: escreva um prompt, receba a imagem e compartilhe ou salve."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O teste de modelos inclui agora os de texto para imagem: escreva um prompt, receba a imagem e partilhe ou guarde."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Modell-Testlauf unterstützt jetzt Text-zu-Bild-Modelle: Prompt eingeben, Bild erhalten, teilen oder sichern."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’essai de modèles prend désormais en charge le texte-vers-image : saisissez une consigne, obtenez l’image, partagez-la ou enregistrez-la."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صار تشغيل النماذج التجريبي يدعم نماذج تحويل النص إلى صورة: اكتب الوصف لتحصل على صورة، ثم شاركها أو احفظها."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Model deneme çalıştırması artık metinden görsele modellerini de destekliyor: bir istem yazın, görseli alın, paylaşın veya kaydedin."
+          }
+        }
+      }
+    },
     "浏览 Pages 项目与部署，一键重试 / 回滚 / 删除部署，并编辑构建配置。": {
       "localizations": {
         "en": {
@@ -3341,6 +7597,158 @@
           "stringUnit": {
             "state": "translated",
             "value": "Alan adı ekle"
+          }
+        }
+      }
+    },
+    "滑动更流畅": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Smoother scrolling"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "捲動更流暢"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "滑動更流暢"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スクロールがより滑らかに"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desplazamiento más fluido"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "더 부드러운 스크롤"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rolagem mais fluida"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deslocação mais fluida"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flüssigeres Scrollen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Défilement plus fluide"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تمرير أكثر سلاسة"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha akıcı kaydırma"
+          }
+        }
+      }
+    },
+    "用一句话生成 DNS 记录，或为流量分析生成一句话要点摘要——全部在设备上离线完成，不出设备。需 iOS 26 及支持 Apple 智能的机型，Pro 功能。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Create a DNS record from a sentence, or get a one-line summary of your traffic analytics — all on-device and offline, nothing leaves your iPhone. Requires iOS 26 and an Apple Intelligence–capable device. A Pro feature."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用一句話生成 DNS 記錄，或為流量分析產生一句話要點摘要——全部在裝置上離線完成，不離開裝置。需 iOS 26 及支援 Apple 智慧的機型，Pro 功能。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用一句話生成 DNS 記錄，或為流量分析產生一句話要點摘要——全部在裝置上離線完成，不離開裝置。需 iOS 26 及支援 Apple 智能的機型，Pro 功能。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一文から DNS レコードを作成したり、トラフィック分析の要点を一行で要約したり——すべてデバイス上でオフライン処理され、データは外部に出ません。iOS 26 と Apple Intelligence 対応端末が必要です。Pro 機能。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea un registro DNS con una frase u obtén un resumen de una línea de tus analíticas de tráfico, todo en el dispositivo y sin conexión: nada sale de tu iPhone. Requiere iOS 26 y un dispositivo compatible con Apple Intelligence. Función Pro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 문장으로 DNS 레코드를 만들거나 트래픽 분석을 한 줄로 요약하세요. 모두 기기에서 오프라인으로 처리되어 기기 밖으로 나가지 않습니다. iOS 26과 Apple Intelligence 지원 기기가 필요합니다. Pro 기능입니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie um registro DNS a partir de uma frase ou obtenha um resumo em uma linha das suas análises de tráfego — tudo no dispositivo e off-line, nada sai do seu iPhone. Requer iOS 26 e um dispositivo compatível com Apple Intelligence. Recurso Pro."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie um registo DNS a partir de uma frase ou obtenha um resumo numa linha das suas análises de tráfego — tudo no dispositivo e offline, nada sai do seu iPhone. Requer iOS 26 e um dispositivo compatível com Apple Intelligence. Funcionalidade Pro."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erstelle einen DNS-Eintrag aus einem Satz oder erhalte eine einzeilige Zusammenfassung deiner Traffic-Analyse – alles auf dem Gerät und offline, nichts verlässt dein iPhone. Erfordert iOS 26 und ein Apple-Intelligence-fähiges Gerät. Eine Pro-Funktion."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créez un enregistrement DNS à partir d’une phrase ou obtenez un résumé en une ligne de vos statistiques de trafic — le tout sur l’appareil et hors ligne, rien ne quitte votre iPhone. Nécessite iOS 26 et un appareil compatible Apple Intelligence. Fonction Pro."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنشئ سجل DNS من جملة واحدة، أو احصل على ملخّص من سطر واحد لتحليلات حركة المرور — كل ذلك على الجهاز وبدون اتصال، ولا شيء يغادر هاتفك. يتطلب iOS 26 وجهازًا يدعم Apple Intelligence. ميزة Pro."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tek bir cümleden DNS kaydı oluşturun veya trafik analizinizin tek satırlık özetini alın; hepsi cihazda ve çevrimdışı, hiçbir şey iPhone’unuzdan çıkmaz. iOS 26 ve Apple Intelligence destekli bir cihaz gerektirir. Pro özelliği."
           }
         }
       }
@@ -3497,6 +7905,82 @@
         }
       }
     },
+    "登录后可直接管理 Cloudflare 告警策略：选择想关注的告警类型（DDoS、健康检查、证书到期、Workers 错误率等），一键接到推送中心，事件发生时直推到这台设备。需账号下有 Pro 及以上套餐的域名。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once signed in, manage your Cloudflare alert policies right here: pick the alert types you care about (DDoS, health checks, certificate expiry, Workers error rate and more) and wire them to the Push Center in one tap, so events land on this device. Requires a domain on a Pro or higher plan."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這台裝置。需帳戶下有 Pro 及以上方案的網域。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這部裝置。需帳戶下有 Pro 及以上計劃的域名。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サインインすると Cloudflare のアラートポリシーをここで管理できます。気になるアラートの種類（DDoS、ヘルスチェック、証明書の有効期限、Workers のエラー率など）を選び、ワンタップでプッシュセンターに接続。イベント発生時にこの端末へ直接届きます。Pro 以上のプランのドメインが必要です。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una vez que inicies sesión, administra aquí tus políticas de alertas de Cloudflare: elige los tipos de alerta que te importan (DDoS, comprobaciones de estado, vencimiento de certificados, tasa de errores de Workers y más) y conéctalos al Centro de notificaciones con un toque, para que los eventos lleguen a este dispositivo. Requiere un dominio con plan Pro o superior."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인하면 여기에서 Cloudflare 경고 정책을 관리할 수 있습니다. 원하는 경고 유형(DDoS, 상태 확인, 인증서 만료, Workers 오류율 등)을 골라 한 번의 탭으로 푸시 센터에 연결하면, 이벤트가 이 기기로 바로 전달됩니다. Pro 이상 요금제의 도메인이 필요합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois de fazer login, gerencie aqui suas políticas de alerta da Cloudflare: escolha os tipos de alerta que importam para você (DDoS, verificações de integridade, expiração de certificados, taxa de erros do Workers e mais) e conecte-os à Central de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Depois de iniciar sessão, faça aqui a gestão das suas políticas de alerta da Cloudflare: escolha os tipos de alerta que lhe interessam (DDoS, verificações de estado, expiração de certificados, taxa de erros do Workers e mais) e ligue-os ao Centro de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach der Anmeldung verwaltest du hier deine Cloudflare-Warnrichtlinien: Wähle die Warntypen, die dich interessieren (DDoS, Health Checks, Zertifikatsablauf, Workers-Fehlerrate und mehr), und verbinde sie mit einem Tippen mit dem Push-Center, damit Ereignisse auf diesem Gerät ankommen. Erfordert eine Domain mit Pro-Tarif oder höher."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une fois connecté, gérez ici vos politiques d'alerte Cloudflare : choisissez les types d'alerte qui vous intéressent (DDoS, contrôles d'état, expiration de certificat, taux d'erreur Workers, etc.) et reliez-les au centre de push en un geste, pour que les événements arrivent sur cet appareil. Nécessite un domaine avec un forfait Pro ou supérieur."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعد تسجيل الدخول، يمكنك إدارة سياسات تنبيهات Cloudflare من هنا: اختر أنواع التنبيهات التي تهمّك (DDoS، فحوصات السلامة، انتهاء الشهادات، معدل أخطاء Workers والمزيد) واربطها بمركز الإشعارات بنقرة واحدة، لتصل الأحداث إلى هذا الجهاز. يتطلب نطاقًا بخطة Pro أو أعلى."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oturum açtıktan sonra Cloudflare uyarı politikalarınızı buradan yönetin: önemsediğiniz uyarı türlerini (DDoS, durum denetimleri, sertifika süresi dolması, Workers hata oranı ve daha fazlası) seçin ve tek dokunuşla Push Merkezi'ne bağlayın; böylece olaylar bu cihaza ulaşsın. Pro veya üzeri planda bir alan adı gerektirir."
+          }
+        }
+      }
+    },
     "登录更稳定": {
       "localizations": {
         "en": {
@@ -3645,6 +8129,234 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bir D1 veritabanı oluşturun veya tam adını doğruladıktan sonra birini güvenle silin."
+          }
+        }
+      }
+    },
+    "直接新建 R2 存储桶、KV 命名空间、Pages 项目、Queues、Hyperdrive 与 AI Gateway，并可删除。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spin up R2 buckets, KV namespaces, Pages projects, Queues, Hyperdrive and AI Gateway right in the app — and delete them too."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接建立 R2 儲存桶、KV 命名空間、Pages 專案、Queues、Hyperdrive 與 AI Gateway，也能刪除。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接建立 R2 儲存桶、KV 命名空間、Pages 專案、Queues、Hyperdrive 與 AI Gateway，亦可刪除。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 バケット、KV 名前空間、Pages プロジェクト、Queues、Hyperdrive、AI Gateway をアプリから直接作成・削除できます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea buckets R2, espacios de nombres KV, proyectos de Pages, Queues, Hyperdrive y AI Gateway desde la app, y elimínalos cuando quieras."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 버킷, KV 네임스페이스, Pages 프로젝트, Queues, Hyperdrive, AI Gateway를 앱에서 바로 만들고 삭제할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie buckets R2, namespaces KV, projetos do Pages, Queues, Hyperdrive e AI Gateway direto no app — e exclua quando quiser."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crie buckets R2, espaços de nomes KV, projetos do Pages, Queues, Hyperdrive e AI Gateway diretamente na app — e elimine quando quiser."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lege R2-Buckets, KV-Namespaces, Pages-Projekte, Queues, Hyperdrive und AI Gateway direkt in der App an – und lösche sie wieder."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Créez des buckets R2, des espaces de noms KV, des projets Pages, des Queues, Hyperdrive et AI Gateway directement dans l'app, et supprimez-les à volonté."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أنشئ حاويات R2 ومساحات أسماء KV ومشاريع Pages وQueues وHyperdrive وAI Gateway مباشرةً من التطبيق، واحذفها متى شئت."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R2 paketlerini, KV ad alanlarını, Pages projelerini, Queues, Hyperdrive ve AI Gateway'i doğrudan uygulamada oluşturun ve silin."
+          }
+        }
+      }
+    },
+    "直接载入线上源码修改后重新部署，变量、密钥与绑定自动保留；也可从 .js 文件导入，或删除整个 Worker。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Load the live source, edit it and redeploy — your variables, secrets and bindings are kept. You can also import from a .js file or delete the whole Worker."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接載入線上原始碼修改後重新部署，變數、密鑰與繫結自動保留；也可從 .js 檔案匯入，或刪除整個 Worker。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接載入線上原始碼修改後重新部署，變數、密鑰與綁定自動保留；也可從 .js 檔案匯入，或刪除整個 Worker。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "稼働中のソースを読み込んで編集し、再デプロイできます。変数・シークレット・バインディングは保持されます。.js ファイルからの読み込みや Worker 全体の削除にも対応します。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carga el código en producción, edítalo y vuelve a desplegar; se conservan tus variables, secretos y enlaces. También puedes importar desde un archivo .js o eliminar todo el Worker."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 중인 소스를 불러와 수정한 뒤 다시 배포할 수 있으며 변수, 비밀, 바인딩이 유지됩니다. .js 파일에서 가져오거나 Worker 전체를 삭제할 수도 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carregue o código em produção, edite e reimplante — suas variáveis, segredos e bindings são mantidos. Também dá para importar de um arquivo .js ou excluir o Worker inteiro."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carregue o código em produção, edite e reimplante — as suas variáveis, segredos e ligações são mantidos. Também pode importar de um ficheiro .js ou eliminar o Worker inteiro."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lade den Live-Quellcode, bearbeite ihn und stelle neu bereit – Variablen, Secrets und Bindings bleiben erhalten. Du kannst auch aus einer .js-Datei importieren oder den ganzen Worker löschen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chargez le code en production, modifiez-le et redéployez ; vos variables, secrets et liaisons sont conservés. Vous pouvez aussi importer depuis un fichier .js ou supprimer le Worker entier."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حمّل الشيفرة المباشرة وعدّلها وأعد النشر مع الحفاظ على المتغيرات والأسرار والارتباطات. يمكنك أيضًا الاستيراد من ملف ‎.js‎ أو حذف Worker بالكامل."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canlı kaynağı yükleyip düzenleyin ve yeniden dağıtın; değişkenleriniz, gizli anahtarlarınız ve bağlamalarınız korunur. Ayrıca bir .js dosyasından içe aktarabilir veya Worker’ın tamamını silebilirsiniz."
+          }
+        }
+      }
+    },
+    "稳定性修复": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stability fixes"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "穩定性修復"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "穩定性修復"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安定性の修正"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correcciones de estabilidad"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "안정성 수정"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correções de estabilidade"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correções de estabilidade"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stabilitätskorrekturen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Corrections de stabilité"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إصلاحات الاستقرار"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kararlılık düzeltmeleri"
           }
         }
       }
@@ -3877,6 +8589,310 @@
         }
       }
     },
+    "编辑 WAF 规则": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit WAF rules"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "編輯 WAF 規則"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "編輯 WAF 規則"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF ルールの編集"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar reglas de WAF"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF 규칙 편집"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar regras do WAF"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Editar regras do WAF"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF-Regeln bearbeiten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifier les règles WAF"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعديل قواعد WAF"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WAF kurallarını düzenleme"
+          }
+        }
+      }
+    },
+    "规则中心": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rules hub"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "規則中心"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "規則中心"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ルールセンター"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centro de reglas"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "규칙 센터"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central de regras"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Central de regras"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regel-Center"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Centre de règles"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مركز القواعد"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kural Merkezi"
+          }
+        }
+      }
+    },
+    "记住你的默认账号": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remembers your default account"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記住你的預設帳戶"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記住你的預設帳戶"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "既定のアカウントを記憶"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recuerda tu cuenta predeterminada"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본 계정을 기억합니다"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembra sua conta padrão"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memoriza a sua conta predefinida"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merkt sich dein Standardkonto"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Retient votre compte par défaut"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتذكّر حسابك الافتراضي"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varsayılan hesabınızı hatırlar"
+          }
+        }
+      }
+    },
+    "设备端 AI 助手": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On-device AI assistant"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裝置端 AI 助手"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "裝置端 AI 助手"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オンデバイス AI アシスタント"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistente de IA en el dispositivo"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "온디바이스 AI 어시스턴트"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente de IA no dispositivo"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente de IA no dispositivo"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KI-Assistent auf dem Gerät"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistant IA sur l’appareil"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساعد ذكاء اصطناعي على الجهاز"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cihaz üzerinde yapay zekâ asistanı"
+          }
+        }
+      }
+    },
     "负载均衡": {
       "localizations": {
         "en": {
@@ -3949,6 +8965,310 @@
           "stringUnit": {
             "state": "translated",
             "value": "Yük dengeleme"
+          }
+        }
+      }
+    },
+    "资源绑定新增 R2：可把现有存储桶直接绑定到 Worker，与 D1 / KV 一样支持一键解除。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resource bindings now cover R2 — attach an existing bucket to a Worker, and unbind it just like D1 / KV."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リソースバインディングに R2 を追加。既存のバケットを Worker にバインドでき、D1 / KV と同様に解除もできます。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los vínculos de recursos ahora incluyen R2: conecta un bucket existente a un Worker y desvincúlalo igual que D1 / KV."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "리소스 바인딩에 R2가 추가되었습니다. 기존 버킷을 Worker에 연결하고 D1 / KV처럼 해제할 수 있습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os vínculos de recursos agora incluem R2: conecte um bucket existente a um Worker e desvincule como em D1 / KV."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As ligações de recursos agora incluem R2: ligue um bucket existente a um Worker e desvincule como em D1 / KV."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ressourcenbindungen umfassen jetzt R2: Hänge einen vorhandenen Bucket an einen Worker und löse ihn wie bei D1 / KV wieder."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les liaisons de ressources couvrent désormais R2 : rattachez un bucket existant à un Worker et dissociez-le comme D1 / KV."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صارت روابط الموارد تشمل R2: اربط حاوية موجودة بأحد Workers وألغِ الربط كما في D1 / KV."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaynak bağlamaları artık R2’yi de kapsıyor: mevcut bir bucket’ı Worker’a bağlayın, D1 / KV gibi kaldırın."
+          }
+        }
+      }
+    },
+    "进一步收敛 iOS 17 上由缓存数据库引发的偶发闪退：缓存读写全部加上异常兜底并在启动时预热，个别设备上残留的启动崩溃不再发生。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Further hardens against rare crashes caused by the cache database on iOS 17: all cache reads and writes now have exception fallbacks and are warmed up at launch, so the startup crashes that lingered on a few devices no longer occur."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "進一步收斂 iOS 17 上由快取資料庫引發的偶發閃退：快取讀寫全部加上例外兜底並在啟動時預熱，個別裝置上殘留的啟動閃退不再發生。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "進一步收斂 iOS 17 上由緩存資料庫引發的偶發閃退：緩存讀寫全部加上例外兜底並在啟動時預熱，個別裝置上殘留的啟動閃退不再發生。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17 でキャッシュデータベースに起因するまれなクラッシュをさらに抑制しました。キャッシュの読み書きすべてに例外時のフォールバックを追加し、起動時にウォームアップするようにしたため、一部の端末で残っていた起動時クラッシュが発生しなくなりました。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refuerza aún más frente a cierres poco frecuentes provocados por la base de datos de caché en iOS 17: todas las lecturas y escrituras de caché ahora tienen protección ante excepciones y se precalientan al iniciar, por lo que los cierres al arrancar que quedaban en algunos dispositivos ya no ocurren."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17에서 캐시 데이터베이스로 인한 드문 종료를 더욱 방지했습니다. 모든 캐시 읽기/쓰기에 예외 대비가 추가되고 실행 시 예열되어, 일부 기기에 남아 있던 실행 시 종료가 더 이상 발생하지 않습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reforça ainda mais contra fechamentos raros causados pelo banco de dados de cache no iOS 17: todas as leituras e gravações de cache agora têm proteção contra exceções e são pré-aquecidas na inicialização, então os fechamentos ao iniciar que persistiam em alguns aparelhos não ocorrem mais."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reforça ainda mais contra fechos raros causados pela base de dados de cache no iOS 17: todas as leituras e escritas de cache passam a ter proteção contra exceções e são pré-aquecidas no arranque, pelo que os fechos no arranque que persistiam em alguns dispositivos deixam de ocorrer."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Härtet weiter gegen seltene Abstürze durch die Cache-Datenbank unter iOS 17 ab: Alle Cache-Zugriffe haben jetzt eine Ausnahmebehandlung und werden beim Start vorgewärmt, sodass die Startabstürze, die auf einzelnen Geräten verblieben, nicht mehr auftreten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renforce encore la protection contre les plantages rares dus à la base de cache sous iOS 17 : toutes les lectures et écritures du cache disposent désormais d’un repli en cas d’exception et sont préchauffées au démarrage, de sorte que les plantages au lancement qui persistaient sur certains appareils ne se produisent plus."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يعزّز الحماية أكثر من الانهيارات النادرة الناتجة عن قاعدة بيانات التخزين المؤقت على iOS 17: أصبحت جميع عمليات قراءة وكتابة التخزين المؤقت محميّة من الاستثناءات ويجري تسخينها عند بدء التشغيل، فلم تعد انهيارات بدء التشغيل التي بقيت على بعض الأجهزة تحدث."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS 17'de önbellek veritabanının yol açtığı nadir çökmelere karşı korumayı daha da güçlendirir: tüm önbellek okuma ve yazma işlemleri artık istisna yedeğine sahip ve başlatmada ön ısıtılıyor; böylece bazı cihazlarda kalan başlatma çökmeleri artık yaşanmıyor."
+          }
+        }
+      }
+    },
+    "部署 Pages 与 Workers": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deploy Pages and Workers"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部署 Pages 與 Workers"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "部署 Pages 與 Workers"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages と Workers をデプロイ"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implementa Pages y Workers"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages와 Workers 배포"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implante Pages e Workers"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Implemente Pages e Workers"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages und Workers bereitstellen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déployez Pages et Workers"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "انشر Pages وWorkers"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pages ve Workers dağıtın"
+          }
+        }
+      }
+    },
+    "重做玻璃卡片的渲染方式：观感不变，滚动开销大幅下降，列表与概览页滑动明显更顺滑，旧机型尤其受益。": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glass cards are rendered with far less overhead while looking identical — lists and Overview scroll noticeably smoother, especially on older devices."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重做玻璃卡片的算繪方式：觀感不變、捲動負擔大幅下降，清單與總覽頁捲動明顯更順暢，舊機型尤其受益。"
+          }
+        },
+        "zh-HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重做玻璃卡片的渲染方式：觀感不變、滑動負擔大幅下降，列表與概覽頁滑動明顯更順暢，舊機型尤其受益。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ガラスカードの描画方式を見直しました。見た目はそのままにスクロール時の負荷を大幅に削減し、リストや概要ページのスクロールが特に旧機種で滑らかになりました。"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las tarjetas de vidrio ahora se dibujan con mucho menos costo manteniendo el mismo aspecto: las listas y Resumen se desplazan con notable mayor fluidez, sobre todo en equipos antiguos."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글래스 카드 렌더링을 개선했습니다. 보이는 모습은 그대로 유지하면서 스크롤 부하를 크게 줄여, 목록과 개요 페이지가 특히 구형 기기에서 눈에 띄게 부드러워졌습니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os cartões de vidro agora são renderizados com muito menos custo, mantendo o mesmo visual — as listas e a Visão geral rolam visivelmente mais suave, principalmente em aparelhos antigos."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os cartões de vidro passam a ser renderizados com muito menos custo, mantendo o mesmo aspeto — as listas e a Vista geral deslizam visivelmente melhor, sobretudo em dispositivos antigos."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glaskarten werden bei gleichem Aussehen deutlich günstiger gerendert – Listen und die Übersicht scrollen spürbar flüssiger, besonders auf älteren Geräten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les cartes en verre sont rendues avec beaucoup moins de coût tout en gardant le même aspect — les listes et l’aperçu défilent nettement plus fluidement, surtout sur les appareils anciens."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أصبحت البطاقات الزجاجية تُرسم بكلفة أقل بكثير مع الحفاظ على المظهر نفسه — تمرير القوائم وصفحة النظرة العامة أصبح أكثر سلاسة، خصوصًا على الأجهزة الأقدم."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cam kartlar aynı görünümü koruyarak çok daha düşük maliyetle çiziliyor — listeler ve Genel Bakış, özellikle eski cihazlarda belirgin şekilde daha akıcı kayıyor."
           }
         }
       }

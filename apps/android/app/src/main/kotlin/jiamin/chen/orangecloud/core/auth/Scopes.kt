@@ -2,7 +2,8 @@ package jiamin.chen.orangecloud.core.auth
 
 /**
  * OAuth scope ID（来自 GET /client/v4/oauth/scopes 的 id 字段，与 iOS PermissionModels 一致）。
- * 注意：Cloudflare 的 authorization_code 授权默认返回 refresh_token，**不需要** offline_access。
+ * 注意：CF dash OAuth（Hydra 系）只在请求 offline_access 时才签发 refresh token（issue #44 踩坑实证），
+ * 该 scope 由 AuthRepository.buildAuthorizationUri 在咽喉点统一追加，此处无需（也勿）列入目录。
  */
 object Scopes {
     const val ACCOUNT_READ = "account-settings.read"
@@ -40,6 +41,39 @@ object Scopes {
     const val FIREWALL_WRITE = "firewall-services.write"
     const val ACCOUNT_ANALYTICS_READ = "account-analytics.read"
     const val ANALYTICS_READ = "analytics.read"
+    // —— 1.4「G–J 爆发」新增 scope（共用 OAuth client 上 iOS 早已注册，均经 [[cf-oauth-scopes]] 核对）——
+    const val CACHE_RULES_READ = "cache-settings.read"          // Cache Rules（Rulesets cache phase）
+    const val CACHE_RULES_WRITE = "cache-settings.write"
+    const val EMAIL_ADDR_READ = "email-routing-address.read"    // Email Routing 目标地址
+    const val EMAIL_ADDR_WRITE = "email-routing-address.write"
+    const val EMAIL_RULE_READ = "email-routing-rule.read"       // Email Routing 路由规则 + 设置
+    const val EMAIL_RULE_WRITE = "email-routing-rule.write"
+    const val REDIRECTS_READ = "mass-url-redirects.read"        // Bulk Redirects 列表
+    const val REDIRECTS_WRITE = "mass-url-redirects.write"
+    const val RULE_LISTS_READ = "account-rule-lists.read"       // Bulk Redirects 条目（rule lists）
+    const val RULE_LISTS_WRITE = "account-rule-lists.write"
+    const val LB_READ = "load-balancers.read"                   // Load Balancer
+    const val LB_WRITE = "load-balancers.write"
+    const val LB_POOLS_READ = "load-balancing-monitors-and-pools.read"
+    const val LB_POOLS_WRITE = "load-balancing-monitors-and-pools.write"
+    const val ACCESS_READ = "access.read"                       // Zero Trust Access 应用
+    const val ACCESS_WRITE = "access.write"
+    const val TEAMS_READ = "teams.read"                         // Zero Trust Gateway 规则
+    const val TEAMS_WRITE = "teams.write"
+    const val PAGES_READ = "page.read"                          // Cloudflare Pages
+    const val PAGES_WRITE = "page.write"
+    const val AI_READ = "ai.read"                               // Workers AI
+    const val AI_WRITE = "ai.write"
+    const val AIG_READ = "aig.read"                             // AI Gateway
+    const val AIG_WRITE = "aig.write"
+    const val QUEUES_READ = "queues.read"                       // Queues
+    const val QUEUES_WRITE = "queues.write"
+    const val HYPERDRIVE_READ = "query-cache.read"              // Hyperdrive（query-cache scope）
+    const val HYPERDRIVE_WRITE = "query-cache.write"
+    const val WORKERS_OBSERVABILITY_READ = "workers-observability.read" // Worker 日志/指标（并入 Workers 功能）
+    // 通知 / 告警（CF Alerting，把告警推到推送端点；iOS 早已在共用 client 注册，经 [[cf-oauth-scopes]] 核对）
+    const val NOTIFICATIONS_READ = "notifications.read"
+    const val NOTIFICATIONS_WRITE = "notifications.write"
 
     /**
      * 默认申请的权限集，覆盖全部已对表 iOS 的功能（账号/域名/DNS/Workers/tail/Snippets/
@@ -64,6 +98,18 @@ object Scopes {
         TRANSFORM_READ, TRANSFORM_WRITE,
         FIREWALL_READ, FIREWALL_WRITE,
         ACCOUNT_ANALYTICS_READ, ANALYTICS_READ,
+        // 1.4 新增
+        CACHE_RULES_READ, CACHE_RULES_WRITE,
+        EMAIL_ADDR_READ, EMAIL_ADDR_WRITE, EMAIL_RULE_READ, EMAIL_RULE_WRITE,
+        REDIRECTS_READ, REDIRECTS_WRITE, RULE_LISTS_READ, RULE_LISTS_WRITE,
+        LB_READ, LB_WRITE, LB_POOLS_READ, LB_POOLS_WRITE,
+        ACCESS_READ, ACCESS_WRITE, TEAMS_READ, TEAMS_WRITE,
+        PAGES_READ, PAGES_WRITE,
+        AI_READ, AI_WRITE, AIG_READ, AIG_WRITE,
+        QUEUES_READ, QUEUES_WRITE,
+        HYPERDRIVE_READ, HYPERDRIVE_WRITE,
+        WORKERS_OBSERVABILITY_READ,
+        NOTIFICATIONS_READ, NOTIFICATIONS_WRITE,
     )
 
     /** 空格分隔、排序去重的 scope 字符串，直接用于 OAuth scope 参数。 */

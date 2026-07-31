@@ -33,6 +33,17 @@ final class DashboardViewModel {
     /// 账户级数据集未授权（免费账号常态）：UI 显示「无账户级数据权限」而非重试，且停发后续账户级查询
     private(set) var accountAnalyticsUnavailable = false
 
+    // MARK: - 资源清单（命令搜索 / 跨类型置顶 / 告警中心共用）
+    // 域名与 Workers 直接读 SwiftData 缓存，这里只补拉「概览页原本不持有」的四类；
+    // 每类按 scope 门控惰性补拉，缺权限就留空数组（不报错、搜索里直接没有该类）。
+    private(set) var r2Buckets:    [R2Bucket] = []
+    private(set) var d1Databases:  [D1Database] = []
+    private(set) var kvNamespaces: [KVNamespace] = []
+    private(set) var tunnels:      [Tunnel] = []
+
+    private var inventoryLoadedForAccount: String?
+    private var inventoryTask: Task<Void, Never>?
+
     private var loadedZoneIds: Set<String> = []
     private var assetsLoadedForAccount: String?
     private var usageLoadedForAccount: String?
@@ -52,6 +63,8 @@ final class DashboardViewModel {
     private let zoneService: ZoneService
     private let workerService: WorkerService
     private let dnsService: DNSService
+    private let kvService: KVService
+    private let tunnelService: TunnelService
 
     init(
         analyticsService: AnalyticsService,
@@ -60,7 +73,9 @@ final class DashboardViewModel {
         d1Service: D1Service,
         zoneService: ZoneService,
         workerService: WorkerService,
-        dnsService: DNSService
+        dnsService: DNSService,
+        kvService: KVService,
+        tunnelService: TunnelService
     ) {
         self.analyticsService = analyticsService
         self.accountService = accountService
@@ -69,6 +84,62 @@ final class DashboardViewModel {
         self.zoneService = zoneService
         self.workerService = workerService
         self.dnsService = dnsService
+        self.kvService = kvService
+        self.tunnelService = tunnelService
+    }
+
+    /// 资源清单补拉（R2 / D1 / KV / Tunnel）。同一账号只拉一次，下拉刷新强制重拉；
+    /// 每类各自 scope 门控，失败或无权限保持空数组（搜索/告警里自然缺席，不弹错）。
+    /// 加载跑在 VM 持有的独立 Task：与 loadAssets 同理，手势取消不能波及它。
+    func loadInventory(
+        accountId: String,
+        canReadR2: Bool,
+        canReadD1: Bool,
+        canReadKV: Bool,
+        canReadTunnel: Bool,
+        force: Bool = false
+    ) async {
+        guard !accountId.isEmpty else { return }
+        guard force || inventoryLoadedForAccount != accountId else { return }
+        if let inventoryTask {
+            await inventoryTask.value
+            return
+        }
+        let task = Task { [weak self] in
+            guard let self else { return }
+            await self.performLoadInventory(
+                accountId: accountId,
+                canReadR2: canReadR2, canReadD1: canReadD1,
+                canReadKV: canReadKV, canReadTunnel: canReadTunnel
+            )
+        }
+        inventoryTask = task
+        defer { inventoryTask = nil }
+        await task.value
+    }
+
+    private func performLoadInventory(
+        accountId: String,
+        canReadR2: Bool,
+        canReadD1: Bool,
+        canReadKV: Bool,
+        canReadTunnel: Bool
+    ) async {
+        if canReadR2, let buckets = try? await r2Service.listBuckets(accountId: accountId) {
+            r2Buckets = buckets
+            r2BucketCount = buckets.count
+        }
+        if canReadD1, let databases = try? await d1Service.listDatabases(accountId: accountId) {
+            d1Databases = databases
+            d1DatabaseCount = databases.count
+        }
+        if canReadKV, let namespaces = try? await kvService.listNamespaces(accountId: accountId) {
+            kvNamespaces = namespaces
+        }
+        if canReadTunnel, let list = try? await tunnelService.listTunnels(accountId: accountId) {
+            tunnels = list
+        }
+        inventoryLoadedForAccount = accountId
     }
 
     /// 首屏资产统计：拉 Zone / Worker 列表同步进缓存（指标格直接从 @Query 读到数量），
@@ -83,6 +154,11 @@ final class DashboardViewModel {
         force: Bool = false
     ) async {
         guard force || assetsLoadedForAccount != accountId else { return }
+        // 冷启动若持久缓存仍在有效期内，直接用缓存（@Query 已即时渲染），不重新拉网络
+        if !force, assetsLoadedForAccount == nil, CachePolicy.zonesFresh(accountId: accountId, context: context) {
+            assetsLoadedForAccount = accountId
+            return
+        }
         // 已有加载在跑：等它结束即可，不另起重复请求（手势取消波及不到这个独立 Task）
         if let assetsTask {
             await assetsTask.value
@@ -116,32 +192,43 @@ final class DashboardViewModel {
             loadFailed = true
             return
         }
-        try? CacheSync.syncZones(zones, accountId: accountId, accountName: accountName, context: context)
+        CacheSync.syncZones(zones, accountId: accountId, accountName: accountName, context: context)
 
         if canReadWorkers, let scripts = try? await workerService.listScripts(accountId: accountId) {
-            try? CacheSync.syncWorkers(scripts, accountId: accountId, context: context)
+            CacheSync.syncWorkers(scripts, accountId: accountId, context: context)
         }
 
         if canReadDNS {
             // 每个 Zone 一个轻量请求并发取 total_count；域名特别多时只统计前 50 个
             let service = dnsService
             let zoneIds = zones.prefix(50).map(\.id)
-            let total = await withTaskGroup(of: Int?.self) { group in
+            let counts = await withTaskGroup(of: (String, Int)?.self) { group in
                 for zoneId in zoneIds {
                     group.addTask {
-                        try? await service.recordCount(zoneId: zoneId)
+                        (try? await service.recordCount(zoneId: zoneId)).map { (zoneId, $0) }
                     }
                 }
-                var sum = 0
-                var anySuccess = zoneIds.isEmpty
-                for await count in group where count != nil {
-                    sum += count!
-                    anySuccess = true
+                var acc: [(zoneId: String, count: Int)] = []
+                for await pair in group {
+                    if let pair { acc.append(pair) }
                 }
-                return anySuccess ? sum : nil as Int?
+                return acc
             }
-            if let total {
-                dnsRecordTotal = total
+            if zoneIds.isEmpty {
+                dnsRecordTotal = 0
+            } else if !counts.isEmpty {
+                dnsRecordTotal = counts.reduce(0) { $0 + $1.count }
+                // 分域名回写缓存：域名详情页首屏直显记录数（不再默认 0 条等进列表刷新）
+                SafeCache.perform("dnsRecordCount 回写") {
+                    let rows = try context.fetch(
+                        FetchDescriptor<CachedZone>(predicate: #Predicate { $0.accountId == accountId })
+                    )
+                    let byId = Dictionary(rows.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+                    for (zoneId, count) in counts {
+                        byId[zoneId]?.dnsRecordCount = count
+                    }
+                    try context.save()
+                }
             }
         }
 
@@ -151,6 +238,10 @@ final class DashboardViewModel {
     /// 账号用量（Workers/R2）。同一账号只拉一次，下拉刷新强制重拉。
     /// 周期起点优先级：订阅接口（best-effort）→ 手动账单日（fallbackPeriodStart）→ 自然月。
     func loadUsage(accountId: String, fallbackPeriodStart: Date? = nil, force: Bool = false) async {
+        // 先用上次缓存即时填充（VM 被重建后切回概览不再空白重载），随后照常后台静默刷新
+        if usage == nil, let cached = UsageCache.load(accountId: accountId) {
+            usage = cached
+        }
         guard force || usageLoadedForAccount != accountId else { return }
         if let usageTask {
             await usageTask.value
@@ -175,10 +266,23 @@ final class DashboardViewModel {
             return
         }
 
+        // 订阅接口需要 billing 权限（OAuth token 不带）：首个确定性拒绝后按账号跨启动记住，
+        // 不再每次冷启动发一条注定 403 的探测（同账户级分析 authz 的惰性识别）；
+        // 下拉刷新（force）会重探，权限恢复时自动回归并摘除标记。
         if force || billingAttemptedForAccount != accountId {
             billingAttemptedForAccount = accountId
-            billing = (try? await accountService.listSubscriptions(accountId: accountId))
-                .map(BillingInfo.derive(from:))
+            if force || !BillingProbeCache.isUnavailable(accountId: accountId) {
+                do {
+                    billing = BillingInfo.derive(from: try await accountService.listSubscriptions(accountId: accountId))
+                    BillingProbeCache.markAvailable(accountId: accountId)
+                } catch {
+                    billing = nil
+                    if let apiError = error as? APIError, apiError.isPermissionDenied {
+                        BillingProbeCache.markUnavailable(accountId: accountId)
+                        AppLog.network.info("subscriptions endpoint permission denied; skipping billing probe for account=\(accountId)")
+                    }
+                }
+            }
         }
 
         // 订阅周期有效才采用：必须在过去、未结束，且不超过 GraphQL 数据留存（约 31 天）
@@ -268,6 +372,7 @@ final class DashboardViewModel {
             self.usage = usage
             usageLoadFailed = false
             usageLoadedForAccount = accountId
+            UsageCache.save(usage, accountId: accountId)   // 落盘供下次切回即时显示
             persistAnalyticsAvailability(true)
         } else {
             // 账号级分析全部失败（多为 GraphQL 数据集权限问题，见网络日志 "graphQL error"）。
@@ -286,7 +391,7 @@ final class DashboardViewModel {
 
     /// 拉取各 Zone 的 24h 流量。zone 集合没变化时跳过（Tab 切换不重复请求）。
     /// 成功后写入 Widget 快照（按域名的指标卡数据源）。
-    func loadTraffic(zones: [(id: String, name: String)], force: Bool = false) async {
+    func loadTraffic(zones: [(id: String, name: String)], accountId: String? = nil, force: Bool = false) async {
         let idSet = Set(zones.map(\.id))
         guard !idSet.isEmpty else { return }
         guard force || idSet != loadedZoneIds else { return }
@@ -296,26 +401,26 @@ final class DashboardViewModel {
         }
         let task = Task { [weak self] in
             guard let self else { return }
-            await self.performLoadTraffic(zones: zones, idSet: idSet)
+            await self.performLoadTraffic(zones: zones, idSet: idSet, accountId: accountId)
         }
         trafficTask = task
         defer { trafficTask = nil }
         await task.value
     }
 
-    private func performLoadTraffic(zones: [(id: String, name: String)], idSet: Set<String>) async {
+    private func performLoadTraffic(zones: [(id: String, name: String)], idSet: Set<String>, accountId: String?) async {
         isLoading = true
         // 流量数据加载失败不打扰 Dashboard（卡片自动隐藏图表）
         if let traffic = try? await analyticsService.trafficByZone24h(zoneIds: zones.map(\.id)) {
             trafficByZone = traffic
             loadedZoneIds = idSet
-            writeZoneWidgetSnapshots(zones: zones, traffic: traffic)
+            writeZoneWidgetSnapshots(zones: zones, traffic: traffic, accountId: accountId)
         }
         isLoading = false
     }
 
-    /// Zone 指标快照 → App Group（Widget 数据源）
-    private func writeZoneWidgetSnapshots(zones: [(id: String, name: String)], traffic: [String: ZoneTrafficBundle]) {
+    /// Zone 指标快照 → App Group（Widget 数据源），按账号分桶
+    private func writeZoneWidgetSnapshots(zones: [(id: String, name: String)], traffic: [String: ZoneTrafficBundle], accountId: String?) {
         let metrics: [WidgetZoneMetrics] = zones.compactMap { zone in
             guard let bundle = traffic[zone.id], !bundle.points.isEmpty else { return nil }
             let points = bundle.points
@@ -336,14 +441,66 @@ final class DashboardViewModel {
                 requestsTrend: trend,
                 requestsSeries: points.map(\.requests),
                 bytesSeries: points.map(\.bytes),
-                updatedAt: Date()
+                updatedAt: Date(),
+                accountId: accountId
             )
         }
         guard !metrics.isEmpty else { return }
-        WidgetDataStore.saveZones(metrics)
+        WidgetDataStore.saveZones(metrics, accountId: accountId ?? "")
         WidgetCenter.shared.reloadTimelines(ofKind: "ZoneStatWidget")
         WidgetCenter.shared.reloadTimelines(ofKind: "ZoneChartWidget")
+        WidgetCenter.shared.reloadTimelines(ofKind: "ZoneStatusWidget")
         // 数据刷新后把最新快照推给 Apple Watch
         WatchSessionManager.shared.pushCurrentState()
+    }
+}
+
+/// 订阅接口可用性缓存（按账号，跨启动持久）：OAuth token 无 billing 权限时该接口恒 403（cf=10000），
+/// 首个确定性拒绝后记住不再探测，免得每次启动固定一条 403 噪音；下拉刷新（force）会绕过重探。
+nonisolated enum BillingProbeCache {
+
+    private static let key = "billingProbeUnavailableAccounts"
+
+    static func isUnavailable(accountId: String) -> Bool {
+        (UserDefaults.standard.stringArray(forKey: key) ?? []).contains(accountId)
+    }
+
+    static func markUnavailable(accountId: String) {
+        var list = UserDefaults.standard.stringArray(forKey: key) ?? []
+        guard !list.contains(accountId) else { return }
+        list.append(accountId)
+        UserDefaults.standard.set(list, forKey: key)
+    }
+
+    static func markAvailable(accountId: String) {
+        var list = UserDefaults.standard.stringArray(forKey: key) ?? []
+        guard let index = list.firstIndex(of: accountId) else { return }
+        list.remove(at: index)
+        UserDefaults.standard.set(list, forKey: key)
+    }
+}
+
+/// 概览用量的本地缓存（按账号）。VM 在 iPad 侧栏返回概览时会被重建，内存里的 usage 随之丢失 →
+/// 每次切回都空白重载。缓存让「先显示上次数据、后台静默刷新」成立，切回即有数。
+nonisolated enum UsageCache {
+
+    private static let key = "dashboardUsageByAccount"
+
+    private static func loadMap() -> [String: AccountUsage] {
+        guard let data = UserDefaults.standard.data(forKey: key),
+              let map = try? JSONDecoder().decode([String: AccountUsage].self, from: data) else { return [:] }
+        return map
+    }
+
+    static func load(accountId: String) -> AccountUsage? {
+        loadMap()[accountId]
+    }
+
+    static func save(_ usage: AccountUsage, accountId: String) {
+        var map = loadMap()
+        map[accountId] = usage
+        if let data = try? JSONEncoder().encode(map) {
+            UserDefaults.standard.set(data, forKey: key)
+        }
     }
 }

@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EAB1E0000000000000000E3 /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAB1E0000000000000000E2 /* Sentry */; };
 		AB12CD00000000000000000C /* OrangeCloudWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AB12CD000000000000000001 /* OrangeCloudWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9AD1A792FE1B6A90020AAAF /* Orange Cloud Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E9AD1A6F2FE1B6A80020AAAF /* Orange Cloud Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9AD1A852FE1B6CA0020AAAF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD1A842FE1B6CA0020AAAF /* WidgetKit.framework */; };
 		E9AD1A872FE1B6CA0020AAAF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AD1A862FE1B6CA0020AAAF /* SwiftUI.framework */; };
 		E9AD1A962FE1B6CB0020AAAF /* Orange Cloud WatchExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9AD1A822FE1B6CA0020AAAF /* Orange Cloud WatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9C176832FEED96400BFBC18 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C176822FEED96400BFBC18 /* UniformTypeIdentifiers.framework */; };
+		E9C1769E2FEED96500BFBC18 /* Orange Cloud File.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9C176812FEED96400BFBC18 /* Orange Cloud File.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E9C18C7B2FF10C7200BFBC18 /* notification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E9C18C742FF10C7200BFBC18 /* notification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,20 @@
 			remoteGlobalIDString = E9AD1A812FE1B6CA0020AAAF;
 			remoteInfo = "Orange Cloud WatchExtension";
 		};
+		E9C1769C2FEED96500BFBC18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9EF3A1B2FD98F7B007C2377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C176802FEED96400BFBC18;
+			remoteInfo = "Orange Cloud File";
+		};
+		E9C18C792FF10C7200BFBC18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9EF3A1B2FD98F7B007C2377 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C18C732FF10C7200BFBC18;
+			remoteInfo = notification;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +64,8 @@
 			dstSubfolderSpec = 13;
 			files = (
 				AB12CD00000000000000000C /* OrangeCloudWidgetsExtension.appex in Embed Foundation Extensions */,
+				E9C18C7B2FF10C7200BFBC18 /* notification.appex in Embed Foundation Extensions */,
+				E9C1769E2FEED96500BFBC18 /* Orange Cloud File.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +100,9 @@
 		E9AD1A822FE1B6CA0020AAAF /* Orange Cloud WatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Orange Cloud WatchExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9AD1A842FE1B6CA0020AAAF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E9AD1A862FE1B6CA0020AAAF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E9C176812FEED96400BFBC18 /* Orange Cloud File.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Orange Cloud File.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C176822FEED96400BFBC18 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		E9C18C742FF10C7200BFBC18 /* notification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = notification.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E3005B2FDB3E3C00EC1E10 /* OrangeCloud.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = OrangeCloud.storekit; sourceTree = "<group>"; };
 		E9EF3A232FD98F7B007C2377 /* Orange Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orange Cloud.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -112,6 +135,20 @@
 				TailActivityAttributes.swift,
 			);
 			target = E9AD1A812FE1B6CA0020AAAF /* Orange Cloud WatchExtension */;
+		};
+		E9C176A62FEED96500BFBC18 /* Exceptions for "Orange Cloud File" folder in "Orange Cloud File" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E9C176802FEED96400BFBC18 /* Orange Cloud File */;
+		};
+		E9C18C7F2FF10C7200BFBC18 /* Exceptions for "notification" folder in "notification" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E9C18C732FF10C7200BFBC18 /* notification */;
 		};
 		E9EF3A302FD98F7C007C2377 /* Exceptions for "Orange Cloud" folder in "Orange Cloud" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -153,6 +190,22 @@
 			path = "Orange Cloud Watch";
 			sourceTree = "<group>";
 		};
+		E9C176842FEED96400BFBC18 /* Orange Cloud File */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E9C176A62FEED96500BFBC18 /* Exceptions for "Orange Cloud File" folder in "Orange Cloud File" target */,
+			);
+			path = "Orange Cloud File";
+			sourceTree = "<group>";
+		};
+		E9C18C752FF10C7200BFBC18 /* notification */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E9C18C7F2FF10C7200BFBC18 /* Exceptions for "notification" folder in "notification" target */,
+			);
+			path = notification;
+			sourceTree = "<group>";
+		};
 		E9EF3A252FD98F7B007C2377 /* Orange Cloud */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -187,10 +240,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9C1767E2FEED96400BFBC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C176832FEED96400BFBC18 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C18C712FF10C7200BFBC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9EF3A202FD98F7B007C2377 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EAB1E0000000000000000E3 /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +271,7 @@
 			children = (
 				E9AD1A842FE1B6CA0020AAAF /* WidgetKit.framework */,
 				E9AD1A862FE1B6CA0020AAAF /* SwiftUI.framework */,
+				E9C176822FEED96400BFBC18 /* UniformTypeIdentifiers.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +285,8 @@
 				AB12CD000000000000000002 /* OrangeCloudWidgets */,
 				E9AD1A702FE1B6A80020AAAF /* Orange Cloud Watch Watch App */,
 				E9AD1A882FE1B6CA0020AAAF /* Orange Cloud Watch */,
+				E9C176842FEED96400BFBC18 /* Orange Cloud File */,
+				E9C18C752FF10C7200BFBC18 /* notification */,
 				E9AD1A832FE1B6CA0020AAAF /* Frameworks */,
 				E9EF3A242FD98F7B007C2377 /* Products */,
 			);
@@ -227,6 +299,8 @@
 				AB12CD000000000000000001 /* OrangeCloudWidgetsExtension.appex */,
 				E9AD1A6F2FE1B6A80020AAAF /* Orange Cloud Watch Watch App.app */,
 				E9AD1A822FE1B6CA0020AAAF /* Orange Cloud WatchExtension.appex */,
+				E9C176812FEED96400BFBC18 /* Orange Cloud File.appex */,
+				E9C18C742FF10C7200BFBC18 /* notification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,6 +379,50 @@
 			productReference = E9AD1A822FE1B6CA0020AAAF /* Orange Cloud WatchExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E9C176802FEED96400BFBC18 /* Orange Cloud File */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C176A52FEED96500BFBC18 /* Build configuration list for PBXNativeTarget "Orange Cloud File" */;
+			buildPhases = (
+				E9C1767D2FEED96400BFBC18 /* Sources */,
+				E9C1767E2FEED96400BFBC18 /* Frameworks */,
+				E9C1767F2FEED96400BFBC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E9C176842FEED96400BFBC18 /* Orange Cloud File */,
+			);
+			name = "Orange Cloud File";
+			packageProductDependencies = (
+			);
+			productName = "Orange Cloud File";
+			productReference = E9C176812FEED96400BFBC18 /* Orange Cloud File.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E9C18C732FF10C7200BFBC18 /* notification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C18C7E2FF10C7200BFBC18 /* Build configuration list for PBXNativeTarget "notification" */;
+			buildPhases = (
+				E9C18C702FF10C7200BFBC18 /* Sources */,
+				E9C18C712FF10C7200BFBC18 /* Frameworks */,
+				E9C18C722FF10C7200BFBC18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E9C18C752FF10C7200BFBC18 /* notification */,
+			);
+			name = notification;
+			packageProductDependencies = (
+			);
+			productName = notification;
+			productReference = E9C18C742FF10C7200BFBC18 /* notification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E9EF3A222FD98F7B007C2377 /* Orange Cloud */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9EF3A312FD98F7C007C2377 /* Build configuration list for PBXNativeTarget "Orange Cloud" */;
@@ -320,6 +438,8 @@
 			dependencies = (
 				AB12CD00000000000000000E /* PBXTargetDependency */,
 				E9AD1A782FE1B6A90020AAAF /* PBXTargetDependency */,
+				E9C1769D2FEED96500BFBC18 /* PBXTargetDependency */,
+				E9C18C7A2FF10C7200BFBC18 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AB12CD000000000000000003 /* Shared */,
@@ -327,6 +447,7 @@
 			);
 			name = "Orange Cloud";
 			packageProductDependencies = (
+				5EAB1E0000000000000000E2 /* Sentry */,
 			);
 			productName = "Orange Cloud";
 			productReference = E9EF3A232FD98F7B007C2377 /* Orange Cloud.app */;
@@ -349,6 +470,12 @@
 						CreatedOnToolsVersion = 27.0;
 					};
 					E9AD1A812FE1B6CA0020AAAF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					E9C176802FEED96400BFBC18 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					E9C18C732FF10C7200BFBC18 = {
 						CreatedOnToolsVersion = 27.0;
 					};
 					E9EF3A222FD98F7B007C2377 = {
@@ -377,6 +504,9 @@
 			);
 			mainGroup = E9EF3A1A2FD98F7B007C2377;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5EAB1E0000000000000000E1 /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E9EF3A242FD98F7B007C2377 /* Products */;
 			projectDirPath = "";
@@ -386,6 +516,8 @@
 				AB12CD000000000000000004 /* OrangeCloudWidgetsExtension */,
 				E9AD1A6E2FE1B6A80020AAAF /* Orange Cloud Watch Watch App */,
 				E9AD1A812FE1B6CA0020AAAF /* Orange Cloud WatchExtension */,
+				E9C176802FEED96400BFBC18 /* Orange Cloud File */,
+				E9C18C732FF10C7200BFBC18 /* notification */,
 			);
 		};
 /* End PBXProject section */
@@ -406,6 +538,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E9AD1A802FE1B6CA0020AAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C1767F2FEED96400BFBC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C18C722FF10C7200BFBC18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -443,6 +589,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E9C1767D2FEED96400BFBC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C18C702FF10C7200BFBC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E9EF3A1F2FD98F7B007C2377 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +628,16 @@
 			target = E9AD1A812FE1B6CA0020AAAF /* Orange Cloud WatchExtension */;
 			targetProxy = E9AD1A942FE1B6CB0020AAAF /* PBXContainerItemProxy */;
 		};
+		E9C1769D2FEED96500BFBC18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C176802FEED96400BFBC18 /* Orange Cloud File */;
+			targetProxy = E9C1769C2FEED96500BFBC18 /* PBXContainerItemProxy */;
+		};
+		E9C18C7A2FF10C7200BFBC18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C18C732FF10C7200BFBC18 /* notification */;
+			targetProxy = E9C18C792FF10C7200BFBC18 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -477,7 +647,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OrangeCloudWidgets/OrangeCloudWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrangeCloudWidgets/Info.plist;
@@ -489,7 +659,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -509,7 +679,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OrangeCloudWidgets/OrangeCloudWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = OrangeCloudWidgets/Info.plist;
@@ -521,7 +691,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -542,7 +712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud Watch Watch App/OrangeCloudWatch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -553,7 +723,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -576,7 +746,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud Watch Watch App/OrangeCloudWatch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -587,7 +757,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -610,7 +780,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud Watch/OrangeCloudWatchExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Orange Cloud Watch/Info.plist";
@@ -622,7 +792,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.watchkitapp.wdigets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -644,7 +814,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud Watch/OrangeCloudWatchExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Orange Cloud Watch/Info.plist";
@@ -656,7 +826,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.watchkitapp.wdigets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -671,6 +841,126 @@
 			};
 			name = Release;
 		};
+		E9C1769F2FEED96500BFBC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Orange Cloud File/Orange_Cloud_File.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = 6G78MMY657;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Orange Cloud File/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Orange Cloud File";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.Orange-Cloud-File";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9C176A02FEED96500BFBC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Orange Cloud File/Orange_Cloud_File.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = 6G78MMY657;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Orange Cloud File/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Orange Cloud File";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.Orange-Cloud-File";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9C18C7C2FF10C7200BFBC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notification/notification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = 6G78MMY657;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9C18C7D2FF10C7200BFBC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = notification/notification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 37;
+				DEVELOPMENT_TEAM = 6G78MMY657;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = notification/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = notification;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.9.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud.notification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E9EF3A322FD98F7C007C2377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -679,7 +969,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud/Orange_Cloud.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -698,7 +988,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -708,6 +998,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Orange Cloud/OrangeCloud-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -722,7 +1013,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = "Orange Cloud/Orange_Cloud.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 37;
 				DEVELOPMENT_TEAM = 6G78MMY657;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -741,7 +1032,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5.1;
+				MARKETING_VERSION = 1.9.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "jiamin.chen.orange-cloud";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -751,6 +1042,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Orange Cloud/OrangeCloud-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -912,6 +1204,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E9C176A52FEED96500BFBC18 /* Build configuration list for PBXNativeTarget "Orange Cloud File" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C1769F2FEED96500BFBC18 /* Debug */,
+				E9C176A02FEED96500BFBC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C18C7E2FF10C7200BFBC18 /* Build configuration list for PBXNativeTarget "notification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C18C7C2FF10C7200BFBC18 /* Debug */,
+				E9C18C7D2FF10C7200BFBC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E9EF3A1E2FD98F7B007C2377 /* Build configuration list for PBXProject "Orange Cloud" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -931,6 +1241,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EAB1E0000000000000000E1 /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EAB1E0000000000000000E2 /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EAB1E0000000000000000E1 /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E9EF3A1B2FD98F7B007C2377 /* Project object */;
 }

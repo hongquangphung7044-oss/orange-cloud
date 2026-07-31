@@ -178,6 +178,23 @@ extension FeaturePermission {
             editScopes: ["cache-settings.write"],
             isRequired: false
         ),
+        // 规则中心（1.8.2(26) 上线）：五个 Rulesets phase + Page Rules；
+        // config-settings 同时覆盖 URL 正规化。缺这组会导致登录后进规则页还要逐个补授权。
+        .init(
+            id: "zone_rules",
+            title: String(localized: "规则中心"),
+            description: String(localized: "单条重定向、源站、配置、压缩、自定义错误与 Page Rules"),
+            icon: "list.bullet.rectangle",
+            readScopes: [
+                "dynamic-redirect.read", "origin.read", "config-settings.read",
+                "response-compression.read", "custom-errors.read", "page-rules.read",
+            ],
+            editScopes: [
+                "dynamic-redirect.write", "origin.write", "config-settings.write",
+                "response-compression.write", "custom-errors.write", "page-rules.write",
+            ],
+            isRequired: false
+        ),
         .init(
             id: "ssl_certs",
             title: String(localized: "SSL 证书"),
@@ -243,6 +260,52 @@ extension FeaturePermission {
             // 「not authorized for that account」（Cloudflare 把账号级 Workers 分析挪到了 Observability 权限下）。
             readScopes: ["account-analytics.read", "analytics.read", "workers-observability.read"],
             editScopes: [],
+            isRequired: false
+        ),
+        // 开发者平台（scope 均已在 OAuth client 注册，见 dash 实列）
+        .init(
+            id: "queues",
+            title: String(localized: "Queues"),
+            description: String(localized: "查看与管理消息队列"),
+            icon: "tray.2",
+            readScopes: ["queues.read"],
+            editScopes: ["queues.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "ai_gateway",
+            title: String(localized: "AI Gateway"),
+            description: String(localized: "查看与管理 AI Gateway 网关"),
+            icon: "brain.head.profile",
+            readScopes: ["aig.read"],
+            editScopes: ["aig.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "workers_ai",
+            title: String(localized: "Workers AI"),
+            description: String(localized: "浏览模型目录，并试运行文本生成模型"),
+            icon: "brain",
+            readScopes: ["ai.read"],
+            editScopes: ["ai.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "hyperdrive",
+            title: "Hyperdrive",
+            description: String(localized: "查看与管理数据库加速配置"),
+            icon: "bolt.horizontal.circle",
+            readScopes: ["query-cache.read"],
+            editScopes: ["query-cache.write"],
+            isRequired: false
+        ),
+        .init(
+            id: "notifications",
+            title: String(localized: "通知 / 告警"),
+            description: String(localized: "管理 Cloudflare 告警策略，把告警推送到推送中心"),
+            icon: "bell.badge",
+            readScopes: ["notifications.read"],
+            editScopes: ["notifications.write"],
             isRequired: false
         ),
     ]

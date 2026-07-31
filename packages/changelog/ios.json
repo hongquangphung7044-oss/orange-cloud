@@ -1,5 +1,1388 @@
 [
   {
+    "version": "1.9.2",
+    "date": "2026.07.25",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "person.crop.circle.badge.checkmark",
+        "title": {
+          "zh-Hans": "记住你的默认账号",
+          "en": "Remembers your default account",
+          "zh-Hant": "記住你的預設帳戶",
+          "zh-HK": "記住你的預設帳戶",
+          "ja": "既定のアカウントを記憶",
+          "es-MX": "Recuerda tu cuenta predeterminada",
+          "ko": "기본 계정을 기억합니다",
+          "pt-BR": "Lembra sua conta padrão",
+          "pt-PT": "Memoriza a sua conta predefinida",
+          "de": "Merkt sich dein Standardkonto",
+          "fr": "Retient votre compte par défaut",
+          "ar": "يتذكّر حسابك الافتراضي",
+          "tr": "Varsayılan hesabınızı hatırlar"
+        },
+        "detail": {
+          "zh-Hans": "有多个 Cloudflare 账号时，App 会记住你上次选中的那一个，下次打开直接进入它，不再固定回到列表里的第一个。",
+          "en": "With more than one Cloudflare account, the app now remembers the one you picked last and opens straight into it, instead of always falling back to the first in the list.",
+          "zh-Hant": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到清單裡的第一個。",
+          "zh-HK": "有多個 Cloudflare 帳戶時，App 會記住你上次選的那一個，下次打開直接進入它，不再固定回到列表裡的第一個。",
+          "ja": "Cloudflare アカウントが複数ある場合、最後に選んだアカウントを記憶し、次に開いたときはそのアカウントで始まります。常に一覧の先頭に戻ることはありません。",
+          "es-MX": "Si tienes varias cuentas de Cloudflare, la app recuerda la última que elegiste y abre directamente en ella, en lugar de volver siempre a la primera de la lista.",
+          "ko": "Cloudflare 계정이 여러 개일 때 마지막으로 선택한 계정을 기억해, 다음에 열면 바로 그 계정으로 시작합니다. 더 이상 목록의 첫 번째 계정으로 돌아가지 않습니다.",
+          "pt-BR": "Com mais de uma conta Cloudflare, o app passa a lembrar a última que você escolheu e abre direto nela, em vez de sempre voltar para a primeira da lista.",
+          "pt-PT": "Com mais do que uma conta Cloudflare, a app passa a memorizar a última que escolheu e abre diretamente nela, em vez de voltar sempre à primeira da lista.",
+          "de": "Bei mehreren Cloudflare-Konten merkt sich die App das zuletzt gewählte Konto und startet direkt damit – statt immer auf das erste Konto der Liste zurückzufallen.",
+          "fr": "Avec plusieurs comptes Cloudflare, l’app retient celui que vous avez choisi en dernier et s’ouvre directement dessus, au lieu de revenir toujours au premier de la liste.",
+          "ar": "عند وجود أكثر من حساب Cloudflare، يتذكّر التطبيق الحساب الذي اخترته آخر مرة ويفتح عليه مباشرة بدلاً من العودة دائمًا إلى أول حساب في القائمة.",
+          "tr": "Birden fazla Cloudflare hesabı varsa uygulama en son seçtiğiniz hesabı hatırlar ve doğrudan onunla açılır; artık her seferinde listedeki ilk hesaba dönmez."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.9.1",
+    "date": "2026.07.22",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "magnifyingglass",
+        "title": {
+          "zh-Hans": "一处搜遍所有资源",
+          "en": "Search everything from one place",
+          "zh-Hant": "一處搜遍所有資源",
+          "zh-HK": "一處搜遍所有資源",
+          "ja": "すべてのリソースをまとめて検索",
+          "es-MX": "Busca todo desde un solo lugar",
+          "ko": "모든 리소스를 한 곳에서 검색",
+          "pt-BR": "Busque tudo em um só lugar",
+          "pt-PT": "Pesquise tudo num só lugar",
+          "de": "Alles an einer Stelle suchen",
+          "fr": "Tout chercher au même endroit",
+          "ar": "ابحث في كل شيء من مكان واحد",
+          "tr": "Her şeyi tek yerden arayın"
+        },
+        "detail": {
+          "zh-Hans": "概览页顶栏的放大镜可一次搜索域名、Worker、R2 存储桶、D1 数据库、KV 命名空间与隧道，点一下直达；任意资源都能星标固定到概览页。",
+          "en": "The magnifier on the overview searches domains, Workers, R2 buckets, D1 databases, KV namespaces and tunnels at once — tap a result to go straight there. And any resource can now be starred to the overview.",
+          "zh-Hant": "總覽頁頂端的放大鏡可一次搜尋網域、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與通道，點一下直達；任何資源都能加上星號固定到總覽頁。",
+          "zh-HK": "概覽頁頂部的放大鏡可一次搜尋域名、Worker、R2 儲存桶、D1 資料庫、KV 命名空間與隧道，點一下直達；任何資源都可以加星固定到概覽頁。",
+          "ja": "概要ページの虫めがねから、ドメイン・Worker・R2 バケット・D1 データベース・KV ネームスペース・トンネルをまとめて検索でき、タップですぐ移動できます。どのリソースもスターを付けて概要ページに固定できます。",
+          "es-MX": "La lupa de la pantalla de resumen busca a la vez dominios, Workers, buckets R2, bases de datos D1, espacios de nombres KV y túneles; toca un resultado para ir directo. Además, ahora puedes fijar cualquier recurso al resumen con una estrella.",
+          "ko": "개요 화면 상단의 돋보기로 도메인, Worker, R2 버킷, D1 데이터베이스, KV 네임스페이스, 터널을 한 번에 검색하고 바로 이동할 수 있습니다. 이제 어떤 리소스든 별표로 개요 화면에 고정할 수 있습니다.",
+          "pt-BR": "A lupa na tela de visão geral busca de uma vez domínios, Workers, buckets R2, bancos D1, namespaces KV e túneis — toque para ir direto. E agora dá para fixar qualquer recurso na visão geral com uma estrela.",
+          "pt-PT": "A lupa no ecrã de descrição geral pesquisa de uma vez domínios, Workers, buckets R2, bases de dados D1, namespaces KV e túneis — toque para ir direto. E agora pode fixar qualquer recurso com uma estrela.",
+          "de": "Über die Lupe in der Übersicht durchsuchst du Domains, Workers, R2-Buckets, D1-Datenbanken, KV-Namespaces und Tunnel auf einmal – ein Tippen führt direkt hin. Und jede Ressource lässt sich per Stern an die Übersicht heften.",
+          "fr": "La loupe de l’aperçu recherche d’un coup les domaines, Workers, buckets R2, bases D1, espaces de noms KV et tunnels : touchez un résultat pour y aller. Et n’importe quelle ressource peut désormais être épinglée à l’aperçu.",
+          "ar": "تبحث العدسة في صفحة النظرة العامة دفعة واحدة في النطاقات وWorkers وحاويات R2 وقواعد بيانات D1 ومساحات أسماء KV والأنفاق، وانقر على النتيجة للانتقال مباشرة. ويمكن الآن تثبيت أي مورد في الصفحة بنجمة.",
+          "tr": "Genel bakıştaki büyüteç; alan adlarını, Worker’ları, R2 bucket’larını, D1 veritabanlarını, KV ad alanlarını ve tünelleri tek seferde arar, dokununca doğrudan açar. Artık her kaynağı yıldızlayıp genel bakışa sabitleyebilirsiniz."
+        }
+      },
+      {
+        "icon": "bell.badge",
+        "title": {
+          "zh-Hans": "告警中心",
+          "en": "Alert center",
+          "zh-Hant": "告警中心",
+          "zh-HK": "告警中心",
+          "ja": "アラートセンター",
+          "es-MX": "Centro de alertas",
+          "ko": "알림 센터",
+          "pt-BR": "Central de alertas",
+          "pt-PT": "Centro de alertas",
+          "de": "Warnungszentrale",
+          "fr": "Centre d’alertes",
+          "ar": "مركز التنبيهات",
+          "tr": "Uyarı merkezi"
+        },
+        "detail": {
+          "zh-Hans": "概览页新增告警卡片，汇总需要注意的资源——未启用的域名、状态异常的隧道等，点一下直达。",
+          "en": "The overview now gathers what needs attention — inactive domains, tunnels in a bad state and more — into a single card. Tap an item to jump right to it.",
+          "zh-Hant": "總覽頁新增告警卡片，彙整需要留意的資源——未啟用的網域、狀態異常的通道等，點一下直達。",
+          "zh-HK": "概覽頁新增告警卡片，彙整需要留意的資源——未啟用的域名、狀態異常的隧道等，點一下直達。",
+          "ja": "概要ページに、注意が必要なリソース（有効になっていないドメイン、状態が異常なトンネルなど）をまとめるカードを追加しました。タップするとその場所へ移動します。",
+          "es-MX": "La pantalla de resumen reúne en una tarjeta lo que necesita atención: dominios sin activar, túneles con estado anómalo y más. Toca uno para ir directo.",
+          "ko": "개요 화면에 주의가 필요한 리소스(활성화되지 않은 도메인, 상태가 비정상인 터널 등)를 모아 보여주는 카드가 추가되었습니다. 탭하면 바로 이동합니다.",
+          "pt-BR": "A visão geral agora reúne num cartão o que precisa de atenção: domínios não ativados, túneis com estado anormal e mais. Toque para ir direto.",
+          "pt-PT": "A descrição geral reúne agora num cartão o que precisa de atenção: domínios não ativados, túneis com estado anómalo e mais. Toque para ir direto.",
+          "de": "Die Übersicht bündelt jetzt in einer Karte, was Aufmerksamkeit braucht – nicht aktivierte Domains, Tunnel in auffälligem Zustand und mehr. Ein Tippen führt direkt hin.",
+          "fr": "L’aperçu regroupe désormais dans une carte ce qui mérite votre attention : domaines non activés, tunnels en état anormal, etc. Touchez pour y accéder.",
+          "ar": "تجمع صفحة النظرة العامة الآن في بطاقة واحدة ما يحتاج انتباهك: النطاقات غير المفعّلة، والأنفاق ذات الحالة غير الطبيعية وغيرها. انقر على البند للانتقال إليه مباشرة.",
+          "tr": "Genel bakış artık dikkat gerektirenleri tek kartta topluyor: etkinleştirilmemiş alan adları, durumu bozuk tüneller ve daha fazlası. Dokununca doğrudan açılır."
+        }
+      },
+      {
+        "icon": "text.magnifyingglass",
+        "title": {
+          "zh-Hans": "实时日志更好用",
+          "en": "Better live logs",
+          "zh-Hant": "即時日誌更好用",
+          "zh-HK": "實時日誌更好用",
+          "ja": "リアルタイムログが使いやすく",
+          "es-MX": "Registros en vivo mejorados",
+          "ko": "실시간 로그 개선",
+          "pt-BR": "Logs ao vivo melhores",
+          "pt-PT": "Registos em direto melhorados",
+          "de": "Bessere Live-Logs",
+          "fr": "Journaux en direct améliorés",
+          "ar": "سجلات مباشرة أفضل",
+          "tr": "Daha iyi canlı günlükler"
+        },
+        "detail": {
+          "zh-Hans": "Worker 实时日志支持关键词搜索与级别筛选；长按复制整行，轻点展开完整详情并选取片段。「暂停」现在只冻结画面、日志照常接收，恢复后能看到完整记录。",
+          "en": "Live Worker logs now support keyword search and level filtering; long-press to copy a whole line, tap to expand the full detail and select any part of it. Pause now only freezes the view — logs keep arriving, so nothing is missing when you resume.",
+          "zh-Hant": "Worker 即時日誌支援關鍵字搜尋與等級篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後能看到完整記錄。",
+          "zh-HK": "Worker 實時日誌支援關鍵字搜尋與級別篩選；長按複製整行，輕點展開完整詳情並選取片段。「暫停」現在只凍結畫面、日誌照常接收，恢復後可看到完整記錄。",
+          "ja": "Worker のリアルタイムログでキーワード検索とレベル絞り込みができるようになりました。長押しで 1 行コピー、タップで詳細を開いて一部を選択できます。「一時停止」は表示を止めるだけになり、ログは受信し続けるため再開後もすべて確認できます。",
+          "es-MX": "Los registros en vivo de Worker ahora tienen búsqueda por palabra clave y filtro por nivel; mantén presionada una línea para copiarla o tócala para ver el detalle completo y seleccionar fragmentos. Pausar solo congela la vista: los registros siguen llegando y no se pierde nada.",
+          "ko": "Worker 실시간 로그에서 키워드 검색과 레벨 필터를 쓸 수 있습니다. 길게 눌러 한 줄을 복사하고, 탭하면 전체 내용을 펼쳐 일부만 선택할 수도 있습니다. 일시정지는 이제 화면만 멈추고 로그는 계속 수신되어 재개하면 빠짐없이 확인할 수 있습니다.",
+          "pt-BR": "Os logs ao vivo do Worker agora têm busca por palavra-chave e filtro por nível; segure para copiar a linha inteira ou toque para abrir o detalhe completo e selecionar trechos. Pausar apenas congela a tela — os logs continuam chegando e nada se perde.",
+          "pt-PT": "Os registos em direto do Worker têm agora pesquisa por palavra-chave e filtro por nível; toque sem soltar para copiar a linha ou toque para abrir o detalhe completo e selecionar excertos. Pausar apenas congela o ecrã — os registos continuam a chegar e nada se perde.",
+          "de": "Live-Logs eines Workers lassen sich jetzt nach Stichwort durchsuchen und nach Level filtern; langes Tippen kopiert die ganze Zeile, kurzes Tippen öffnet das vollständige Detail zum Markieren. Die Pause friert nur die Ansicht ein – Logs laufen weiter ein, beim Fortsetzen fehlt nichts.",
+          "fr": "Les journaux en direct d’un Worker acceptent désormais la recherche par mot-clé et le filtre par niveau ; appui long pour copier toute la ligne, appui simple pour ouvrir le détail complet et en sélectionner un extrait. La pause ne fige que l’affichage : les journaux continuent d’arriver, rien ne manque à la reprise.",
+          "ar": "صارت سجلات Worker المباشرة تدعم البحث بالكلمات المفتاحية والتصفية حسب المستوى؛ اضغط مطوّلًا لنسخ السطر كاملًا، أو انقر لعرض التفاصيل كاملة وتحديد جزء منها. ولم يعد الإيقاف المؤقت سوى تجميد للعرض — تستمر السجلات في الوصول فلا يفوتك شيء عند المتابعة.",
+          "tr": "Worker canlı günlüklerinde artık anahtar kelime araması ve seviye filtresi var; uzun basınca satırın tamamı kopyalanır, dokununca tüm ayrıntı açılır ve içinden seçim yapılabilir. Duraklatma yalnızca görüntüyü dondurur; günlükler gelmeye devam eder, devam ettiğinizde hiçbir şey eksik olmaz."
+        }
+      },
+      {
+        "icon": "clock.arrow.circlepath",
+        "title": {
+          "zh-Hans": "SQL 历史与收藏",
+          "en": "SQL history and favorites",
+          "zh-Hant": "SQL 記錄與收藏",
+          "zh-HK": "SQL 記錄與收藏",
+          "ja": "SQL の履歴とお気に入り",
+          "es-MX": "Historial y favoritos de SQL",
+          "ko": "SQL 기록과 즐겨찾기",
+          "pt-BR": "Histórico e favoritos de SQL",
+          "pt-PT": "Histórico e favoritos de SQL",
+          "de": "SQL-Verlauf und Favoriten",
+          "fr": "Historique et favoris SQL",
+          "ar": "سجل SQL والمفضلة",
+          "tr": "SQL geçmişi ve favoriler"
+        },
+        "detail": {
+          "zh-Hans": "D1 查询自动记录最近 12 条，常用语句可收藏（按数据库分别保存）；查询结果一键导出 CSV，表详情还能查看索引。",
+          "en": "D1 keeps your last 12 queries and lets you favorite the ones you reuse (saved per database). Results export to CSV in a tap, and table details now list indexes.",
+          "zh-Hant": "D1 查詢會自動記錄最近 12 筆，常用語句可收藏（依資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還能檢視索引。",
+          "zh-HK": "D1 查詢會自動記錄最近 12 條，常用語句可收藏（按資料庫分別儲存）；查詢結果一鍵匯出 CSV，資料表詳情還可查看索引。",
+          "ja": "D1 は直近 12 件のクエリを自動で記録し、よく使う文はお気に入りに登録できます（データベースごとに保存）。結果はワンタップで CSV に書き出せ、テーブル詳細ではインデックスも確認できます。",
+          "es-MX": "D1 guarda tus últimas 12 consultas y te deja marcar como favoritas las que más usas (por base de datos). Los resultados se exportan a CSV con un toque y el detalle de la tabla ya muestra los índices.",
+          "ko": "D1이 최근 12개의 쿼리를 자동으로 기록하고, 자주 쓰는 문장은 즐겨찾기에 담을 수 있습니다(데이터베이스별로 저장). 결과는 한 번에 CSV로 내보낼 수 있고, 테이블 상세에서 인덱스도 볼 수 있습니다.",
+          "pt-BR": "O D1 guarda suas últimas 12 consultas e deixa favoritar as que você mais usa (salvas por banco). Os resultados viram CSV com um toque e o detalhe da tabela agora mostra os índices.",
+          "pt-PT": "O D1 guarda as suas últimas 12 consultas e permite marcar como favoritas as mais usadas (guardadas por base de dados). Os resultados exportam para CSV com um toque e o detalhe da tabela mostra agora os índices.",
+          "de": "D1 merkt sich die letzten 12 Abfragen, häufig genutzte lassen sich als Favorit sichern (je Datenbank getrennt). Ergebnisse exportierst du mit einem Tippen als CSV, und die Tabellendetails zeigen jetzt auch Indizes.",
+          "fr": "D1 conserve vos 12 dernières requêtes et permet de mettre en favori celles que vous réutilisez (par base de données). Les résultats s’exportent en CSV d’un geste, et le détail d’une table affiche désormais les index.",
+          "ar": "يحتفظ D1 بآخر 12 استعلامًا تلقائيًا، ويمكنك إضافة العبارات المتكررة إلى المفضلة (تُحفظ لكل قاعدة بيانات على حدة). صدّر النتائج إلى CSV بنقرة، وتعرض تفاصيل الجدول الآن الفهارس أيضًا.",
+          "tr": "D1 son 12 sorgunuzu otomatik saklar, sık kullandıklarınızı favorilere ekleyebilirsiniz (her veritabanı için ayrı). Sonuçlar tek dokunuşla CSV olarak dışa aktarılır, tablo ayrıntılarında artık dizinler de görünür."
+        }
+      },
+      {
+        "icon": "photo.artframe",
+        "title": {
+          "zh-Hans": "Workers AI 文生图",
+          "en": "Generate images with Workers AI",
+          "zh-Hant": "Workers AI 文字生圖",
+          "zh-HK": "Workers AI 文字生圖",
+          "ja": "Workers AI で画像生成",
+          "es-MX": "Genera imágenes con Workers AI",
+          "ko": "Workers AI로 이미지 생성",
+          "pt-BR": "Gere imagens com Workers AI",
+          "pt-PT": "Gere imagens com Workers AI",
+          "de": "Bilder mit Workers AI erzeugen",
+          "fr": "Générer des images avec Workers AI",
+          "ar": "توليد الصور عبر Workers AI",
+          "tr": "Workers AI ile görsel üretin"
+        },
+        "detail": {
+          "zh-Hans": "模型试运行新增文生图：输入提示词直接出图，可分享保存。",
+          "en": "The model playground now covers text-to-image models — type a prompt, get a picture, then share or save it.",
+          "zh-Hant": "模型試執行新增文字生圖：輸入提示詞直接產生圖片，可分享或儲存。",
+          "zh-HK": "模型試執行新增文字生圖：輸入提示詞直接生成圖片，可分享或儲存。",
+          "ja": "モデルの試し実行が画像生成モデルに対応。プロンプトを入力するだけで画像ができ、共有や保存もできます。",
+          "es-MX": "La prueba de modelos ahora incluye los de texto a imagen: escribe un prompt, obtén la imagen y compártela o guárdala.",
+          "ko": "모델 시험 실행이 이미지 생성 모델을 지원합니다. 프롬프트를 입력하면 바로 이미지가 만들어지고, 공유하거나 저장할 수 있습니다.",
+          "pt-BR": "O teste de modelos agora inclui os de texto para imagem: escreva um prompt, receba a imagem e compartilhe ou salve.",
+          "pt-PT": "O teste de modelos inclui agora os de texto para imagem: escreva um prompt, receba a imagem e partilhe ou guarde.",
+          "de": "Der Modell-Testlauf unterstützt jetzt Text-zu-Bild-Modelle: Prompt eingeben, Bild erhalten, teilen oder sichern.",
+          "fr": "L’essai de modèles prend désormais en charge le texte-vers-image : saisissez une consigne, obtenez l’image, partagez-la ou enregistrez-la.",
+          "ar": "صار تشغيل النماذج التجريبي يدعم نماذج تحويل النص إلى صورة: اكتب الوصف لتحصل على صورة، ثم شاركها أو احفظها.",
+          "tr": "Model deneme çalıştırması artık metinden görsele modellerini de destekliyor: bir istem yazın, görseli alın, paylaşın veya kaydedin."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.7",
+    "date": "2026.07.18",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "globe",
+        "title": {
+          "zh-Hans": "workers.dev 子域直达",
+          "en": "One-tap workers.dev URL",
+          "zh-Hant": "workers.dev 子網域直達",
+          "zh-HK": "workers.dev 子網域直達",
+          "ja": "workers.dev サブドメインに直接アクセス",
+          "es-MX": "Acceso directo al subdominio workers.dev",
+          "ko": "workers.dev 서브도메인 바로 열기",
+          "pt-BR": "Acesso direto ao subdomínio workers.dev",
+          "pt-PT": "Acesso direto ao subdomínio workers.dev",
+          "de": "Direkter workers.dev-Zugriff",
+          "fr": "Accès direct au sous-domaine workers.dev",
+          "ar": "وصول مباشر إلى نطاق workers.dev الفرعي",
+          "tr": "workers.dev alt alan adına doğrudan erişim"
+        },
+        "detail": {
+          "zh-Hans": "Worker 开启 workers.dev 子域后，直接显示完整访问地址，点一下即可打开。",
+          "en": "When a Worker’s workers.dev subdomain is on, its full URL now shows right there — tap to open.",
+          "zh-Hant": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。",
+          "zh-HK": "Worker 開啟 workers.dev 子網域後，直接顯示完整存取網址，點一下即可開啟。",
+          "ja": "Worker の workers.dev サブドメインを有効にすると、完全な URL が表示され、タップして開けます。",
+          "es-MX": "Cuando el subdominio workers.dev de un Worker está activo, ahora se muestra su URL completa: tócala para abrir.",
+          "ko": "Worker의 workers.dev 서브도메인을 켜면 전체 주소가 바로 표시되며, 탭하면 열립니다.",
+          "pt-BR": "Quando o subdomínio workers.dev de um Worker está ativo, a URL completa aparece ali — toque para abrir.",
+          "pt-PT": "Quando o subdomínio workers.dev de um Worker está ativo, o URL completo aparece ali — toque para abrir.",
+          "de": "Ist die workers.dev-Subdomain eines Workers aktiv, wird jetzt die vollständige URL angezeigt – zum Öffnen tippen.",
+          "fr": "Lorsque le sous-domaine workers.dev d’un Worker est activé, son URL complète s’affiche : touchez pour l’ouvrir.",
+          "ar": "عند تفعيل نطاق workers.dev الفرعي لأحد Workers، يظهر عنوانه الكامل الآن — انقر لفتحه.",
+          "tr": "Bir Worker’ın workers.dev alt alan adı açıkken tam adresi artık orada görünür; açmak için dokunun."
+        }
+      },
+      {
+        "icon": "cube.fill",
+        "title": {
+          "zh-Hans": "快速绑定 D1 / KV",
+          "en": "Quickly bind D1 / KV",
+          "zh-Hant": "快速綁定 D1 / KV",
+          "zh-HK": "快速綁定 D1 / KV",
+          "ja": "D1 / KV をすばやくバインド",
+          "es-MX": "Vincula D1 / KV rápidamente",
+          "ko": "D1 / KV 빠른 바인딩",
+          "pt-BR": "Vincule D1 / KV rapidamente",
+          "pt-PT": "Vincule D1 / KV rapidamente",
+          "de": "D1 / KV schnell binden",
+          "fr": "Lier rapidement D1 / KV",
+          "ar": "ربط D1 / KV بسرعة",
+          "tr": "D1 / KV’yi hızlıca bağla"
+        },
+        "detail": {
+          "zh-Hans": "在变量与密钥页直接把现有 D1 数据库或 KV 命名空间绑定到 Worker，也能一键解除。",
+          "en": "Bind an existing D1 database or KV namespace to a Worker right from the bindings page — and unbind just as easily.",
+          "zh-Hant": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。",
+          "zh-HK": "在變數與密鑰頁直接把現有 D1 資料庫或 KV 命名空間綁定到 Worker，也能一鍵解除。",
+          "ja": "変数とシークレットのページから、既存の D1 データベースや KV ネームスペースを Worker にバインドでき、解除も簡単です。",
+          "es-MX": "Vincula una base de datos D1 o un espacio de nombres KV existente a un Worker desde la página de vínculos, y desvincúlalos con la misma facilidad.",
+          "ko": "변수·시크릿 페이지에서 기존 D1 데이터베이스나 KV 네임스페이스를 Worker에 바인딩하고, 해제도 간편합니다.",
+          "pt-BR": "Vincule um banco de dados D1 ou namespace KV existente a um Worker direto na página de vínculos — e desvincule com a mesma facilidade.",
+          "pt-PT": "Vincule uma base de dados D1 ou namespace KV existente a um Worker diretamente na página de ligações — e desvincule com a mesma facilidade.",
+          "de": "Binde eine vorhandene D1-Datenbank oder einen KV-Namespace direkt auf der Bindungsseite an einen Worker – und löse die Bindung ebenso einfach.",
+          "fr": "Liez une base de données D1 ou un espace de noms KV existant à un Worker depuis la page des liaisons, et dissociez-les tout aussi facilement.",
+          "ar": "اربط قاعدة بيانات D1 أو مساحة أسماء KV موجودة بأحد Workers مباشرة من صفحة الروابط، وألغِ الربط بالسهولة نفسها.",
+          "tr": "Mevcut bir D1 veritabanını veya KV ad alanını bağlamalar sayfasından doğrudan bir Worker’a bağlayın; bağlantıyı kaldırmak da aynı kolaylıkta."
+        }
+      },
+      {
+        "icon": "shippingbox.fill",
+        "title": {
+          "zh-Hans": "快速绑定 R2 存储桶",
+          "en": "Quickly bind R2 buckets",
+          "zh-Hant": "快速綁定 R2 儲存桶",
+          "zh-HK": "快速綁定 R2 儲存桶",
+          "ja": "R2 バケットをすばやくバインド",
+          "es-MX": "Vincula buckets R2 rápidamente",
+          "ko": "R2 버킷 빠른 바인딩",
+          "pt-BR": "Vincule buckets R2 rapidamente",
+          "pt-PT": "Vincule buckets R2 rapidamente",
+          "de": "R2-Buckets schnell binden",
+          "fr": "Lier rapidement des buckets R2",
+          "ar": "ربط حاويات R2 بسرعة",
+          "tr": "R2 bucket’larını hızlıca bağla"
+        },
+        "detail": {
+          "zh-Hans": "资源绑定新增 R2：可把现有存储桶直接绑定到 Worker，与 D1 / KV 一样支持一键解除。",
+          "en": "Resource bindings now cover R2 — attach an existing bucket to a Worker, and unbind it just like D1 / KV.",
+          "zh-Hant": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。",
+          "zh-HK": "資源綁定新增 R2：可把現有儲存桶直接綁定到 Worker，與 D1 / KV 一樣支援一鍵解除。",
+          "ja": "リソースバインディングに R2 を追加。既存のバケットを Worker にバインドでき、D1 / KV と同様に解除もできます。",
+          "es-MX": "Los vínculos de recursos ahora incluyen R2: conecta un bucket existente a un Worker y desvincúlalo igual que D1 / KV.",
+          "ko": "리소스 바인딩에 R2가 추가되었습니다. 기존 버킷을 Worker에 연결하고 D1 / KV처럼 해제할 수 있습니다.",
+          "pt-BR": "Os vínculos de recursos agora incluem R2: conecte um bucket existente a um Worker e desvincule como em D1 / KV.",
+          "pt-PT": "As ligações de recursos agora incluem R2: ligue um bucket existente a um Worker e desvincule como em D1 / KV.",
+          "de": "Ressourcenbindungen umfassen jetzt R2: Hänge einen vorhandenen Bucket an einen Worker und löse ihn wie bei D1 / KV wieder.",
+          "fr": "Les liaisons de ressources couvrent désormais R2 : rattachez un bucket existant à un Worker et dissociez-le comme D1 / KV.",
+          "ar": "صارت روابط الموارد تشمل R2: اربط حاوية موجودة بأحد Workers وألغِ الربط كما في D1 / KV.",
+          "tr": "Kaynak bağlamaları artık R2’yi de kapsıyor: mevcut bir bucket’ı Worker’a bağlayın, D1 / KV gibi kaldırın."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.5",
+    "date": "2026.07.18",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "clock.arrow.circlepath",
+        "title": {
+          "zh-Hans": "Worker 部署历史",
+          "en": "Worker deployment history",
+          "zh-Hant": "Worker 部署歷史",
+          "zh-HK": "Worker 部署歷史",
+          "ja": "Worker のデプロイ履歴",
+          "es-MX": "Historial de despliegues de Worker",
+          "ko": "Worker 배포 기록",
+          "pt-BR": "Histórico de implantações do Worker",
+          "pt-PT": "Histórico de implementações do Worker",
+          "de": "Worker-Bereitstellungsverlauf",
+          "fr": "Historique des déploiements Worker",
+          "ar": "سجل عمليات نشر Worker",
+          "tr": "Worker dağıtım geçmişi"
+        },
+        "detail": {
+          "zh-Hans": "查看每个 Worker 的历次部署记录，并可删除不再需要的旧部署。",
+          "en": "See every past deployment of a Worker and delete older ones you no longer need.",
+          "zh-Hant": "檢視每個 Worker 的歷次部署記錄，並可刪除不再需要的舊部署。",
+          "zh-HK": "查看每個 Worker 的歷次部署記錄，並可刪除不再需要的舊部署。",
+          "ja": "各 Worker の過去のデプロイを確認し、不要になった古いデプロイを削除できます。",
+          "es-MX": "Consulta cada despliegue anterior de un Worker y elimina los que ya no necesites.",
+          "ko": "각 Worker의 과거 배포를 확인하고 더 이상 필요 없는 이전 배포를 삭제할 수 있습니다.",
+          "pt-BR": "Veja todas as implantações anteriores de um Worker e exclua as antigas que não precisa mais.",
+          "pt-PT": "Veja todas as implementações anteriores de um Worker e elimine as antigas de que já não precisa.",
+          "de": "Sieh dir alle bisherigen Bereitstellungen eines Workers an und lösche nicht mehr benötigte alte Bereitstellungen.",
+          "fr": "Consultez tous les déploiements passés d’un Worker et supprimez les anciens dont vous n’avez plus besoin.",
+          "ar": "اطّلع على كل عمليات نشر Worker السابقة واحذف القديمة التي لم تعد بحاجة إليها.",
+          "tr": "Bir Worker’ın geçmiş tüm dağıtımlarını görün ve artık ihtiyaç duymadığınız eskileri silin."
+        }
+      },
+      {
+        "icon": "square.and.pencil",
+        "title": {
+          "zh-Hans": "就地编辑与删除 Worker",
+          "en": "Edit and delete Workers in place",
+          "zh-Hant": "就地編輯與刪除 Worker",
+          "zh-HK": "就地編輯與刪除 Worker",
+          "ja": "Worker をその場で編集・削除",
+          "es-MX": "Edita y elimina Workers directamente",
+          "ko": "Worker를 바로 편집·삭제",
+          "pt-BR": "Edite e exclua Workers diretamente",
+          "pt-PT": "Edite e elimine Workers diretamente",
+          "de": "Worker direkt bearbeiten und löschen",
+          "fr": "Modifier et supprimer des Workers sur place",
+          "ar": "تعديل وحذف Workers مباشرةً",
+          "tr": "Worker’ları yerinde düzenleyin ve silin"
+        },
+        "detail": {
+          "zh-Hans": "直接载入线上源码修改后重新部署，变量、密钥与绑定自动保留；也可从 .js 文件导入，或删除整个 Worker。",
+          "en": "Load the live source, edit it and redeploy — your variables, secrets and bindings are kept. You can also import from a .js file or delete the whole Worker.",
+          "zh-Hant": "直接載入線上原始碼修改後重新部署，變數、密鑰與繫結自動保留；也可從 .js 檔案匯入，或刪除整個 Worker。",
+          "zh-HK": "直接載入線上原始碼修改後重新部署，變數、密鑰與綁定自動保留；也可從 .js 檔案匯入，或刪除整個 Worker。",
+          "ja": "稼働中のソースを読み込んで編集し、再デプロイできます。変数・シークレット・バインディングは保持されます。.js ファイルからの読み込みや Worker 全体の削除にも対応します。",
+          "es-MX": "Carga el código en producción, edítalo y vuelve a desplegar; se conservan tus variables, secretos y enlaces. También puedes importar desde un archivo .js o eliminar todo el Worker.",
+          "ko": "실행 중인 소스를 불러와 수정한 뒤 다시 배포할 수 있으며 변수, 비밀, 바인딩이 유지됩니다. .js 파일에서 가져오거나 Worker 전체를 삭제할 수도 있습니다.",
+          "pt-BR": "Carregue o código em produção, edite e reimplante — suas variáveis, segredos e bindings são mantidos. Também dá para importar de um arquivo .js ou excluir o Worker inteiro.",
+          "pt-PT": "Carregue o código em produção, edite e reimplante — as suas variáveis, segredos e ligações são mantidos. Também pode importar de um ficheiro .js ou eliminar o Worker inteiro.",
+          "de": "Lade den Live-Quellcode, bearbeite ihn und stelle neu bereit – Variablen, Secrets und Bindings bleiben erhalten. Du kannst auch aus einer .js-Datei importieren oder den ganzen Worker löschen.",
+          "fr": "Chargez le code en production, modifiez-le et redéployez ; vos variables, secrets et liaisons sont conservés. Vous pouvez aussi importer depuis un fichier .js ou supprimer le Worker entier.",
+          "ar": "حمّل الشيفرة المباشرة وعدّلها وأعد النشر مع الحفاظ على المتغيرات والأسرار والارتباطات. يمكنك أيضًا الاستيراد من ملف ‎.js‎ أو حذف Worker بالكامل.",
+          "tr": "Canlı kaynağı yükleyip düzenleyin ve yeniden dağıtın; değişkenleriniz, gizli anahtarlarınız ve bağlamalarınız korunur. Ayrıca bir .js dosyasından içe aktarabilir veya Worker’ın tamamını silebilirsiniz."
+        }
+      },
+      {
+        "icon": "tablecells",
+        "title": {
+          "zh-Hans": "删除 D1 数据表",
+          "en": "Delete D1 tables",
+          "zh-Hant": "刪除 D1 資料表",
+          "zh-HK": "刪除 D1 資料表",
+          "ja": "D1 テーブルを削除",
+          "es-MX": "Eliminar tablas de D1",
+          "ko": "D1 테이블 삭제",
+          "pt-BR": "Excluir tabelas do D1",
+          "pt-PT": "Eliminar tabelas do D1",
+          "de": "D1-Tabellen löschen",
+          "fr": "Supprimer des tables D1",
+          "ar": "حذف جداول D1",
+          "tr": "D1 tablolarını silme"
+        },
+        "detail": {
+          "zh-Hans": "在查询控制台长按任意表即可删除，需输入表名二次确认。",
+          "en": "Long-press any table in the query console to drop it, with a type-the-name confirmation.",
+          "zh-Hant": "在查詢主控台長按任一表即可刪除，需輸入表名二次確認。",
+          "zh-HK": "在查詢控制台長按任一表即可刪除，需輸入表名二次確認。",
+          "ja": "クエリコンソールでテーブルを長押しすると削除できます。テーブル名の入力による確認付きです。",
+          "es-MX": "Mantén pulsada cualquier tabla en la consola de consultas para eliminarla, con confirmación escribiendo su nombre.",
+          "ko": "쿼리 콘솔에서 테이블을 길게 눌러 삭제할 수 있으며 이름을 입력해 확인합니다.",
+          "pt-BR": "Toque e segure qualquer tabela no console de consultas para excluí-la, com confirmação digitando o nome.",
+          "pt-PT": "Toque sem soltar em qualquer tabela na consola de consultas para a eliminar, com confirmação escrevendo o nome.",
+          "de": "Halte in der Abfragekonsole eine Tabelle gedrückt, um sie zu löschen – mit Bestätigung durch Eingabe des Namens.",
+          "fr": "Appuyez longuement sur une table dans la console de requêtes pour la supprimer, avec confirmation en saisissant son nom.",
+          "ar": "اضغط مطوّلاً على أي جدول في وحدة الاستعلام لحذفه، مع تأكيد بكتابة الاسم.",
+          "tr": "Sorgu konsolunda bir tabloya uzun basarak silin; adını yazarak onaylayın."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.4",
+    "date": "2026.07.10",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "shield.lefthalf.filled",
+        "title": {
+          "zh-Hans": "编辑 WAF 规则",
+          "en": "Edit WAF rules",
+          "zh-Hant": "編輯 WAF 規則",
+          "zh-HK": "編輯 WAF 規則",
+          "ja": "WAF ルールの編集",
+          "es-MX": "Editar reglas de WAF",
+          "ko": "WAF 규칙 편집",
+          "pt-BR": "Editar regras do WAF",
+          "pt-PT": "Editar regras do WAF",
+          "de": "WAF-Regeln bearbeiten",
+          "fr": "Modifier les règles WAF",
+          "ar": "تعديل قواعد WAF",
+          "tr": "WAF kurallarını düzenleme"
+        },
+        "detail": {
+          "zh-Hans": "WAF 自定义防火墙规则现在支持编辑：点按任意规则即可修改动作、表达式、名称与启用状态，无需再删除后重建。",
+          "en": "WAF custom firewall rules can now be edited: tap any rule to change its action, expression, name and enabled state — no need to delete and recreate it.",
+          "zh-Hant": "WAF 自訂防火牆規則現在支援編輯：點按任一規則即可修改動作、運算式、名稱與啟用狀態，不必再刪除後重建。",
+          "zh-HK": "WAF 自訂防火牆規則現在支援編輯：點按任一規則即可修改動作、運算式、名稱與啟用狀態，無需再刪除後重建。",
+          "ja": "WAF のカスタムファイアウォールルールを編集できるようになりました。任意のルールをタップして、アクション・式・名前・有効状態を変更でき、削除して作り直す必要はありません。",
+          "es-MX": "Ahora puedes editar las reglas de firewall personalizadas de WAF: toca cualquier regla para cambiar su acción, expresión, nombre y estado, sin tener que eliminarla y volver a crearla.",
+          "ko": "이제 WAF 사용자 지정 방화벽 규칙을 편집할 수 있습니다. 규칙을 탭해 동작, 표현식, 이름, 사용 여부를 변경할 수 있어 삭제 후 다시 만들 필요가 없습니다.",
+          "pt-BR": "Agora é possível editar as regras de firewall personalizadas do WAF: toque em qualquer regra para alterar ação, expressão, nome e estado, sem precisar excluir e recriar.",
+          "pt-PT": "Agora é possível editar as regras de firewall personalizadas do WAF: toque em qualquer regra para alterar ação, expressão, nome e estado, sem ter de eliminar e recriar.",
+          "de": "WAF-eigene Firewall-Regeln lassen sich jetzt bearbeiten: Tippe auf eine Regel, um Aktion, Ausdruck, Name und Aktivierungsstatus zu ändern – ohne sie löschen und neu anlegen zu müssen.",
+          "fr": "Les règles de pare-feu personnalisées WAF sont désormais modifiables : touchez une règle pour changer son action, son expression, son nom et son état, sans avoir à la supprimer puis à la recréer.",
+          "ar": "يمكنك الآن تعديل قواعد جدار الحماية المخصّصة في WAF: انقر على أي قاعدة لتغيير إجرائها وتعبيرها واسمها وحالة تفعيلها، دون الحاجة إلى حذفها وإعادة إنشائها.",
+          "tr": "Artık WAF özel güvenlik duvarı kurallarını düzenleyebilirsiniz: bir kurala dokunarak eylemini, ifadesini, adını ve etkin durumunu değiştirin; silip yeniden oluşturmanıza gerek yok."
+        }
+      },
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "稳定性修复",
+          "en": "Stability fixes",
+          "zh-Hant": "穩定性修復",
+          "zh-HK": "穩定性修復",
+          "ja": "安定性の修正",
+          "es-MX": "Correcciones de estabilidad",
+          "ko": "안정성 개선",
+          "pt-BR": "Correções de estabilidade",
+          "pt-PT": "Correções de estabilidade",
+          "de": "Stabilitätsverbesserungen",
+          "fr": "Corrections de stabilité",
+          "ar": "إصلاحات الاستقرار",
+          "tr": "Kararlılık düzeltmeleri"
+        },
+        "detail": {
+          "zh-Hans": "进一步收敛 iOS 17 上由缓存数据库引发的偶发闪退：缓存读写全部加上异常兜底并在启动时预热，个别设备上残留的启动崩溃不再发生。",
+          "en": "Further hardens against rare crashes caused by the cache database on iOS 17: all cache reads and writes now have exception fallbacks and are warmed up at launch, so the startup crashes that lingered on a few devices no longer occur.",
+          "zh-Hant": "進一步收斂 iOS 17 上由快取資料庫引發的偶發閃退：快取讀寫全部加上例外兜底並在啟動時預熱，個別裝置上殘留的啟動閃退不再發生。",
+          "zh-HK": "進一步收斂 iOS 17 上由緩存資料庫引發的偶發閃退：緩存讀寫全部加上例外兜底並在啟動時預熱，個別裝置上殘留的啟動閃退不再發生。",
+          "ja": "iOS 17 でキャッシュデータベースに起因するまれなクラッシュをさらに抑制しました。キャッシュの読み書きすべてに例外時のフォールバックを追加し、起動時にウォームアップするようにしたため、一部の端末で残っていた起動時クラッシュが発生しなくなりました。",
+          "es-MX": "Refuerza aún más frente a cierres poco frecuentes provocados por la base de datos de caché en iOS 17: todas las lecturas y escrituras de caché ahora tienen protección ante excepciones y se precalientan al iniciar, por lo que los cierres al arrancar que quedaban en algunos dispositivos ya no ocurren.",
+          "ko": "iOS 17에서 캐시 데이터베이스로 인한 드문 종료를 더욱 방지했습니다. 모든 캐시 읽기/쓰기에 예외 대비가 추가되고 실행 시 예열되어, 일부 기기에 남아 있던 실행 시 종료가 더 이상 발생하지 않습니다.",
+          "pt-BR": "Reforça ainda mais contra fechamentos raros causados pelo banco de dados de cache no iOS 17: todas as leituras e gravações de cache agora têm proteção contra exceções e são pré-aquecidas na inicialização, então os fechamentos ao iniciar que persistiam em alguns aparelhos não ocorrem mais.",
+          "pt-PT": "Reforça ainda mais contra fechos raros causados pela base de dados de cache no iOS 17: todas as leituras e escritas de cache passam a ter proteção contra exceções e são pré-aquecidas no arranque, pelo que os fechos no arranque que persistiam em alguns dispositivos deixam de ocorrer.",
+          "de": "Härtet weiter gegen seltene Abstürze durch die Cache-Datenbank unter iOS 17 ab: Alle Cache-Zugriffe haben jetzt eine Ausnahmebehandlung und werden beim Start vorgewärmt, sodass die Startabstürze, die auf einzelnen Geräten verblieben, nicht mehr auftreten.",
+          "fr": "Renforce encore la protection contre les plantages rares dus à la base de cache sous iOS 17 : toutes les lectures et écritures du cache disposent désormais d’un repli en cas d’exception et sont préchauffées au démarrage, de sorte que les plantages au lancement qui persistaient sur certains appareils ne se produisent plus.",
+          "ar": "يعزّز الحماية أكثر من الانهيارات النادرة الناتجة عن قاعدة بيانات التخزين المؤقت على iOS 17: أصبحت جميع عمليات قراءة وكتابة التخزين المؤقت محميّة من الاستثناءات ويجري تسخينها عند بدء التشغيل، فلم تعد انهيارات بدء التشغيل التي بقيت على بعض الأجهزة تحدث.",
+          "tr": "iOS 17'de önbellek veritabanının yol açtığı nadir çökmelere karşı korumayı daha da güçlendirir: tüm önbellek okuma ve yazma işlemleri artık istisna yedeğine sahip ve başlatmada ön ısıtılıyor; böylece bazı cihazlarda kalan başlatma çökmeleri artık yaşanmıyor."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.3",
+    "date": "2026.07.07",
+    "channel": "App Store",
+    "inApp": false,
+    "items": [
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "稳定性修复",
+          "en": "Stability fixes",
+          "zh-Hant": "穩定性修復",
+          "zh-HK": "穩定性修復",
+          "ja": "安定性の修正",
+          "es-MX": "Correcciones de estabilidad",
+          "ko": "안정성 개선",
+          "pt-BR": "Correções de estabilidade",
+          "pt-PT": "Correções de estabilidade",
+          "de": "Stabilitätsverbesserungen",
+          "fr": "Corrections de stabilité",
+          "ar": "إصلاحات الاستقرار",
+          "tr": "Kararlılık düzeltmeleri"
+        },
+        "detail": {
+          "zh-Hans": "修复概览页「Access 应用 / Gateway 策略 / Bulk Redirects」点击后卡死或闪退的问题（iOS 17 设备尤为明显），并排查修复 Pages 项目子页打不开等同类导航隐患；iOS 17.0 个别设备上缓存数据库损坏导致的启动闪退现在会自动修复；另修复授权回调与后台令牌刷新的两类偶发退出。",
+          "en": "Fixes freezes and crashes when tapping “Access Apps / Gateway Policies / Bulk Redirects” on the Overview page (most noticeable on iOS 17), along with similar navigation issues such as Pages project sub-pages failing to open. Startup crashes caused by a corrupted cache database on a few iOS 17.0 devices are now repaired automatically, and two rare exits around the sign-in callback and background token refresh are fixed.",
+          "zh-Hant": "修復總覽頁「Access 應用程式 / Gateway 政策 / Bulk Redirects」點按後卡死或閃退的問題（iOS 17 裝置尤為明顯），並排查修復 Pages 專案子頁無法開啟等同類導覽問題；iOS 17.0 個別裝置上快取資料庫損毀導致的啟動閃退現在會自動修復；另修復授權回呼與背景權杖重新整理的兩類偶發退出。",
+          "zh-HK": "修復總覽頁「Access 應用程式 / Gateway 政策 / Bulk Redirects」點按後卡死或閃退的問題（iOS 17 裝置尤為明顯），並排查修復 Pages 專案子頁無法開啟等同類導覽問題；iOS 17.0 個別裝置上緩存資料庫損毀導致的啟動閃退現在會自動修復；另修復授權回調與背景令牌刷新的兩類偶發退出。",
+          "ja": "概要ページの「Access アプリ / Gateway ポリシー / Bulk Redirects」をタップするとフリーズまたはクラッシュする問題（iOS 17 端末で顕著）を修正し、Pages プロジェクトのサブページが開けないなど同種のナビゲーション問題も修正しました。iOS 17.0 の一部端末でキャッシュデータベースの破損による起動時クラッシュが自動修復されるようになり、サインインコールバックとバックグラウンドのトークン更新に関する 2 種類のまれな強制終了も修正しています。",
+          "es-MX": "Corrige bloqueos y cierres al tocar «Aplicaciones de Access / Políticas de Gateway / Bulk Redirects» en la página de resumen (especialmente en iOS 17), junto con problemas de navegación similares, como subpáginas de proyectos de Pages que no se abrían. Los cierres al iniciar causados por una base de datos de caché dañada en algunos dispositivos con iOS 17.0 ahora se reparan automáticamente, y se corrigen dos cierres poco frecuentes relacionados con el callback de inicio de sesión y la actualización del token en segundo plano.",
+          "ko": "개요 페이지에서 'Access 앱 / Gateway 정책 / Bulk Redirects'를 탭하면 멈추거나 종료되는 문제(iOS 17 기기에서 두드러짐)를 수정하고, Pages 프로젝트 하위 페이지가 열리지 않는 등 유사한 내비게이션 문제도 함께 수정했습니다. 일부 iOS 17.0 기기에서 캐시 데이터베이스 손상으로 발생하던 실행 시 종료가 이제 자동으로 복구되며, 로그인 콜백과 백그라운드 토큰 갱신 관련 두 가지 드문 종료 현상도 수정했습니다.",
+          "pt-BR": "Corrige travamentos e fechamentos ao tocar em “Apps do Access / Políticas do Gateway / Bulk Redirects” na página de visão geral (mais evidente no iOS 17), além de problemas de navegação semelhantes, como subpáginas de projetos do Pages que não abriam. Fechamentos na inicialização causados por banco de dados de cache corrompido em alguns aparelhos com iOS 17.0 agora são reparados automaticamente, e dois encerramentos raros ligados ao callback de login e à atualização do token em segundo plano foram corrigidos.",
+          "pt-PT": "Corrige bloqueios e fechos ao tocar em «Apps do Access / Políticas do Gateway / Bulk Redirects» na página de visão geral (mais evidente no iOS 17), bem como problemas de navegação semelhantes, como subpáginas de projetos do Pages que não abriam. Os fechos no arranque causados por uma base de dados de cache danificada em alguns dispositivos com iOS 17.0 são agora reparados automaticamente, e foram corrigidos dois encerramentos raros relacionados com o callback de início de sessão e a atualização do token em segundo plano.",
+          "de": "Behebt Einfrieren und Abstürze beim Antippen von „Access-Apps / Gateway-Richtlinien / Bulk Redirects“ auf der Übersichtsseite (besonders auf iOS 17) sowie ähnliche Navigationsprobleme, etwa nicht öffnende Unterseiten von Pages-Projekten. Startabstürze durch eine beschädigte Cache-Datenbank auf einzelnen iOS-17.0-Geräten werden jetzt automatisch repariert; außerdem wurden zwei seltene Abstürze rund um den Anmelde-Callback und die Token-Aktualisierung im Hintergrund behoben.",
+          "fr": "Corrige les blocages et plantages lors de l’appui sur « Applications Access / Politiques Gateway / Bulk Redirects » sur la page d’aperçu (surtout sous iOS 17), ainsi que des problèmes de navigation similaires, comme des sous-pages de projets Pages qui ne s’ouvraient pas. Les plantages au démarrage dus à une base de cache corrompue sur certains appareils iOS 17.0 sont désormais réparés automatiquement, et deux fermetures rares liées au rappel de connexion et à l’actualisation du jeton en arrière-plan sont corrigées.",
+          "ar": "يعالج هذا التحديث تجمّد التطبيق أو انهياره عند النقر على «تطبيقات Access / سياسات Gateway / Bulk Redirects» في صفحة النظرة العامة (خاصة على iOS 17)، إضافة إلى مشاكل تنقّل مماثلة مثل تعذّر فتح الصفحات الفرعية لمشاريع Pages. كما يُصلح الآن تلقائيًا انهيار بدء التشغيل الناتج عن تلف قاعدة بيانات التخزين المؤقت على بعض أجهزة iOS 17.0، ويعالج حالتين نادرتين من الإغلاق تتعلقان برد نداء تسجيل الدخول وتحديث الرمز في الخلفية.",
+          "tr": "Genel bakış sayfasında “Access Uygulamaları / Gateway Politikaları / Bulk Redirects” öğelerine dokununca donma veya kapanma sorunu (özellikle iOS 17 cihazlarda) ve Pages proje alt sayfalarının açılmaması gibi benzer gezinme sorunları giderildi. Bazı iOS 17.0 cihazlarda bozuk önbellek veritabanının neden olduğu açılış çökmeleri artık otomatik olarak onarılıyor; ayrıca oturum açma geri çağrısı ve arka plan token yenilemeyle ilgili iki nadir kapanma düzeltildi."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.2",
+    "date": "2026.07.05",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "arrow.triangle.branch",
+        "title": {
+          "zh-Hans": "规则中心",
+          "en": "Rules hub",
+          "zh-Hant": "規則中心",
+          "zh-HK": "規則中心",
+          "ja": "ルールセンター",
+          "es-MX": "Centro de reglas",
+          "ko": "규칙 센터",
+          "pt-BR": "Central de regras",
+          "pt-PT": "Central de regras",
+          "de": "Regel-Center",
+          "fr": "Centre de règles",
+          "ar": "مركز القواعد",
+          "tr": "Kural Merkezi"
+        },
+        "detail": {
+          "zh-Hans": "域名详情新增「规则」统一入口：单条重定向、源站、配置、压缩与自定义错误五类规则支持查看、启停、新建、编辑与删除；Page Rules 与 URL 正规化支持查看与启停。",
+          "en": "Domain details gain a unified “Rules” entry: Single Redirects, Origin, Configuration, Compression and Custom Error rules with view, toggle, create, edit and delete; Page Rules and URL Normalization support view and toggle.",
+          "zh-Hant": "網域詳情新增「規則」統一入口：單條重新導向、來源、組態、壓縮與自訂錯誤五類規則支援檢視、啟停、新增、編輯與刪除；Page Rules 與 URL 正規化支援檢視與啟停。",
+          "zh-HK": "域名詳情新增「規則」統一入口：單條重新導向、源站、配置、壓縮與自訂錯誤五類規則支援查看、啟停、新增、編輯與刪除；Page Rules 與 URL 正規化支援查看與啟停。",
+          "ja": "ドメイン詳細に「ルール」の統一入口を追加。単一リダイレクト、オリジン、設定、圧縮、カスタムエラーの 5 種類のルールで表示・オン/オフ・作成・編集・削除に対応し、Page Rules と URL 正規化は表示とオン/オフに対応します。",
+          "es-MX": "Los detalles del dominio incorporan una entrada unificada de «Reglas»: redirecciones individuales, origen, configuración, compresión y errores personalizados admiten ver, activar/desactivar, crear, editar y eliminar; Page Rules y la normalización de URL admiten ver y activar/desactivar.",
+          "ko": "도메인 상세에 '규칙' 통합 입구가 추가되었습니다. 단일 리디렉션, 오리진, 구성, 압축, 사용자 지정 오류 다섯 가지 규칙에서 보기·켜기/끄기·생성·편집·삭제를 지원하며, Page Rules와 URL 정규화는 보기와 켜기/끄기를 지원합니다.",
+          "pt-BR": "Os detalhes do domínio ganham uma entrada unificada de “Regras”: redirecionamentos individuais, origem, configuração, compressão e erros personalizados com ver, ativar/desativar, criar, editar e excluir; Page Rules e normalização de URL permitem ver e ativar/desativar.",
+          "pt-PT": "Os detalhes do domínio ganham uma entrada unificada de «Regras»: redirecionamentos individuais, origem, configuração, compressão e erros personalizados com ver, ativar/desativar, criar, editar e eliminar; Page Rules e normalização de URL permitem ver e ativar/desativar.",
+          "de": "Die Domain-Details erhalten einen einheitlichen Bereich „Regeln“: Einzelweiterleitungen, Origin-, Konfigurations-, Komprimierungs- und benutzerdefinierte Fehlerregeln mit Anzeigen, Ein/Aus, Erstellen, Bearbeiten und Löschen; Page Rules und URL-Normalisierung unterstützen Anzeigen und Ein/Aus.",
+          "fr": "Les détails du domaine gagnent une entrée unifiée « Règles » : redirections unitaires, règles d’origine, de configuration, de compression et d’erreurs personnalisées avec affichage, activation, création, modification et suppression ; les Page Rules et la normalisation d’URL prennent en charge l’affichage et l’activation.",
+          "ar": "تحصل تفاصيل النطاق على مدخل موحّد «القواعد»: قواعد إعادة التوجيه الفردية والمصدر والتهيئة والضغط والأخطاء المخصصة مع العرض والتفعيل والإنشاء والتحرير والحذف؛ وتدعم Page Rules وتطبيع عناوين URL العرض والتفعيل.",
+          "tr": "Alan adı ayrıntılarına birleşik \"Kurallar\" girişi eklendi: tekil yönlendirme, kaynak, yapılandırma, sıkıştırma ve özel hata kuralları görüntüleme, açma/kapatma, oluşturma, düzenleme ve silmeyi destekler; Page Rules ve URL normalleştirme görüntüleme ile açma/kapatmayı destekler."
+        }
+      },
+      {
+        "icon": "globe",
+        "title": {
+          "zh-Hans": "Pages 自定义域名",
+          "en": "Pages custom domains",
+          "zh-Hant": "Pages 自訂網域",
+          "zh-HK": "Pages 自訂域名",
+          "ja": "Pages カスタムドメイン",
+          "es-MX": "Dominios personalizados de Pages",
+          "ko": "Pages 사용자 지정 도메인",
+          "pt-BR": "Domínios personalizados do Pages",
+          "pt-PT": "Domínios personalizados do Pages",
+          "de": "Benutzerdefinierte Domains für Pages",
+          "fr": "Domaines personnalisés Pages",
+          "ar": "نطاقات Pages المخصصة",
+          "tr": "Pages özel alan adları"
+        },
+        "detail": {
+          "zh-Hans": "Pages 项目现可直接管理自定义域名：添加、删除、重新验证并检查解析状态；域名在当前账号时，还能一键添加指向项目的 CNAME 记录。",
+          "en": "Manage custom domains right inside a Pages project: add, remove, re-validate, and check DNS status — with one-tap CNAME setup when the domain’s zone is on your account.",
+          "zh-Hant": "Pages 專案現可直接管理自訂網域：新增、刪除、重新驗證並檢查解析狀態；網域在目前帳號時，還能一鍵新增指向專案的 CNAME 記錄。",
+          "zh-HK": "Pages 項目現可直接管理自訂域名：新增、刪除、重新驗證並檢查解析狀態；域名在當前帳戶時，還能一鍵新增指向項目的 CNAME 記錄。",
+          "ja": "Pages プロジェクト内でカスタムドメインを直接管理：追加・削除・再検証と DNS 状態の確認に対応。ドメインが現在のアカウントにある場合は、プロジェクトへ向ける CNAME レコードをワンタップで追加できます。",
+          "es-MX": "Administra dominios personalizados dentro de un proyecto de Pages: agregar, eliminar, revalidar y comprobar el estado del DNS; si la zona del dominio está en tu cuenta, agrega el registro CNAME con un toque.",
+          "ko": "Pages 프로젝트에서 사용자 지정 도메인을 직접 관리하세요: 추가·삭제·재확인과 DNS 상태 확인을 지원하며, 도메인이 현재 계정에 있으면 프로젝트를 가리키는 CNAME 레코드를 한 번에 추가할 수 있습니다.",
+          "pt-BR": "Gerencie domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o status do DNS — com criação do registro CNAME em um toque quando a zona do domínio está na sua conta.",
+          "pt-PT": "Faça a gestão de domínios personalizados dentro de um projeto do Pages: adicionar, remover, revalidar e verificar o estado do DNS — com criação do registo CNAME num toque quando a zona do domínio está na sua conta.",
+          "de": "Verwalte benutzerdefinierte Domains direkt im Pages-Projekt: hinzufügen, entfernen, erneut validieren und DNS-Status prüfen – mit Ein-Tipp-CNAME, wenn die Zone der Domain in deinem Konto liegt.",
+          "fr": "Gérez les domaines personnalisés directement dans un projet Pages : ajout, suppression, revalidation et vérification du DNS — avec création du CNAME en un geste quand la zone du domaine est sur votre compte.",
+          "ar": "أدر النطاقات المخصصة داخل مشروع Pages مباشرة: إضافة وحذف وإعادة تحقق وفحص حالة DNS — مع إضافة سجل CNAME بلمسة واحدة عندما تكون منطقة النطاق ضمن حسابك.",
+          "tr": "Özel alan adlarını doğrudan Pages projesi içinde yönetin: ekleme, silme, yeniden doğrulama ve DNS durumu kontrolü — alan adının bölgesi hesabınızdaysa tek dokunuşla CNAME kaydı ekleyin."
+        }
+      },
+      {
+        "icon": "arrow.up.arrow.down",
+        "title": {
+          "zh-Hans": "列表排序",
+          "en": "List sorting",
+          "zh-Hant": "清單排序",
+          "zh-HK": "列表排序",
+          "ja": "リストの並べ替え",
+          "es-MX": "Orden de listas",
+          "ko": "목록 정렬",
+          "pt-BR": "Ordenação de listas",
+          "pt-PT": "Ordenação de listas",
+          "de": "Listensortierung",
+          "fr": "Tri des listes",
+          "ar": "ترتيب القوائم",
+          "tr": "Liste sıralama"
+        },
+        "detail": {
+          "zh-Hans": "Workers 与 Pages 列表新增排序：默认（名称）、创建日期、最近更新，选择会被记住。",
+          "en": "Workers and Pages lists can now be sorted by name (default), date created, or recently updated — your choice is remembered.",
+          "zh-Hant": "Workers 與 Pages 清單新增排序：預設（名稱）、建立日期、最近更新，選擇會被記住。",
+          "zh-HK": "Workers 與 Pages 列表新增排序：默認（名稱）、創建日期、最近更新，選擇會被記住。",
+          "ja": "Workers と Pages のリストを名前（デフォルト）・作成日・最近の更新で並べ替えられるようになりました。選択は記憶されます。",
+          "es-MX": "Las listas de Workers y Pages ahora se pueden ordenar por nombre (predeterminado), fecha de creación o actualización reciente; tu elección se recuerda.",
+          "ko": "Workers와 Pages 목록을 이름(기본), 생성일, 최근 업데이트로 정렬할 수 있습니다. 선택은 기억됩니다.",
+          "pt-BR": "As listas de Workers e Pages agora podem ser ordenadas por nome (padrão), data de criação ou atualização recente — sua escolha é lembrada.",
+          "pt-PT": "As listas de Workers e Pages podem agora ser ordenadas por nome (predefinição), data de criação ou atualização recente — a sua escolha é lembrada.",
+          "de": "Workers- und Pages-Listen lassen sich jetzt nach Name (Standard), Erstellungsdatum oder letzter Aktualisierung sortieren – die Auswahl wird gemerkt.",
+          "fr": "Les listes Workers et Pages peuvent désormais être triées par nom (par défaut), date de création ou mise à jour récente — votre choix est mémorisé.",
+          "ar": "يمكن الآن ترتيب قوائم Workers و Pages حسب الاسم (افتراضي) أو تاريخ الإنشاء أو آخر تحديث — ويُحفظ اختيارك.",
+          "tr": "Workers ve Pages listeleri artık ada (varsayılan), oluşturma tarihine veya son güncellemeye göre sıralanabilir; seçiminiz hatırlanır."
+        }
+      },
+      {
+        "icon": "person.badge.key.fill",
+        "title": {
+          "zh-Hans": "登录更稳定",
+          "en": "More reliable sign-in",
+          "zh-Hant": "登入更穩定",
+          "zh-HK": "登入更穩定",
+          "ja": "ログインがより安定",
+          "es-MX": "Inicio de sesión más estable",
+          "ko": "더 안정적인 로그인",
+          "pt-BR": "Login mais estável",
+          "pt-PT": "Sessão mais estável",
+          "de": "Stabilere Anmeldung",
+          "fr": "Connexion plus fiable",
+          "ar": "تسجيل دخول أكثر استقرارًا",
+          "tr": "Daha kararlı oturum açma"
+        },
+        "detail": {
+          "zh-Hans": "根治部分用户「自动退出账号」的问题：授权流程补齐长期凭证，登录状态不再随令牌到期而失效；若授权仍失效，概览页会提供「一键重新授权」引导。",
+          "en": "Fixes the root cause of being signed out unexpectedly: the authorization flow now obtains long-lived credentials, so your session no longer lapses when the token expires. If authorization does become invalid, Overview offers one-tap re-authorization.",
+          "zh-Hant": "根治部分使用者「自動登出帳號」的問題：授權流程補齊長期憑證，登入狀態不再隨權杖到期而失效；若授權仍失效，總覽頁會提供「一鍵重新授權」引導。",
+          "zh-HK": "根治部分用戶「自動登出帳戶」的問題：授權流程補齊長期憑證，登入狀態不再隨令牌到期而失效；若授權仍失效，概覽頁會提供「一鍵重新授權」引導。",
+          "ja": "一部のユーザーで発生していた「自動的にログアウトされる」問題を根本から修正しました。認証フローが長期資格情報を取得するようになり、トークンの期限切れでセッションが失われることはありません。認証が無効になった場合は、概要ページにワンタップ再認証の案内を表示します。",
+          "es-MX": "Corrige de raíz el cierre de sesión inesperado: el flujo de autorización ahora obtiene credenciales de larga duración, por lo que la sesión ya no caduca con el token. Si la autorización deja de ser válida, Resumen ofrece reautorizar con un toque.",
+          "ko": "일부 사용자의 '자동 로그아웃' 문제를 근본적으로 해결했습니다. 인증 과정에서 장기 자격 증명을 받아 토큰이 만료되어도 로그인 상태가 유지됩니다. 인증이 무효화된 경우에는 개요 페이지에서 원탭 재인증 안내를 제공합니다.",
+          "pt-BR": "Corrige na raiz o problema de desconexão inesperada: o fluxo de autorização agora obtém credenciais de longa duração, e a sessão não expira mais com o token. Se a autorização ficar inválida, a Visão geral oferece reautorização com um toque.",
+          "pt-PT": "Corrige na raiz o problema de fim de sessão inesperado: o fluxo de autorização passa a obter credenciais de longa duração, pelo que a sessão já não expira com o token. Se a autorização ficar inválida, a Vista geral oferece reautorização com um toque.",
+          "de": "Behebt die Ursache unerwarteter Abmeldungen: Der Autorisierungsablauf holt jetzt langlebige Anmeldedaten ein, sodass die Sitzung nicht mehr mit dem Token abläuft. Wird die Autorisierung dennoch ungültig, bietet die Übersicht eine Neuautorisierung mit einem Tipp.",
+          "fr": "Corrige à la racine les déconnexions inattendues : le flux d’autorisation obtient désormais des identifiants de longue durée, la session n’expire donc plus avec le jeton. Si l’autorisation devient invalide, l’aperçu propose une réautorisation en un geste.",
+          "ar": "يعالج جذريًا مشكلة «تسجيل الخروج التلقائي» لدى بعض المستخدمين: يحصل تدفق التفويض الآن على بيانات اعتماد طويلة الأمد، فلا تنتهي الجلسة بانتهاء صلاحية الرمز. وإذا أصبح التفويض غير صالح، تعرض النظرة العامة إعادة التفويض بنقرة واحدة.",
+          "tr": "Bazı kullanıcıların beklenmedik şekilde oturumdan çıkarılması sorununu kökten çözer: yetkilendirme akışı artık uzun ömürlü kimlik bilgileri alır, bu yüzden oturum belirteç süresi dolunca kapanmaz. Yetki yine geçersiz olursa Genel Bakış tek dokunuşla yeniden yetkilendirme sunar."
+        }
+      },
+      {
+        "icon": "waveform.path.ecg",
+        "title": {
+          "zh-Hans": "体验者计划",
+          "en": "Insider Program",
+          "zh-Hant": "體驗者計畫",
+          "zh-HK": "體驗者計劃",
+          "ja": "インサイダープログラム",
+          "es-MX": "Programa Insider",
+          "ko": "인사이더 프로그램",
+          "pt-BR": "Programa Insider",
+          "pt-PT": "Programa Insider",
+          "de": "Insider-Programm",
+          "fr": "Programme Insider",
+          "ar": "برنامج تحسين التطبيق",
+          "tr": "Insider Programı"
+        },
+        "detail": {
+          "zh-Hans": "新增可随时开关的体验者计划：默认关闭，加入后才会匿名上报诊断信息，帮助我们更快定位闪退与登录问题；不收集任何个人身份数据。",
+          "en": "New opt-in Insider Program, off by default: join to share anonymous diagnostics that help us pinpoint crashes and sign-in issues faster. No personal data is collected.",
+          "zh-Hant": "新增可隨時開關的體驗者計畫：預設關閉，加入後才會匿名回報診斷資訊，協助我們更快定位閃退與登入問題；不收集任何個人身分資料。",
+          "zh-HK": "新增可隨時開關的體驗者計劃：預設關閉，加入後才會匿名上報診斷資訊，協助我們更快定位閃退與登入問題；不收集任何個人身份資料。",
+          "ja": "任意参加のインサイダープログラムを追加しました。既定ではオフで、参加した場合のみ匿名の診断情報を送信し、クラッシュやログイン問題の特定に役立てます。個人を特定できるデータは収集しません。",
+          "es-MX": "Nuevo programa Insider opcional, desactivado de forma predeterminada: al unirte, se envían diagnósticos anónimos que nos ayudan a localizar más rápido los cierres inesperados y problemas de inicio de sesión. No se recopilan datos personales.",
+          "ko": "언제든 켜고 끌 수 있는 인사이더 프로그램이 추가되었습니다. 기본은 꺼짐이며, 참여할 때만 익명 진단 정보를 전송해 앱 종료와 로그인 문제를 더 빠르게 파악하도록 돕습니다. 개인 식별 데이터는 수집하지 않습니다.",
+          "pt-BR": "Novo Programa Insider opcional, desativado por padrão: ao participar, diagnósticos anônimos nos ajudam a localizar falhas e problemas de login mais rápido. Nenhum dado pessoal é coletado.",
+          "pt-PT": "Novo Programa Insider opcional, desativado por predefinição: ao aderir, diagnósticos anónimos ajudam-nos a localizar falhas e problemas de sessão mais depressa. Não são recolhidos dados pessoais.",
+          "de": "Neues Insider-Programm zum Mitmachen, standardmäßig aus: Nach dem Beitritt helfen anonyme Diagnosedaten, Abstürze und Anmeldeprobleme schneller einzugrenzen. Es werden keine personenbezogenen Daten erfasst.",
+          "fr": "Nouveau programme Insider facultatif, désactivé par défaut : en le rejoignant, des diagnostics anonymes nous aident à localiser plus vite les plantages et problèmes de connexion. Aucune donnée personnelle n’est collectée.",
+          "ar": "برنامج تحسين التطبيق الجديد اختياري ومعطّل افتراضيًا: عند الانضمام تُرسل بيانات تشخيصية مجهولة تساعدنا على تحديد الانهيارات ومشكلات تسجيل الدخول بشكل أسرع، ولا تُجمع أي بيانات شخصية.",
+          "tr": "İsteğe bağlı yeni Insider Programı, varsayılan olarak kapalı: katıldığınızda anonim tanılama verileri çökmeleri ve oturum açma sorunlarını daha hızlı bulmamıza yardımcı olur. Hiçbir kişisel veri toplanmaz."
+        }
+      },
+      {
+        "icon": "textformat.123",
+        "title": {
+          "zh-Hans": "数据单位显示",
+          "en": "Data unit display",
+          "zh-Hant": "數據單位顯示",
+          "zh-HK": "數據單位顯示",
+          "ja": "データ単位の表示",
+          "es-MX": "Unidades de datos",
+          "ko": "데이터 단위 표시",
+          "pt-BR": "Unidades de dados",
+          "pt-PT": "Unidades de dados",
+          "de": "Anzeige von Dateneinheiten",
+          "fr": "Affichage des unités",
+          "ar": "عرض وحدات البيانات",
+          "tr": "Veri birimi gösterimi"
+        },
+        "detail": {
+          "zh-Hans": "存储与流量单位在所有语言下统一显示为国际通用符号（KB / MB / GB），不再随语言翻译。",
+          "en": "Storage and traffic sizes now always use the universal unit symbols (KB / MB / GB) in every language, instead of localized unit names.",
+          "zh-Hant": "儲存與流量單位在所有語言下統一顯示為國際通用符號（KB / MB / GB），不再隨語言翻譯。",
+          "zh-HK": "儲存與流量單位在所有語言下統一顯示為國際通用符號（KB / MB / GB），不再隨語言翻譯。",
+          "ja": "ストレージや通信量の単位を、どの言語でも国際的な表記（KB / MB / GB）で統一しました。",
+          "es-MX": "Los tamaños de almacenamiento y tráfico ahora usan siempre los símbolos universales (KB / MB / GB) en todos los idiomas.",
+          "ko": "저장 용량과 트래픽 단위를 모든 언어에서 국제 공용 기호(KB / MB / GB)로 통일했습니다.",
+          "pt-BR": "Os tamanhos de armazenamento e tráfego agora usam sempre os símbolos universais (KB / MB / GB) em todos os idiomas.",
+          "pt-PT": "Os tamanhos de armazenamento e tráfego usam agora sempre os símbolos universais (KB / MB / GB) em todos os idiomas.",
+          "de": "Speicher- und Traffic-Größen verwenden jetzt in allen Sprachen einheitlich die universellen Einheitensymbole (KB / MB / GB).",
+          "fr": "Les tailles de stockage et de trafic utilisent désormais les symboles universels (KB / MB / GB) dans toutes les langues.",
+          "ar": "أحجام التخزين وحركة المرور تُعرض الآن دائمًا بالرموز العالمية (KB / MB / GB) في جميع اللغات.",
+          "tr": "Depolama ve trafik boyutları artık tüm dillerde evrensel birim simgeleriyle (KB / MB / GB) gösteriliyor."
+        }
+      },
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "稳定性修复",
+          "en": "Stability fixes",
+          "zh-Hant": "穩定性修復",
+          "zh-HK": "穩定性修復",
+          "ja": "安定性の修正",
+          "es-MX": "Correcciones de estabilidad",
+          "ko": "안정성 수정",
+          "pt-BR": "Correções de estabilidade",
+          "pt-PT": "Correções de estabilidade",
+          "de": "Stabilitätskorrekturen",
+          "fr": "Corrections de stabilité",
+          "ar": "إصلاحات الاستقرار",
+          "tr": "Kararlılık düzeltmeleri"
+        },
+        "detail": {
+          "zh-Hans": "根治 iOS 17.0 上概览页、资源列表与域名详情的多处闪退与冻结；同时修复 Tunnel 页面卡死与冷启动请求翻倍的问题。",
+          "en": "Fixes multiple crashes and freezes on iOS 17.0 across Overview, resource lists and domain details, plus the Tunnel page hanging and doubled requests on cold launch.",
+          "zh-Hant": "根治 iOS 17.0 上總覽頁、資源列表與網域詳情的多處閃退與凍結；同時修復 Tunnel 頁面卡死與冷啟動請求翻倍的問題。",
+          "zh-HK": "根治 iOS 17.0 上概覽頁、資源列表與域名詳情的多處閃退與凍結；同時修復 Tunnel 頁面卡死與冷啟動請求翻倍的問題。",
+          "ja": "iOS 17.0 における概要ページ、リソース一覧、ドメイン詳細での複数のクラッシュとフリーズを根本から修正。Tunnel ページのフリーズや、コールド起動時にリクエストが倍増する問題も修正しました。",
+          "es-MX": "Corrige de raíz varios cierres inesperados y bloqueos en iOS 17.0 en Resumen, las listas de recursos y los detalles del dominio; también soluciona el bloqueo de la página de Tunnel y las solicitudes duplicadas al iniciar en frío.",
+          "ko": "iOS 17.0에서 개요 페이지, 리소스 목록, 도메인 상세의 여러 앱 종료·멈춤 문제를 근본적으로 해결했습니다. Tunnel 페이지 멈춤과 콜드 시작 시 요청이 두 배로 발생하는 문제도 수정했습니다.",
+          "pt-BR": "Corrige na raiz várias falhas e travamentos no iOS 17.0 na Visão geral, nas listas de recursos e nos detalhes do domínio; também resolve o travamento da página de Tunnel e as solicitações duplicadas na inicialização a frio.",
+          "pt-PT": "Corrige na raiz várias falhas e bloqueios no iOS 17.0 na Vista geral, nas listas de recursos e nos detalhes do domínio; resolve ainda o bloqueio da página de Tunnel e os pedidos duplicados no arranque a frio.",
+          "de": "Behebt mehrere Abstürze und Einfrieren unter iOS 17.0 in der Übersicht, in Ressourcenlisten und in den Domain-Details; außerdem hängt die Tunnel-Seite nicht mehr und beim Kaltstart werden Anfragen nicht mehr doppelt gesendet.",
+          "fr": "Corrige à la racine plusieurs plantages et blocages sous iOS 17.0 dans l’aperçu, les listes de ressources et les détails du domaine ; corrige aussi le blocage de la page Tunnel et le doublement des requêtes au démarrage à froid.",
+          "ar": "يعالج جذريًا عدة انهيارات وتجمّدات على iOS 17.0 في النظرة العامة وقوائم الموارد وتفاصيل النطاق؛ كما يصلح تجمّد صفحة Tunnel وتضاعف الطلبات عند التشغيل البارد.",
+          "tr": "iOS 17.0'da Genel Bakış, kaynak listeleri ve alan adı ayrıntılarındaki birden çok çökme ve donmayı kökten düzeltir; ayrıca Tunnel sayfasının donması ve soğuk başlatmada isteklerin ikiye katlanması sorunlarını giderir."
+        }
+      },
+      {
+        "icon": "speedometer",
+        "title": {
+          "zh-Hans": "滑动更流畅",
+          "en": "Smoother scrolling",
+          "zh-Hant": "捲動更流暢",
+          "zh-HK": "滑動更流暢",
+          "ja": "スクロールがより滑らかに",
+          "es-MX": "Desplazamiento más fluido",
+          "ko": "더 부드러운 스크롤",
+          "pt-BR": "Rolagem mais fluida",
+          "pt-PT": "Deslocação mais fluida",
+          "de": "Flüssigeres Scrollen",
+          "fr": "Défilement plus fluide",
+          "ar": "تمرير أكثر سلاسة",
+          "tr": "Daha akıcı kaydırma"
+        },
+        "detail": {
+          "zh-Hans": "重做玻璃卡片的渲染方式：观感不变，滚动开销大幅下降，列表与概览页滑动明显更顺滑，旧机型尤其受益。",
+          "en": "Glass cards are rendered with far less overhead while looking identical — lists and Overview scroll noticeably smoother, especially on older devices.",
+          "zh-Hant": "重做玻璃卡片的算繪方式：觀感不變、捲動負擔大幅下降，清單與總覽頁捲動明顯更順暢，舊機型尤其受益。",
+          "zh-HK": "重做玻璃卡片的渲染方式：觀感不變、滑動負擔大幅下降，列表與概覽頁滑動明顯更順暢，舊機型尤其受益。",
+          "ja": "ガラスカードの描画方式を見直しました。見た目はそのままにスクロール時の負荷を大幅に削減し、リストや概要ページのスクロールが特に旧機種で滑らかになりました。",
+          "es-MX": "Las tarjetas de vidrio ahora se dibujan con mucho menos costo manteniendo el mismo aspecto: las listas y Resumen se desplazan con notable mayor fluidez, sobre todo en equipos antiguos.",
+          "ko": "글래스 카드 렌더링을 개선했습니다. 보이는 모습은 그대로 유지하면서 스크롤 부하를 크게 줄여, 목록과 개요 페이지가 특히 구형 기기에서 눈에 띄게 부드러워졌습니다.",
+          "pt-BR": "Os cartões de vidro agora são renderizados com muito menos custo, mantendo o mesmo visual — as listas e a Visão geral rolam visivelmente mais suave, principalmente em aparelhos antigos.",
+          "pt-PT": "Os cartões de vidro passam a ser renderizados com muito menos custo, mantendo o mesmo aspeto — as listas e a Vista geral deslizam visivelmente melhor, sobretudo em dispositivos antigos.",
+          "de": "Glaskarten werden bei gleichem Aussehen deutlich günstiger gerendert – Listen und die Übersicht scrollen spürbar flüssiger, besonders auf älteren Geräten.",
+          "fr": "Les cartes en verre sont rendues avec beaucoup moins de coût tout en gardant le même aspect — les listes et l’aperçu défilent nettement plus fluidement, surtout sur les appareils anciens.",
+          "ar": "أصبحت البطاقات الزجاجية تُرسم بكلفة أقل بكثير مع الحفاظ على المظهر نفسه — تمرير القوائم وصفحة النظرة العامة أصبح أكثر سلاسة، خصوصًا على الأجهزة الأقدم.",
+          "tr": "Cam kartlar aynı görünümü koruyarak çok daha düşük maliyetle çiziliyor — listeler ve Genel Bakış, özellikle eski cihazlarda belirgin şekilde daha akıcı kayıyor."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.1",
+    "date": "2026.06.30",
+    "channel": "App Store",
+    "inApp": false,
+    "items": [
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "稳定性与体验修复",
+          "en": "Stability & experience fixes",
+          "zh-Hant": "穩定性與體驗修復",
+          "zh-HK": "穩定性與體驗修復",
+          "ja": "安定性と使い勝手の修正",
+          "es-MX": "Correcciones de estabilidad y experiencia",
+          "ko": "안정성 및 사용성 개선",
+          "pt-BR": "Correções de estabilidade e experiência",
+          "pt-PT": "Correções de estabilidade e experiência",
+          "de": "Stabilitäts- und Erlebnisverbesserungen",
+          "fr": "Corrections de stabilité et d’expérience",
+          "ar": "تحسينات الاستقرار والتجربة",
+          "tr": "Kararlılık ve deneyim düzeltmeleri"
+        },
+        "detail": {
+          "zh-Hans": "修复 Access 应用多个公共主机名只显示第一个、长时间使用后保持登录却刷新不出数据、重装后存储桶在「文件」App 重复挂载等问题，并优化「减少动画」开关与概览用量加载。",
+          "en": "Fixes an Access app showing only the first of multiple public hostnames, a rare “stays signed in but won’t refresh data” after long use, and duplicate R2 bucket mounts in Files after reinstalling; also improves the Reduce Animations toggle and Overview usage loading.",
+          "zh-Hant": "修復 Access 應用程式多個公開主機名稱只顯示第一個、長時間使用後保持登入卻無法重新整理資料、重新安裝後儲存桶在「檔案」App 重複掛載等問題，並優化「減少動畫」開關與總覽用量載入。",
+          "zh-HK": "修復 Access 應用程式多個公開主機名稱只顯示第一個、長時間使用後保持登入卻無法重新整理資料、重新安裝後儲存桶在「檔案」App 重複掛載等問題，並優化「減少動畫」開關與概覽用量載入。",
+          "ja": "Access の複数の公開ホスト名が最初の1つしか表示されない問題、長時間使用後にログイン状態のままデータを更新できない問題、再インストール後に「ファイル」で R2 バケットが重複マウントされる問題を修正し、「アニメーションを減らす」スイッチと概要の使用状況の読み込みを改善しました。",
+          "es-MX": "Corrige que una app de Access muestre solo el primero de varios nombres de host públicos, un raro “sesión iniciada pero sin actualizar datos” tras un uso prolongado y los montajes duplicados de buckets R2 en Archivos tras reinstalar; también mejora Reducir animaciones y la carga de uso en Resumen.",
+          "ko": "Access 앱에서 여러 공개 호스트 이름 중 첫 번째만 표시되던 문제, 장시간 사용 후 로그인 상태가 유지되지만 데이터가 새로 고쳐지지 않던 문제, 재설치 후 '파일'에서 R2 버킷이 중복 마운트되던 문제를 수정하고 '애니메이션 줄이기' 스위치와 개요 사용량 로딩을 개선했습니다.",
+          "pt-BR": "Corrige um app do Access que mostrava apenas o primeiro de vários nomes de host públicos, um raro “continua conectado mas não atualiza os dados” após uso prolongado e montagens duplicadas de buckets R2 em Arquivos após reinstalar; também melhora Reduzir animações e o carregamento de uso na Visão geral.",
+          "pt-PT": "Corrige uma app do Access que mostrava apenas o primeiro de vários nomes de anfitrião públicos, um raro “mantém a sessão iniciada mas não atualiza os dados” após uso prolongado e montagens duplicadas de buckets R2 em Ficheiros após reinstalar; também melhora Reduzir animações e o carregamento de utilização na Vista geral.",
+          "de": "Behebt, dass eine Access-App nur den ersten von mehreren öffentlichen Hostnamen anzeigte, ein seltenes „bleibt angemeldet, aktualisiert aber keine Daten“ nach langer Nutzung und doppelte R2-Bucket-Einbindungen in „Dateien“ nach einer Neuinstallation; verbessert außerdem „Animationen reduzieren“ und das Laden der Nutzung in der Übersicht.",
+          "fr": "Corrige une app Access n’affichant que le premier de plusieurs noms d’hôte publics, un rare « reste connecté mais n’actualise pas les données » après une utilisation prolongée et les montages en double de buckets R2 dans Fichiers après une réinstallation ; améliore aussi Réduire les animations et le chargement de l’utilisation dans l’aperçu.",
+          "ar": "يُصلح ظهور أول اسم فقط من بين عدة أسماء مضيفين عامة في تطبيق Access، ومشكلة نادرة وهي «يبقى تسجيل الدخول لكن لا تتحدّث البيانات» بعد الاستخدام الطويل، وتكرار تحميل حاويات R2 في «الملفات» بعد إعادة التثبيت؛ كما يحسّن مفتاح «تقليل الحركة» وتحميل الاستخدام في النظرة العامة.",
+          "tr": "Bir Access uygulamasının birden çok genel ana makine adından yalnızca ilkini göstermesini, uzun kullanımdan sonra nadiren görülen “oturum açık kalır ama veriler yenilenmez” sorununu ve yeniden yükleme sonrası Dosyalar’da yinelenen R2 paketi bağlamalarını giderir; ayrıca Animasyonları Azalt anahtarını ve Genel Bakış kullanım yüklemesini iyileştirir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.8.0",
+    "date": "2026.06.29",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "bell.badge.fill",
+        "title": {
+          "zh-Hans": "推送中心",
+          "en": "Push Center",
+          "zh-Hant": "推送中心",
+          "zh-HK": "推送中心",
+          "ja": "プッシュセンター",
+          "es-MX": "Centro de notificaciones",
+          "ko": "푸시 센터",
+          "pt-BR": "Central de Push",
+          "pt-PT": "Centro de Push",
+          "de": "Push-Center",
+          "fr": "Centre de push",
+          "ar": "مركز الإشعارات",
+          "tr": "Push Merkezi"
+        },
+        "detail": {
+          "zh-Hans": "内置推送服务：拿到一个专属端点，用 curl 或脚本就能把消息推到这台设备，支持标题、分组、铃声与端到端加密。无需登录 Cloudflare 即可使用。",
+          "en": "A built-in push service: get your own endpoint and send messages to this device with a simple curl or script — with titles, groups, sounds and end-to-end encryption. No Cloudflare sign-in required.",
+          "zh-Hant": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這台裝置，支援標題、分組、鈴聲與端對端加密。無需登入 Cloudflare 即可使用。",
+          "zh-HK": "內建推送服務：取得專屬端點，用 curl 或指令稿就能把訊息推到這部裝置，支援標題、分組、鈴聲與端對端加密。無需登入 Cloudflare 即可使用。",
+          "ja": "プッシュ機能を内蔵。専用エンドポイントを取得すれば、curl やスクリプトでこの端末にメッセージを送れます。タイトル、グループ、サウンドと端末間暗号化に対応。Cloudflare へのサインインは不要です。",
+          "es-MX": "Servicio de notificaciones integrado: obtén tu propio endpoint y envía mensajes a este dispositivo con un simple curl o script, con título, grupo, sonido y cifrado de extremo a extremo. No requiere iniciar sesión en Cloudflare.",
+          "ko": "푸시 기능 내장: 전용 엔드포인트를 받아 curl이나 스크립트로 이 기기에 메시지를 보낼 수 있습니다. 제목, 그룹, 사운드와 종단 간 암호화를 지원합니다. Cloudflare 로그인이 필요 없습니다.",
+          "pt-BR": "Serviço de push integrado: obtenha seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo, som e criptografia de ponta a ponta. Não exige login na Cloudflare.",
+          "pt-PT": "Serviço de push integrado: obtenha o seu próprio endpoint e envie mensagens para este dispositivo com um simples curl ou script — com título, grupo, som e encriptação de ponta a ponta. Não exige iniciar sessão na Cloudflare.",
+          "de": "Integrierter Push-Dienst: Hol dir deinen eigenen Endpunkt und sende Nachrichten per curl oder Skript an dieses Gerät – mit Titel, Gruppe, Ton und Ende-zu-Ende-Verschlüsselung. Keine Cloudflare-Anmeldung nötig.",
+          "fr": "Service de push intégré : obtenez votre propre point de terminaison et envoyez des messages à cet appareil avec un simple curl ou script — avec titre, groupe, son et chiffrement de bout en bout. Aucune connexion Cloudflare requise.",
+          "ar": "خدمة دفع مدمجة: احصل على نقطة نهاية خاصة بك وأرسل الرسائل إلى هذا الجهاز باستخدام curl أو سكربت بسيط — مع عنوان ومجموعة وصوت وتشفير من طرف إلى طرف. لا يتطلب تسجيل الدخول إلى Cloudflare.",
+          "tr": "Yerleşik push hizmeti: kendi uç noktanızı alın ve basit bir curl veya betikle bu cihaza mesaj gönderin — başlık, grup, ses ve uçtan uca şifreleme ile. Cloudflare oturumu gerekmez."
+        }
+      },
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "免登录开发者工具箱",
+          "en": "No-login developer toolbox",
+          "zh-Hant": "免登入開發者工具箱",
+          "zh-HK": "免登入開發者工具箱",
+          "ja": "ログイン不要の開発者ツールボックス",
+          "es-MX": "Caja de herramientas para desarrolladores sin iniciar sesión",
+          "ko": "로그인 없는 개발자 도구 모음",
+          "pt-BR": "Caixa de ferramentas do desenvolvedor sem login",
+          "pt-PT": "Caixa de ferramentas do programador sem início de sessão",
+          "de": "Entwickler-Toolbox ohne Anmeldung",
+          "fr": "Boîte à outils développeur sans connexion",
+          "ar": "صندوق أدوات المطوّر بدون تسجيل دخول",
+          "tr": "Girişsiz geliştirici araç kutusu"
+        },
+        "detail": {
+          "zh-Hans": "无需登录即可使用一组常用网络工具：DNS 查询、SSL 证书检查、HTTP 头、WHOIS、IP 归属、CIDR 计算与 Cloudflare trace。打开 App 在登录页就能直接进入。",
+          "en": "A set of handy network tools you can use without signing in: DNS lookup, SSL certificate inspection, HTTP headers, WHOIS, IP geolocation, a CIDR calculator and Cloudflare trace — reachable right from the login screen.",
+          "zh-Hant": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。",
+          "zh-HK": "無需登入即可使用一組常用網路工具：DNS 查詢、SSL 憑證檢查、HTTP 標頭、WHOIS、IP 歸屬、CIDR 計算與 Cloudflare trace。開啟 App 在登入頁就能直接進入。",
+          "ja": "ログインせずに使える定番のネットワークツール群：DNS 検索、SSL 証明書チェック、HTTP ヘッダー、WHOIS、IP 位置情報、CIDR 計算、Cloudflare trace。ログイン画面からそのまま開けます。",
+          "es-MX": "Un conjunto de herramientas de red prácticas que puedes usar sin iniciar sesión: consulta DNS, inspección de certificados SSL, encabezados HTTP, WHOIS, geolocalización de IP, calculadora CIDR y Cloudflare trace, accesibles desde la pantalla de inicio de sesión.",
+          "ko": "로그인 없이 사용할 수 있는 유용한 네트워크 도구 모음: DNS 조회, SSL 인증서 검사, HTTP 헤더, WHOIS, IP 위치, CIDR 계산기, Cloudflare trace. 로그인 화면에서 바로 열 수 있습니다.",
+          "pt-BR": "Um conjunto de ferramentas de rede úteis que você pode usar sem fazer login: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis direto na tela de login.",
+          "pt-PT": "Um conjunto de ferramentas de rede úteis que pode usar sem iniciar sessão: consulta DNS, inspeção de certificado SSL, cabeçalhos HTTP, WHOIS, geolocalização de IP, calculadora CIDR e Cloudflare trace — acessíveis a partir do ecrã de início de sessão.",
+          "de": "Praktische Netzwerk-Tools, die du ohne Anmeldung nutzen kannst: DNS-Abfrage, SSL-Zertifikatsprüfung, HTTP-Header, WHOIS, IP-Geolokalisierung, ein CIDR-Rechner und Cloudflare-Trace – direkt vom Anmeldebildschirm aus erreichbar.",
+          "fr": "Un ensemble d'outils réseau pratiques utilisables sans connexion : requête DNS, inspection de certificat SSL, en-têtes HTTP, WHOIS, géolocalisation IP, calculateur CIDR et Cloudflare trace — accessibles depuis l'écran de connexion.",
+          "ar": "مجموعة من أدوات الشبكة العملية التي يمكنك استخدامها دون تسجيل الدخول: استعلام DNS، فحص شهادة SSL، ترويسات HTTP، WHOIS، تحديد موقع IP، حاسبة CIDR، وCloudflare trace — يمكن الوصول إليها مباشرةً من شاشة تسجيل الدخول.",
+          "tr": "Oturum açmadan kullanabileceğiniz pratik ağ araçları: DNS sorgusu, SSL sertifikası incelemesi, HTTP başlıkları, WHOIS, IP konumu, CIDR hesaplayıcı ve Cloudflare trace — giriş ekranından doğrudan erişilebilir."
+        }
+      },
+      {
+        "icon": "exclamationmark.bubble.fill",
+        "title": {
+          "zh-Hans": "把 Cloudflare 告警推到手机",
+          "en": "Cloudflare alerts on your phone",
+          "zh-Hant": "把 Cloudflare 告警推到手機",
+          "zh-HK": "把 Cloudflare 告警推到手機",
+          "ja": "Cloudflare のアラートをスマホへ",
+          "es-MX": "Alertas de Cloudflare en tu teléfono",
+          "ko": "휴대폰으로 받는 Cloudflare 경고",
+          "pt-BR": "Alertas da Cloudflare no seu celular",
+          "pt-PT": "Alertas da Cloudflare no seu telemóvel",
+          "de": "Cloudflare-Warnungen auf deinem Handy",
+          "fr": "Les alertes Cloudflare sur votre téléphone",
+          "ar": "تنبيهات Cloudflare على هاتفك",
+          "tr": "Cloudflare uyarıları telefonunuzda"
+        },
+        "detail": {
+          "zh-Hans": "登录后可直接管理 Cloudflare 告警策略：选择想关注的告警类型（DDoS、健康检查、证书到期、Workers 错误率等），一键接到推送中心，事件发生时直推到这台设备。需账号下有 Pro 及以上套餐的域名。",
+          "en": "Once signed in, manage your Cloudflare alert policies right here: pick the alert types you care about (DDoS, health checks, certificate expiry, Workers error rate and more) and wire them to the Push Center in one tap, so events land on this device. Requires a domain on a Pro or higher plan.",
+          "zh-Hant": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這台裝置。需帳戶下有 Pro 及以上方案的網域。",
+          "zh-HK": "登入後可直接管理 Cloudflare 告警策略：選擇想關注的告警類型（DDoS、健康檢查、憑證到期、Workers 錯誤率等），一鍵接到推送中心，事件發生時直推到這部裝置。需帳戶下有 Pro 及以上計劃的域名。",
+          "ja": "サインインすると Cloudflare のアラートポリシーをここで管理できます。気になるアラートの種類（DDoS、ヘルスチェック、証明書の有効期限、Workers のエラー率など）を選び、ワンタップでプッシュセンターに接続。イベント発生時にこの端末へ直接届きます。Pro 以上のプランのドメインが必要です。",
+          "es-MX": "Una vez que inicies sesión, administra aquí tus políticas de alertas de Cloudflare: elige los tipos de alerta que te importan (DDoS, comprobaciones de estado, vencimiento de certificados, tasa de errores de Workers y más) y conéctalos al Centro de notificaciones con un toque, para que los eventos lleguen a este dispositivo. Requiere un dominio con plan Pro o superior.",
+          "ko": "로그인하면 여기에서 Cloudflare 경고 정책을 관리할 수 있습니다. 원하는 경고 유형(DDoS, 상태 확인, 인증서 만료, Workers 오류율 등)을 골라 한 번의 탭으로 푸시 센터에 연결하면, 이벤트가 이 기기로 바로 전달됩니다. Pro 이상 요금제의 도메인이 필요합니다.",
+          "pt-BR": "Depois de fazer login, gerencie aqui suas políticas de alerta da Cloudflare: escolha os tipos de alerta que importam para você (DDoS, verificações de integridade, expiração de certificados, taxa de erros do Workers e mais) e conecte-os à Central de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior.",
+          "pt-PT": "Depois de iniciar sessão, faça aqui a gestão das suas políticas de alerta da Cloudflare: escolha os tipos de alerta que lhe interessam (DDoS, verificações de estado, expiração de certificados, taxa de erros do Workers e mais) e ligue-os ao Centro de Push com um toque, para que os eventos cheguem a este dispositivo. Requer um domínio com plano Pro ou superior.",
+          "de": "Nach der Anmeldung verwaltest du hier deine Cloudflare-Warnrichtlinien: Wähle die Warntypen, die dich interessieren (DDoS, Health Checks, Zertifikatsablauf, Workers-Fehlerrate und mehr), und verbinde sie mit einem Tippen mit dem Push-Center, damit Ereignisse auf diesem Gerät ankommen. Erfordert eine Domain mit Pro-Tarif oder höher.",
+          "fr": "Une fois connecté, gérez ici vos politiques d'alerte Cloudflare : choisissez les types d'alerte qui vous intéressent (DDoS, contrôles d'état, expiration de certificat, taux d'erreur Workers, etc.) et reliez-les au centre de push en un geste, pour que les événements arrivent sur cet appareil. Nécessite un domaine avec un forfait Pro ou supérieur.",
+          "ar": "بعد تسجيل الدخول، يمكنك إدارة سياسات تنبيهات Cloudflare من هنا: اختر أنواع التنبيهات التي تهمّك (DDoS، فحوصات السلامة، انتهاء الشهادات، معدل أخطاء Workers والمزيد) واربطها بمركز الإشعارات بنقرة واحدة، لتصل الأحداث إلى هذا الجهاز. يتطلب نطاقًا بخطة Pro أو أعلى.",
+          "tr": "Oturum açtıktan sonra Cloudflare uyarı politikalarınızı buradan yönetin: önemsediğiniz uyarı türlerini (DDoS, durum denetimleri, sertifika süresi dolması, Workers hata oranı ve daha fazlası) seçin ve tek dokunuşla Push Merkezi'ne bağlayın; böylece olaylar bu cihaza ulaşsın. Pro veya üzeri planda bir alan adı gerektirir."
+        }
+      },
+      {
+        "icon": "rectangle.3.group.fill",
+        "title": {
+          "zh-Hans": "开发者平台更进一步",
+          "en": "Developer Platform goes further",
+          "zh-Hant": "開發者平台更進一步",
+          "zh-HK": "開發者平台更進一步",
+          "ja": "開発者プラットフォームがさらに進化",
+          "es-MX": "La plataforma para desarrolladores va más allá",
+          "ko": "한 걸음 더 나아간 개발자 플랫폼",
+          "pt-BR": "A plataforma do desenvolvedor vai além",
+          "pt-PT": "A plataforma do programador vai mais longe",
+          "de": "Die Entwicklerplattform geht weiter",
+          "fr": "La plateforme développeur va plus loin",
+          "ar": "منصة المطوّرين تتقدّم خطوة أخرى",
+          "tr": "Geliştirici Platformu daha da ileride"
+        },
+        "detail": {
+          "zh-Hans": "Queues 现可暂停/恢复投递、清空消息、调整保留期与延迟；Hyperdrive 可编辑查询缓存与源数据库连接；Durable Objects 可浏览对象实例；Workers AI 能直接在 App 内试运行文本生成模型，缺权限时可一键补授权、无需退出登录。",
+          "en": "Queues can now pause/resume delivery, purge messages, and adjust retention and delay; Hyperdrive lets you edit query caching and the origin database connection; Durable Objects can browse object instances; and Workers AI runs text-generation models right in the app — with one-tap permission top-up, no sign-out needed.",
+          "zh-Hant": "Queues 現可暫停／恢復投遞、清空訊息、調整保留期與延遲；Hyperdrive 可編輯查詢快取與來源資料庫連線；Durable Objects 可瀏覽物件實例；Workers AI 能直接在 App 內試執行文字生成模型，缺權限時可一鍵補授權、無需登出。",
+          "zh-HK": "Queues 現可暫停／恢復投遞、清空訊息、調整保留期與延遲；Hyperdrive 可編輯查詢緩存與來源資料庫連線；Durable Objects 可瀏覽物件實例；Workers AI 能直接在 App 內試執行文字生成模型，缺權限時可一鍵補授權、無需登出。",
+          "ja": "Queues は配信の一時停止／再開、メッセージの消去、保持期間と遅延の調整に対応。Hyperdrive はクエリキャッシュとオリジンDB接続を編集可能。Durable Objects はオブジェクトインスタンスを閲覧可能。Workers AI はテキスト生成モデルをアプリ内で試せます（権限はワンタップで追加、サインアウト不要）。",
+          "es-MX": "Queues ahora puede pausar/reanudar la entrega, vaciar mensajes y ajustar la retención y el retraso; Hyperdrive permite editar el caché de consultas y la conexión a la base de datos de origen; Durable Objects puede explorar instancias de objetos; y Workers AI ejecuta modelos de generación de texto dentro de la app, con permisos añadidos en un toque y sin cerrar sesión.",
+          "ko": "이제 Queues에서 전송 일시중지/재개, 메시지 비우기, 보존 기간 및 지연 조정이 가능합니다. Hyperdrive에서는 쿼리 캐시와 원본 데이터베이스 연결을 편집할 수 있고, Durable Objects에서는 객체 인스턴스를 둘러볼 수 있으며, Workers AI에서는 앱 안에서 바로 텍스트 생성 모델을 실행할 수 있습니다(권한은 한 번의 탭으로 추가, 로그아웃 불필요).",
+          "pt-BR": "O Queues agora pode pausar/retomar a entrega, limpar mensagens e ajustar retenção e atraso; o Hyperdrive permite editar o cache de consultas e a conexão com o banco de dados de origem; o Durable Objects pode navegar pelas instâncias de objeto; e o Workers AI executa modelos de geração de texto dentro do app, com permissão concedida em um toque e sem sair da conta.",
+          "pt-PT": "O Queues passa a poder pausar/retomar a entrega, limpar mensagens e ajustar retenção e atraso; o Hyperdrive permite editar a cache de consultas e a ligação à base de dados de origem; o Durable Objects pode navegar pelas instâncias de objeto; e o Workers AI executa modelos de geração de texto dentro da app, com permissão concedida num toque e sem terminar sessão.",
+          "de": "Queues kann jetzt die Zustellung pausieren/fortsetzen, Nachrichten leeren sowie Aufbewahrung und Verzögerung anpassen; bei Hyperdrive lassen sich Query-Caching und die Verbindung zur Ursprungsdatenbank bearbeiten; Durable Objects kann Objektinstanzen durchsuchen; und Workers AI führt Textgenerierungsmodelle direkt in der App aus – Berechtigung per Tipp ergänzt, ohne Abmelden.",
+          "fr": "Queues peut désormais suspendre/reprendre la distribution, purger les messages et ajuster la rétention et le délai ; Hyperdrive permet de modifier le cache de requêtes et la connexion à la base de données d'origine ; Durable Objects permet de parcourir les instances d'objet ; et Workers AI exécute des modèles de génération de texte directement dans l'app — autorisation ajoutée en un geste, sans déconnexion.",
+          "ar": "يمكن الآن في Queues إيقاف/استئناف التسليم مؤقتًا، ومسح الرسائل، وضبط مدة الاحتفاظ والتأخير؛ ويتيح Hyperdrive تعديل التخزين المؤقت للاستعلامات والاتصال بقاعدة البيانات المصدر؛ ويمكن في Durable Objects تصفّح مثيلات الكائنات؛ ويشغّل Workers AI نماذج توليد النص داخل التطبيق مباشرةً — مع إضافة الإذن بنقرة واحدة دون تسجيل الخروج.",
+          "tr": "Queues artık teslimatı duraklatıp/sürdürebilir, mesajları temizleyebilir, saklama ve gecikmeyi ayarlayabilir; Hyperdrive sorgu önbelleğini ve kaynak veritabanı bağlantısını düzenlemenize olanak tanır; Durable Objects nesne örneklerine göz atabilir; ve Workers AI metin üretme modellerini doğrudan uygulamada çalıştırır — izin tek dokunuşla eklenir, oturum kapatmak gerekmez."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.7.1",
+    "date": "2026.06.28",
+    "channel": "App Store",
+    "inApp": false,
+    "items": [
+      {
+        "icon": "wrench.and.screwdriver.fill",
+        "title": {
+          "zh-Hans": "修复与优化",
+          "en": "Fixes & improvements",
+          "zh-Hant": "修復與優化",
+          "zh-HK": "修復與優化",
+          "ja": "修正と改善",
+          "es-MX": "Correcciones y mejoras",
+          "ko": "버그 수정 및 개선",
+          "pt-BR": "Correções e melhorias",
+          "pt-PT": "Correções e melhorias",
+          "de": "Fehlerbehebungen und Verbesserungen",
+          "fr": "Corrections et améliorations",
+          "ar": "إصلاحات وتحسينات",
+          "tr": "Düzeltmeler ve iyileştirmeler"
+        },
+        "detail": {
+          "zh-Hans": "修复「开发者平台」中 Workers 打开缓慢或无响应、点按后无法进入详情，以及 Pages 项目列表加载报错的问题。",
+          "en": "Fixes issues in the Developer Platform where Workers opened slowly or stopped responding and wouldn't open details when tapped, plus a loading error on the Pages project list.",
+          "zh-Hant": "修復「開發者平台」中 Workers 開啟緩慢或無回應、點按後無法進入詳情，以及 Pages 專案清單載入發生錯誤的問題。",
+          "zh-HK": "修復「開發者平台」中 Workers 開啟緩慢或無回應、點按後無法進入詳情，以及 Pages 專案清單載入發生錯誤的問題。",
+          "ja": "「開発者プラットフォーム」で Workers の表示が遅い・反応しない、タップしても詳細が開かない問題と、Pages プロジェクト一覧の読み込みエラーを修正しました。",
+          "es-MX": "Corrige problemas en la plataforma para desarrolladores donde Workers se abría lento o dejaba de responder y no abría los detalles al tocarlo, además de un error al cargar la lista de proyectos de Pages.",
+          "ko": "개발자 플랫폼에서 Workers가 느리게 열리거나 응답하지 않고 탭해도 세부 정보가 열리지 않던 문제와 Pages 프로젝트 목록 로딩 오류를 수정했습니다.",
+          "pt-BR": "Corrige problemas na plataforma do desenvolvedor em que o Workers abria devagar ou parava de responder e não abria os detalhes ao tocar, além de um erro ao carregar a lista de projetos do Pages.",
+          "pt-PT": "Corrige problemas na plataforma do programador em que o Workers abria lentamente ou deixava de responder e não abria os detalhes ao tocar, além de um erro ao carregar a lista de projetos do Pages.",
+          "de": "Behebt Probleme in der Entwicklerplattform, bei denen Workers langsam öffnete oder nicht mehr reagierte und beim Tippen keine Details zeigte, sowie einen Ladefehler bei der Pages-Projektliste.",
+          "fr": "Corrige des problèmes de la plateforme développeur où Workers s'ouvrait lentement ou ne répondait plus et n'ouvrait pas le détail au toucher, ainsi qu'une erreur de chargement de la liste des projets Pages.",
+          "ar": "يعالج مشكلات في منصة المطوّرين كان فيها Workers يفتح ببطء أو يتوقف عن الاستجابة ولا يفتح التفاصيل عند النقر، إضافةً إلى خطأ في تحميل قائمة مشاريع Pages.",
+          "tr": "Geliştirici platformunda Workers'ın yavaş açılması veya yanıt vermeyi bırakması ve dokununca ayrıntıların açılmaması ile Pages proje listesinde oluşan yükleme hatasını giderir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.7.0",
+    "date": "2026.06.28",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "rectangle.3.group.fill",
+        "title": {
+          "zh-Hans": "全新「开发者平台」",
+          "en": "A new Developer Platform",
+          "zh-Hant": "全新「開發者平台」",
+          "zh-HK": "全新「開發者平台」",
+          "ja": "新しい「開発者プラットフォーム」",
+          "es-MX": "Nueva plataforma para desarrolladores",
+          "ko": "새로운 개발자 플랫폼",
+          "pt-BR": "Nova plataforma do desenvolvedor",
+          "pt-PT": "Nova plataforma do programador",
+          "de": "Neue Entwicklerplattform",
+          "fr": "Nouvelle plateforme développeur",
+          "ar": "منصة مطوّرين جديدة",
+          "tr": "Yeni Geliştirici Platformu"
+        },
+        "detail": {
+          "zh-Hans": "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收进一个按「计算 / 数据与消息 / AI」分组的 Tab，对齐 Cloudflare 的产品布局。",
+          "en": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI and AI Gateway now share one tab, grouped into Compute / Data & Messaging / AI to mirror Cloudflare's own layout.",
+          "zh-Hant": "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收進一個依「運算 / 資料與訊息 / AI」分組的分頁，對齊 Cloudflare 的產品配置。",
+          "zh-HK": "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收進一個依「運算 / 資料與訊息 / AI」分組的分頁，對齊 Cloudflare 的產品配置。",
+          "ja": "Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway を、Cloudflare の構成に合わせて「コンピュート / データとメッセージング / AI」に分類した 1 つのタブにまとめました。",
+          "es-MX": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI y AI Gateway ahora comparten una sola pestaña, agrupados en Cómputo / Datos y mensajería / IA, igual que en Cloudflare.",
+          "ko": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI, AI Gateway를 컴퓨팅 / 데이터·메시징 / AI로 묶어 하나의 탭에 모았습니다. Cloudflare 구성과 동일합니다.",
+          "pt-BR": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI e AI Gateway agora ficam em uma única aba, agrupados em Computação / Dados e mensageria / IA, como na Cloudflare.",
+          "pt-PT": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI e AI Gateway passam a partilhar um único separador, agrupados em Computação / Dados e mensagens / IA, tal como na Cloudflare.",
+          "de": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI und AI Gateway teilen sich jetzt einen Tab – gruppiert nach Compute / Daten & Messaging / KI, passend zu Cloudflares eigener Struktur.",
+          "fr": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI et AI Gateway partagent désormais un seul onglet, regroupés en Calcul / Données et messagerie / IA, comme chez Cloudflare.",
+          "ar": "تجتمع الآن Workers وPages وQueues وDurable Objects وHyperdrive وWorkers AI وAI Gateway في علامة تبويب واحدة، مُجمَّعة ضمن الحوسبة / البيانات والمراسلة / الذكاء الاصطناعي، على غرار تنظيم Cloudflare.",
+          "tr": "Workers, Pages, Queues, Durable Objects, Hyperdrive, Workers AI ve AI Gateway artık tek bir sekmeyi paylaşıyor; Cloudflare'in kendi düzenine uygun olarak İşlem / Veri ve Mesajlaşma / Yapay Zekâ olarak gruplandı."
+        }
+      },
+      {
+        "icon": "plus.circle.fill",
+        "title": {
+          "zh-Hans": "创建资源，不止于查看",
+          "en": "Create resources, not just view them",
+          "zh-Hant": "建立資源，不只是檢視",
+          "zh-HK": "建立資源，不只是檢視",
+          "ja": "見るだけでなく、作成も",
+          "es-MX": "Crea recursos, no solo los veas",
+          "ko": "보기만 하지 않고 직접 생성까지",
+          "pt-BR": "Crie recursos, não só visualize",
+          "pt-PT": "Crie recursos, não apenas os veja",
+          "de": "Ressourcen erstellen, nicht nur ansehen",
+          "fr": "Créez des ressources, pas seulement les consulter",
+          "ar": "أنشئ الموارد، لا تكتفِ بعرضها",
+          "tr": "Yalnızca görüntüleme değil, oluşturma"
+        },
+        "detail": {
+          "zh-Hans": "直接新建 R2 存储桶、KV 命名空间、Pages 项目、Queues、Hyperdrive 与 AI Gateway，并可删除。",
+          "en": "Spin up R2 buckets, KV namespaces, Pages projects, Queues, Hyperdrive and AI Gateway right in the app — and delete them too.",
+          "zh-Hant": "直接建立 R2 儲存桶、KV 命名空間、Pages 專案、Queues、Hyperdrive 與 AI Gateway，也能刪除。",
+          "zh-HK": "直接建立 R2 儲存桶、KV 命名空間、Pages 專案、Queues、Hyperdrive 與 AI Gateway，亦可刪除。",
+          "ja": "R2 バケット、KV 名前空間、Pages プロジェクト、Queues、Hyperdrive、AI Gateway をアプリから直接作成・削除できます。",
+          "es-MX": "Crea buckets R2, espacios de nombres KV, proyectos de Pages, Queues, Hyperdrive y AI Gateway desde la app, y elimínalos cuando quieras.",
+          "ko": "R2 버킷, KV 네임스페이스, Pages 프로젝트, Queues, Hyperdrive, AI Gateway를 앱에서 바로 만들고 삭제할 수 있습니다.",
+          "pt-BR": "Crie buckets R2, namespaces KV, projetos do Pages, Queues, Hyperdrive e AI Gateway direto no app — e exclua quando quiser.",
+          "pt-PT": "Crie buckets R2, espaços de nomes KV, projetos do Pages, Queues, Hyperdrive e AI Gateway diretamente na app — e elimine quando quiser.",
+          "de": "Lege R2-Buckets, KV-Namespaces, Pages-Projekte, Queues, Hyperdrive und AI Gateway direkt in der App an – und lösche sie wieder.",
+          "fr": "Créez des buckets R2, des espaces de noms KV, des projets Pages, des Queues, Hyperdrive et AI Gateway directement dans l'app, et supprimez-les à volonté.",
+          "ar": "أنشئ حاويات R2 ومساحات أسماء KV ومشاريع Pages وQueues وHyperdrive وAI Gateway مباشرةً من التطبيق، واحذفها متى شئت.",
+          "tr": "R2 paketlerini, KV ad alanlarını, Pages projelerini, Queues, Hyperdrive ve AI Gateway'i doğrudan uygulamada oluşturun ve silin."
+        }
+      },
+      {
+        "icon": "square.and.arrow.up.fill",
+        "title": {
+          "zh-Hans": "部署 Pages 与 Workers",
+          "en": "Deploy Pages and Workers",
+          "zh-Hant": "部署 Pages 與 Workers",
+          "zh-HK": "部署 Pages 與 Workers",
+          "ja": "Pages と Workers をデプロイ",
+          "es-MX": "Implementa Pages y Workers",
+          "ko": "Pages와 Workers 배포",
+          "pt-BR": "Implante Pages e Workers",
+          "pt-PT": "Implemente Pages e Workers",
+          "de": "Pages und Workers bereitstellen",
+          "fr": "Déployez Pages et Workers",
+          "ar": "انشر Pages وWorkers",
+          "tr": "Pages ve Workers dağıtın"
+        },
+        "detail": {
+          "zh-Hans": "Pages 支持「直接上传」部署（粘贴代码或选取文件 / ZIP）；Workers 可新建并整体更新代码，变量与密钥支持 JSON 批量导入。受 OAuth 限制无法读取源码，更新为整体替换。",
+          "en": "Pages supports Direct Upload deploys (paste code or pick files/ZIP); Workers can be created and updated whole-script, with bulk JSON import for vars and secrets. OAuth can't read source, so an update replaces the whole script.",
+          "zh-Hant": "Pages 支援「直接上傳」部署（貼上程式碼或選取檔案 / ZIP）；Workers 可建立並整體更新程式碼，變數與密鑰支援 JSON 批次匯入。受 OAuth 限制無法讀取原始碼，更新為整體取代。",
+          "zh-HK": "Pages 支援「直接上傳」部署（貼上程式碼或選取檔案 / ZIP）；Workers 可建立並整體更新程式碼，變數與密鑰支援 JSON 批次匯入。受 OAuth 限制無法讀取原始碼，更新為整體取代。",
+          "ja": "Pages は「直接アップロード」デプロイ（コードを貼り付け、またはファイル/ZIP を選択）に対応。Workers は新規作成とスクリプト全体の更新ができ、変数とシークレットは JSON で一括インポートできます。OAuth ではソースを読めないため、更新は全体置換になります。",
+          "es-MX": "Pages admite despliegues con Carga directa (pega código o elige archivos/ZIP); los Workers se pueden crear y actualizar por completo, con importación masiva de variables y secretos por JSON. OAuth no puede leer el código, así que la actualización reemplaza todo el script.",
+          "ko": "Pages는 직접 업로드 배포(코드 붙여넣기 또는 파일/ZIP 선택)를 지원하고, Workers는 새로 만들거나 스크립트 전체를 업데이트할 수 있으며 변수와 시크릿을 JSON으로 일괄 가져올 수 있습니다. OAuth로는 소스를 읽을 수 없어 업데이트는 전체 교체 방식입니다.",
+          "pt-BR": "O Pages aceita deploys por Upload direto (cole o código ou escolha arquivos/ZIP); os Workers podem ser criados e atualizados por completo, com importação em massa de variáveis e segredos via JSON. O OAuth não lê o código-fonte, então a atualização substitui o script inteiro.",
+          "pt-PT": "O Pages aceita implementações por Carregamento direto (cole o código ou escolha ficheiros/ZIP); os Workers podem ser criados e atualizados na íntegra, com importação em massa de variáveis e segredos via JSON. O OAuth não lê o código-fonte, por isso a atualização substitui todo o script.",
+          "de": "Pages unterstützt Direct-Upload-Deploys (Code einfügen oder Dateien/ZIP wählen); Workers lassen sich anlegen und als ganzes Skript aktualisieren, Variablen und Secrets per JSON im Stapel importieren. OAuth kann den Quellcode nicht lesen, daher ersetzt ein Update das gesamte Skript.",
+          "fr": "Pages prend en charge le déploiement par Téléversement direct (collez le code ou choisissez des fichiers/ZIP) ; les Workers peuvent être créés et mis à jour intégralement, avec import JSON en masse des variables et secrets. OAuth ne peut pas lire le code source, la mise à jour remplace donc tout le script.",
+          "ar": "يدعم Pages النشر عبر الرفع المباشر (ألصق الشيفرة أو اختر ملفات/ZIP)؛ ويمكن إنشاء Workers وتحديث النص البرمجي بالكامل، مع استيراد المتغيّرات والأسرار دفعةً واحدة عبر JSON. لا يستطيع OAuth قراءة الشيفرة المصدرية، لذا يستبدل التحديثُ النصَّ بأكمله.",
+          "tr": "Pages, Doğrudan Yükleme dağıtımlarını destekler (kodu yapıştırın ya da dosya/ZIP seçin); Workers oluşturulabilir ve betiğin tamamı güncellenebilir, değişkenler ile gizli anahtarlar JSON ile toplu içe aktarılabilir. OAuth kaynağı okuyamadığından güncelleme tüm betiği değiştirir."
+        }
+      },
+      {
+        "icon": "lock.shield.fill",
+        "title": {
+          "zh-Hans": "Zero Trust 编辑器",
+          "en": "Zero Trust editing",
+          "zh-Hant": "Zero Trust 編輯器",
+          "zh-HK": "Zero Trust 編輯器",
+          "ja": "Zero Trust エディタ",
+          "es-MX": "Edición de Zero Trust",
+          "ko": "Zero Trust 편집기",
+          "pt-BR": "Edição de Zero Trust",
+          "pt-PT": "Edição de Zero Trust",
+          "de": "Zero-Trust-Editor",
+          "fr": "Édition Zero Trust",
+          "ar": "محرّر Zero Trust",
+          "tr": "Zero Trust düzenleme"
+        },
+        "detail": {
+          "zh-Hans": "可视化增删改 Access 自托管应用与策略，以及 Gateway 的 DNS / HTTP / 网络策略，内置带选择器调色板的表达式编辑器。",
+          "en": "Create, edit and remove Access self-hosted apps and policies, plus Gateway DNS / HTTP / network policies — with an expression editor and a per-type selector palette.",
+          "zh-Hant": "可視化新增、編輯、刪除 Access 自託管應用與政策，以及 Gateway 的 DNS / HTTP / 網路政策，內建附選擇器調色盤的運算式編輯器。",
+          "zh-HK": "可視化新增、編輯、刪除 Access 自託管應用與政策，以及 Gateway 的 DNS / HTTP / 網路政策，內建附選擇器調色盤的運算式編輯器。",
+          "ja": "Access のセルフホスト型アプリとポリシー、Gateway の DNS / HTTP / ネットワークポリシーを視覚的に作成・編集・削除。種類別のセレクタパレットを備えた式エディタ付きです。",
+          "es-MX": "Crea, edita y elimina apps autoalojadas y políticas de Access, además de las políticas DNS / HTTP / de red de Gateway, con un editor de expresiones y una paleta de selectores por tipo.",
+          "ko": "Access 자체 호스팅 앱과 정책, Gateway의 DNS / HTTP / 네트워크 정책을 시각적으로 만들고 편집·삭제할 수 있습니다. 유형별 선택기 팔레트가 있는 표현식 편집기를 갖췄습니다.",
+          "pt-BR": "Crie, edite e remova apps auto-hospedados e políticas do Access, além das políticas de DNS / HTTP / rede do Gateway, com um editor de expressões e uma paleta de seletores por tipo.",
+          "pt-PT": "Crie, edite e remova apps auto-alojadas e políticas do Access, além das políticas de DNS / HTTP / rede do Gateway, com um editor de expressões e uma paleta de seletores por tipo.",
+          "de": "Erstelle, bearbeite und lösche selbstgehostete Access-Apps und -Richtlinien sowie Gateway-Richtlinien für DNS / HTTP / Netzwerk – mit Ausdruckseditor und typabhängiger Selektor-Palette.",
+          "fr": "Créez, modifiez et supprimez les applications auto-hébergées et les politiques Access, ainsi que les politiques DNS / HTTP / réseau de Gateway, avec un éditeur d'expressions et une palette de sélecteurs par type.",
+          "ar": "أنشئ وعدّل واحذف تطبيقات Access ذاتية الاستضافة وسياساتها، إضافةً إلى سياسات DNS / HTTP / الشبكة في Gateway، مع محرّر تعبيرات ولوحة محدِّدات حسب النوع.",
+          "tr": "Access'in kendi barındırılan uygulamalarını ve ilkelerini, ayrıca Gateway'in DNS / HTTP / ağ ilkelerini görsel olarak oluşturun, düzenleyin ve silin; türüne göre seçici paleti olan bir ifade düzenleyici içerir."
+        }
+      },
+      {
+        "icon": "shield.lefthalf.filled",
+        "title": {
+          "zh-Hans": "WAF 可视化规则构建器",
+          "en": "Visual WAF rule builder",
+          "zh-Hant": "WAF 視覺化規則建構器",
+          "zh-HK": "WAF 視覺化規則建構器",
+          "ja": "WAF のビジュアルルールビルダー",
+          "es-MX": "Constructor visual de reglas WAF",
+          "ko": "WAF 시각적 규칙 빌더",
+          "pt-BR": "Construtor visual de regras WAF",
+          "pt-PT": "Construtor visual de regras WAF",
+          "de": "Visueller WAF-Regelbaukasten",
+          "fr": "Générateur visuel de règles WAF",
+          "ar": "أداة بناء قواعد WAF المرئية",
+          "tr": "Görsel WAF kural oluşturucu"
+        },
+        "detail": {
+          "zh-Hans": "新建自定义防护规则时，可在「书写规则」与「表达式编辑器」之间随时切换，更快写出想要的条件。",
+          "en": "When writing a custom rule, switch any time between a guided rule builder and the raw expression editor to craft conditions faster.",
+          "zh-Hant": "新增自訂防護規則時，可隨時在「書寫規則」與「運算式編輯器」之間切換，更快寫出想要的條件。",
+          "zh-HK": "新增自訂防護規則時，可隨時在「書寫規則」與「運算式編輯器」之間切換，更快寫出想要的條件。",
+          "ja": "カスタムルールの作成時に、ガイド付きのルールビルダーと式エディタをいつでも切り替えて、条件をすばやく組み立てられます。",
+          "es-MX": "Al crear una regla personalizada, alterna en cualquier momento entre el generador guiado y el editor de expresiones para definir condiciones más rápido.",
+          "ko": "사용자 지정 규칙을 만들 때 가이드형 규칙 빌더와 표현식 편집기를 언제든 전환하며 조건을 더 빠르게 작성할 수 있습니다.",
+          "pt-BR": "Ao criar uma regra personalizada, alterne quando quiser entre o construtor guiado e o editor de expressões para definir condições mais rápido.",
+          "pt-PT": "Ao criar uma regra personalizada, alterne quando quiser entre o construtor guiado e o editor de expressões para definir condições mais depressa.",
+          "de": "Wechsle beim Erstellen einer eigenen Regel jederzeit zwischen geführtem Regelbaukasten und Ausdruckseditor, um Bedingungen schneller zu formulieren.",
+          "fr": "Lors de la création d'une règle personnalisée, basculez à tout moment entre le générateur guidé et l'éditeur d'expressions pour définir vos conditions plus vite.",
+          "ar": "عند إنشاء قاعدة مخصّصة، بدّل في أي وقت بين أداة البناء الموجَّهة ومحرّر التعبيرات لصياغة الشروط بسرعة أكبر.",
+          "tr": "Özel bir kural yazarken, koşulları daha hızlı oluşturmak için rehberli kural oluşturucu ile ifade düzenleyici arasında istediğiniz zaman geçiş yapın."
+        }
+      },
+      {
+        "icon": "checklist",
+        "title": {
+          "zh-Hans": "授权更省心",
+          "en": "Easier authorization",
+          "zh-Hant": "授權更省心",
+          "zh-HK": "授權更省心",
+          "ja": "認可がもっと簡単に",
+          "es-MX": "Autorización más simple",
+          "ko": "더 간편한 권한 부여",
+          "pt-BR": "Autorização mais simples",
+          "pt-PT": "Autorização mais simples",
+          "de": "Einfachere Autorisierung",
+          "fr": "Autorisation simplifiée",
+          "ar": "تفويض أسهل",
+          "tr": "Daha kolay yetkilendirme"
+        },
+        "detail": {
+          "zh-Hans": "授权页新增「全部只读 / 全部读写 / 仅必选」快捷预设。本版新增 Queues、AI Gateway、Workers AI 等模块，需重新授权才会点亮对应入口。",
+          "en": "The authorization screen adds quick presets — all read-only, all read-write, or required-only. New modules like Queues, AI Gateway and Workers AI need a fresh authorization to light up.",
+          "zh-Hant": "授權頁新增「全部唯讀 / 全部讀寫 / 僅必選」快捷預設。本版新增 Queues、AI Gateway、Workers AI 等模組，需重新授權才會點亮對應入口。",
+          "zh-HK": "授權頁新增「全部唯讀 / 全部讀寫 / 僅必選」快捷預設。本版新增 Queues、AI Gateway、Workers AI 等模組，需重新授權才會點亮對應入口。",
+          "ja": "認可画面に「すべて読み取り専用 / すべて読み書き / 必須のみ」のクイックプリセットを追加。今回追加の Queues、AI Gateway、Workers AI などの新モジュールは、再認可すると表示されます。",
+          "es-MX": "La pantalla de autorización añade ajustes rápidos: todo de solo lectura, todo de lectura y escritura, o solo lo necesario. Los nuevos módulos como Queues, AI Gateway y Workers AI requieren autorizar de nuevo para activarse.",
+          "ko": "권한 부여 화면에 빠른 프리셋(모두 읽기 전용 / 모두 읽기·쓰기 / 필수만)이 추가됐습니다. Queues, AI Gateway, Workers AI 같은 새 모듈은 다시 권한을 부여해야 표시됩니다.",
+          "pt-BR": "A tela de autorização ganha predefinições rápidas: tudo somente leitura, tudo leitura e escrita ou apenas o necessário. Os novos módulos, como Queues, AI Gateway e Workers AI, precisam de nova autorização para aparecer.",
+          "pt-PT": "O ecrã de autorização ganha predefinições rápidas: tudo só de leitura, tudo de leitura e escrita ou apenas o necessário. Os novos módulos, como Queues, AI Gateway e Workers AI, precisam de nova autorização para aparecer.",
+          "de": "Der Autorisierungs-Bildschirm bekommt Schnellvorlagen – alles nur lesen, alles lesen und schreiben oder nur das Nötigste. Neue Module wie Queues, AI Gateway und Workers AI erscheinen erst nach erneuter Autorisierung.",
+          "fr": "L'écran d'autorisation ajoute des préréglages rapides : tout en lecture seule, tout en lecture-écriture ou strictement nécessaire. Les nouveaux modules comme Queues, AI Gateway et Workers AI nécessitent une nouvelle autorisation pour apparaître.",
+          "ar": "تضيف شاشة التفويض إعداداتٍ سريعة: الكل للقراءة فقط، أو الكل للقراءة والكتابة، أو الضروري فقط. وتحتاج الوحدات الجديدة مثل Queues وAI Gateway وWorkers AI إلى تفويض جديد لتظهر.",
+          "tr": "Yetkilendirme ekranına hızlı ön ayarlar eklendi: tümü salt okunur, tümü okuma-yazma veya yalnızca gerekli. Queues, AI Gateway ve Workers AI gibi yeni modüllerin görünmesi için yeniden yetkilendirme gerekir."
+        }
+      }
+    ]
+  },
+  {
+    "version": "1.6.0",
+    "date": "2026.06.28",
+    "channel": "App Store",
+    "inApp": true,
+    "items": [
+      {
+        "icon": "folder.badge.gearshape",
+        "title": {
+          "zh-Hans": "在「文件」App 中打开 R2",
+          "en": "Open R2 in the Files app",
+          "zh-Hant": "在「檔案」App 中開啟 R2",
+          "zh-HK": "在「檔案」App 中開啟 R2",
+          "ja": "「ファイル」App で R2 を開く",
+          "es-MX": "Abre R2 en la app Archivos",
+          "ko": "파일 앱에서 R2 열기",
+          "pt-BR": "Abra o R2 no app Arquivos",
+          "pt-PT": "Abra o R2 na app Ficheiros",
+          "de": "R2 in der Dateien-App öffnen",
+          "fr": "Ouvrir R2 dans l’app Fichiers",
+          "ar": "افتح R2 في تطبيق الملفات",
+          "tr": "R2’yi Dosyalar uygulamasında aç"
+        },
+        "detail": {
+          "zh-Hans": "把 R2 存储桶挂进系统「文件」App，像 iCloud 云盘一样浏览、上传、下载、重命名，并用任意 App 直接打开。Pro 功能。",
+          "en": "Mount an R2 bucket right inside the system Files app — browse, upload, download and rename like iCloud Drive, and open files in any app. A Pro feature.",
+          "zh-Hant": "將 R2 儲存桶掛進系統「檔案」App，像 iCloud 雲端硬碟一樣瀏覽、上傳、下載、重新命名，並用任何 App 直接開啟。Pro 功能。",
+          "zh-HK": "將 R2 儲存桶掛進系統「檔案」App，像 iCloud 雲端硬碟一樣瀏覽、上傳、下載、重新命名，並用任何 App 直接開啟。Pro 功能。",
+          "ja": "R2 バケットをシステムの「ファイル」App に直接マウント。iCloud Drive のように閲覧・アップロード・ダウンロード・名称変更ができ、任意の App で開けます。Pro 機能。",
+          "es-MX": "Monta un bucket R2 directamente en la app Archivos: explora, sube, descarga y renombra como en iCloud Drive, y ábrelo con cualquier app. Función Pro.",
+          "ko": "R2 버킷을 시스템 파일 앱에 바로 마운트하세요. iCloud Drive처럼 탐색·업로드·다운로드·이름 변경이 가능하고 어떤 앱으로든 열 수 있습니다. Pro 기능입니다.",
+          "pt-BR": "Monte um bucket R2 direto no app Arquivos: navegue, envie, baixe e renomeie como no iCloud Drive e abra em qualquer app. Recurso Pro.",
+          "pt-PT": "Monte um bucket R2 diretamente na app Ficheiros: navegue, carregue, descarregue e mude o nome como no iCloud Drive e abra em qualquer app. Funcionalidade Pro.",
+          "de": "Binde einen R2-Bucket direkt in die Dateien-App ein – durchsuchen, hochladen, herunterladen und umbenennen wie in iCloud Drive und in jeder App öffnen. Eine Pro-Funktion.",
+          "fr": "Montez un bucket R2 directement dans l’app Fichiers : parcourez, importez, téléchargez et renommez comme sur iCloud Drive, et ouvrez vos fichiers dans n’importe quelle app. Fonction Pro.",
+          "ar": "ثبّت حاوية R2 مباشرةً داخل تطبيق الملفات — تصفّح وارفع ونزّل وأعد التسمية كما في iCloud Drive، وافتح الملفات بأي تطبيق. ميزة Pro.",
+          "tr": "Bir R2 paketini doğrudan sistemin Dosyalar uygulamasına bağlayın; iCloud Drive gibi gözatın, yükleyin, indirin ve yeniden adlandırın, dosyaları herhangi bir uygulamada açın. Pro özelliği."
+        }
+      },
+      {
+        "icon": "sparkles",
+        "title": {
+          "zh-Hans": "设备端 AI 助手",
+          "en": "On-device AI assistant",
+          "zh-Hant": "裝置端 AI 助手",
+          "zh-HK": "裝置端 AI 助手",
+          "ja": "オンデバイス AI アシスタント",
+          "es-MX": "Asistente de IA en el dispositivo",
+          "ko": "온디바이스 AI 어시스턴트",
+          "pt-BR": "Assistente de IA no dispositivo",
+          "pt-PT": "Assistente de IA no dispositivo",
+          "de": "KI-Assistent auf dem Gerät",
+          "fr": "Assistant IA sur l’appareil",
+          "ar": "مساعد ذكاء اصطناعي على الجهاز",
+          "tr": "Cihaz üzerinde yapay zekâ asistanı"
+        },
+        "detail": {
+          "zh-Hans": "用一句话生成 DNS 记录，或为流量分析生成一句话要点摘要——全部在设备上离线完成，不出设备。需 iOS 26 及支持 Apple 智能的机型，Pro 功能。",
+          "en": "Create a DNS record from a sentence, or get a one-line summary of your traffic analytics — all on-device and offline, nothing leaves your iPhone. Requires iOS 26 and an Apple Intelligence–capable device. A Pro feature.",
+          "zh-Hant": "用一句話生成 DNS 記錄，或為流量分析產生一句話要點摘要——全部在裝置上離線完成，不離開裝置。需 iOS 26 及支援 Apple 智慧的機型，Pro 功能。",
+          "zh-HK": "用一句話生成 DNS 記錄，或為流量分析產生一句話要點摘要——全部在裝置上離線完成，不離開裝置。需 iOS 26 及支援 Apple 智能的機型，Pro 功能。",
+          "ja": "一文から DNS レコードを作成したり、トラフィック分析の要点を一行で要約したり——すべてデバイス上でオフライン処理され、データは外部に出ません。iOS 26 と Apple Intelligence 対応端末が必要です。Pro 機能。",
+          "es-MX": "Crea un registro DNS con una frase u obtén un resumen de una línea de tus analíticas de tráfico, todo en el dispositivo y sin conexión: nada sale de tu iPhone. Requiere iOS 26 y un dispositivo compatible con Apple Intelligence. Función Pro.",
+          "ko": "한 문장으로 DNS 레코드를 만들거나 트래픽 분석을 한 줄로 요약하세요. 모두 기기에서 오프라인으로 처리되어 기기 밖으로 나가지 않습니다. iOS 26과 Apple Intelligence 지원 기기가 필요합니다. Pro 기능입니다.",
+          "pt-BR": "Crie um registro DNS a partir de uma frase ou obtenha um resumo em uma linha das suas análises de tráfego — tudo no dispositivo e off-line, nada sai do seu iPhone. Requer iOS 26 e um dispositivo compatível com Apple Intelligence. Recurso Pro.",
+          "pt-PT": "Crie um registo DNS a partir de uma frase ou obtenha um resumo numa linha das suas análises de tráfego — tudo no dispositivo e offline, nada sai do seu iPhone. Requer iOS 26 e um dispositivo compatível com Apple Intelligence. Funcionalidade Pro.",
+          "de": "Erstelle einen DNS-Eintrag aus einem Satz oder erhalte eine einzeilige Zusammenfassung deiner Traffic-Analyse – alles auf dem Gerät und offline, nichts verlässt dein iPhone. Erfordert iOS 26 und ein Apple-Intelligence-fähiges Gerät. Eine Pro-Funktion.",
+          "fr": "Créez un enregistrement DNS à partir d’une phrase ou obtenez un résumé en une ligne de vos statistiques de trafic — le tout sur l’appareil et hors ligne, rien ne quitte votre iPhone. Nécessite iOS 26 et un appareil compatible Apple Intelligence. Fonction Pro.",
+          "ar": "أنشئ سجل DNS من جملة واحدة، أو احصل على ملخّص من سطر واحد لتحليلات حركة المرور — كل ذلك على الجهاز وبدون اتصال، ولا شيء يغادر هاتفك. يتطلب iOS 26 وجهازًا يدعم Apple Intelligence. ميزة Pro.",
+          "tr": "Tek bir cümleden DNS kaydı oluşturun veya trafik analizinizin tek satırlık özetini alın; hepsi cihazda ve çevrimdışı, hiçbir şey iPhone’unuzdan çıkmaz. iOS 26 ve Apple Intelligence destekli bir cihaz gerektirir. Pro özelliği."
+        }
+      },
+      {
+        "icon": "globe.americas",
+        "title": {
+          "zh-Hans": "全球流量地图",
+          "en": "Global traffic map",
+          "zh-Hant": "全球流量地圖",
+          "zh-HK": "全球流量地圖",
+          "ja": "グローバルトラフィックマップ",
+          "es-MX": "Mapa de tráfico global",
+          "ko": "글로벌 트래픽 지도",
+          "pt-BR": "Mapa de tráfego global",
+          "pt-PT": "Mapa de tráfego global",
+          "de": "Globale Traffic-Karte",
+          "fr": "Carte du trafic mondial",
+          "ar": "خريطة حركة المرور العالمية",
+          "tr": "Küresel trafik haritası"
+        },
+        "detail": {
+          "zh-Hans": "在世界地图上按国家/地区查看请求量与威胁分布，一眼看清流量来自哪里。Pro 功能。",
+          "en": "See where your traffic comes from at a glance — requests and threats plotted by country on a world map. A Pro feature.",
+          "zh-Hant": "在世界地圖上依國家/地區檢視請求量與威脅分佈，一眼看清流量來自哪裡。Pro 功能。",
+          "zh-HK": "在世界地圖上按國家/地區查看請求量與威脅分佈，一眼看清流量來自哪裡。Pro 功能。",
+          "ja": "リクエストと脅威を世界地図上に国・地域別でプロット。トラフィックの発信元がひと目で分かります。Pro 機能。",
+          "es-MX": "Ve de un vistazo de dónde viene tu tráfico: solicitudes y amenazas trazadas por país en un mapa mundial. Función Pro.",
+          "ko": "트래픽이 어디에서 오는지 한눈에 확인하세요. 요청과 위협을 세계 지도에 국가별로 표시합니다. Pro 기능입니다.",
+          "pt-BR": "Veja de onde vem o seu tráfego num relance: solicitações e ameaças mapeadas por país em um mapa-múndi. Recurso Pro.",
+          "pt-PT": "Veja de onde vem o seu tráfego num ápice: pedidos e ameaças mapeados por país num mapa-múndi. Funcionalidade Pro.",
+          "de": "Sieh auf einen Blick, woher dein Traffic kommt – Anfragen und Bedrohungen nach Land auf einer Weltkarte. Eine Pro-Funktion.",
+          "fr": "Voyez d’où vient votre trafic en un coup d’œil : requêtes et menaces représentées par pays sur une carte du monde. Fonction Pro.",
+          "ar": "اعرف مصدر حركة المرور لديك بلمحة — الطلبات والتهديدات موزّعة حسب الدولة على خريطة العالم. ميزة Pro.",
+          "tr": "Trafiğinizin nereden geldiğini bir bakışta görün; istekler ve tehditler dünya haritasında ülkelere göre işaretlenir. Pro özelliği."
+        }
+      },
+      {
+        "icon": "wrench.and.screwdriver",
+        "title": {
+          "zh-Hans": "体验与稳定性改进",
+          "en": "Experience & stability improvements",
+          "zh-Hant": "體驗與穩定性改進",
+          "zh-HK": "體驗與穩定性改進",
+          "ja": "体験と安定性の改善",
+          "es-MX": "Mejoras de experiencia y estabilidad",
+          "ko": "사용 경험 및 안정성 개선",
+          "pt-BR": "Melhorias de experiência e estabilidade",
+          "pt-PT": "Melhorias de experiência e estabilidade",
+          "de": "Verbesserungen bei Erlebnis und Stabilität",
+          "fr": "Améliorations de l’expérience et de la stabilité",
+          "ar": "تحسينات في التجربة والاستقرار",
+          "tr": "Deneyim ve kararlılık iyileştirmeleri"
+        },
+        "detail": {
+          "zh-Hans": "新增「减少动画」开关让界面更跟手，优化多账号切换的稳定性，并在后台预热数据，切回前台更快看到最新内容。",
+          "en": "A new “Reduce Animations” toggle makes the interface feel snappier, multi-account switching is more reliable, and data is pre-warmed in the background so you see the latest content faster when you return.",
+          "zh-Hant": "新增「減少動畫」開關讓介面更跟手，優化多帳戶切換的穩定性，並在背景預先載入資料，切回前景更快看到最新內容。",
+          "zh-HK": "新增「減少動畫」開關讓介面更跟手，優化多帳戶切換的穩定性，並在背景預先載入資料，切回前景更快看到最新內容。",
+          "ja": "新しい「アニメーションを減らす」スイッチで操作がより軽快に。複数アカウントの切り替えも安定し、バックグラウンドでデータを事前読み込みするため、戻ったときに最新の内容をすばやく表示します。",
+          "es-MX": "Un nuevo interruptor «Reducir animaciones» hace la interfaz más ágil, el cambio entre varias cuentas es más estable y los datos se precargan en segundo plano para que veas el contenido más reciente más rápido al volver.",
+          "ko": "새로운 ‘애니메이션 줄이기’ 스위치로 화면이 더 빠릿해지고, 여러 계정 전환이 더 안정적이며, 백그라운드에서 데이터를 미리 불러와 돌아왔을 때 최신 내용을 더 빨리 볼 수 있습니다.",
+          "pt-BR": "Um novo botão “Reduzir animações” deixa a interface mais ágil, a troca entre várias contas ficou mais estável e os dados são pré-carregados em segundo plano para você ver o conteúdo mais recente mais rápido ao voltar.",
+          "pt-PT": "Um novo botão “Reduzir animações” torna a interface mais ágil, a mudança entre várias contas ficou mais estável e os dados são pré-carregados em segundo plano para ver o conteúdo mais recente mais depressa ao regressar.",
+          "de": "Ein neuer Schalter „Animationen reduzieren“ lässt die Oberfläche flüssiger wirken, der Wechsel zwischen mehreren Konten ist zuverlässiger, und Daten werden im Hintergrund vorgeladen, damit du nach der Rückkehr schneller die neuesten Inhalte siehst.",
+          "fr": "Un nouveau réglage « Réduire les animations » rend l’interface plus réactive, le passage d’un compte à l’autre est plus fiable, et les données sont préchargées en arrière-plan pour afficher le contenu le plus récent plus vite à votre retour.",
+          "ar": "مفتاح جديد «تقليل الحركات» يجعل الواجهة أكثر سلاسة، والتبديل بين الحسابات المتعددة أصبح أكثر ثباتًا، ويتم تحميل البيانات مسبقًا في الخلفية لتشاهد أحدث المحتوى بسرعة عند عودتك.",
+          "tr": "Yeni “Animasyonları Azalt” anahtarı arayüzü daha akıcı yapar, çoklu hesap geçişi daha kararlı hale gelir ve veriler arka planda önceden yüklenir; böylece geri döndüğünüzde en güncel içeriği daha hızlı görürsünüz."
+        }
+      }
+    ]
+  },
+  {
     "version": "1.5.1",
     "date": "2026.06.26",
     "channel": "App Store",

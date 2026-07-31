@@ -85,31 +85,34 @@ class AuthRepository @Inject constructor(
     /**
      * 构造授权 URL（PKCE + state）。
      *
-     * freshLogin（添加 / 切换账号）时，把授权 URL 包进 Cloudflare 网页登出端点
-     * `dash.cloudflare.com/logout?to=<authorize>`：先清掉浏览器里上一个账号的 dash 会话 Cookie，
-     * 再续跳授权页 → 无会话 → 落到登录表单，可输入不同账号。
-     * （Custom Tab 与浏览器共享 Cookie，`prompt=login` 被 Cloudflare 忽略、Chrome 不给第三方应用开无痕标签，
-     * 故唯一可靠途径是走 Cloudflare 自家的 logout 清会话。）
+     * freshLogin（添加账号）不再包 `dash.cloudflare.com/logout?to=<authorize>` 登出跳板——
+     * 那会把用户系统浏览器里的 Cloudflare 登录态一并登出。现在 freshLogin 由调用方改走
+     * 无痕 WebView（[jiamin.chen.orangecloud.core.util.WebAuthActivity]，进出清 Cookie），
+     * 授权 URL 本身两种场景一致。（`prompt=login` 被 Cloudflare 忽略、Chrome 不给第三方
+     * 开无痕标签，实测均无效，勿走回头路。）
      */
-    suspend fun buildAuthorizationUri(scopeString: String, freshLogin: Boolean): Uri {
+    suspend fun buildAuthorizationUri(scopeString: String): Uri {
         val verifier = PkceHelper.generateCodeVerifier()
         val challenge = PkceHelper.generateCodeChallenge(verifier)
         val state = UUID.randomUUID().toString()
         savePending(Pending(verifier, state))
 
-        val authorize = Uri.parse(OAuthConfig.AUTHORIZATION_URL).buildUpon()
+        // CF dash OAuth（Hydra 系）只在请求 offline_access 时才签发 refresh token；
+        // 2026-06-29 client 轮换后不带它的登录拿不到 refresh token，access token 到期后
+        // refreshAccessToken 走 removeSession → 用户被「自动退出账号」（issue #44 楼层反馈）。
+        // 与 iOS 1.8.2(26) 同修：在唯一咽喉点统一追加，勿在 UI 层散落。
+        val scopeWithOffline =
+            if (scopeString.split(" ").contains("offline_access")) scopeString
+            else "$scopeString offline_access"
+
+        return Uri.parse(OAuthConfig.AUTHORIZATION_URL).buildUpon()
             .appendQueryParameter("response_type", "code")
             .appendQueryParameter("client_id", OAuthConfig.clientId)
             .appendQueryParameter("redirect_uri", OAuthConfig.REDIRECT_URI)
-            .appendQueryParameter("scope", scopeString)
+            .appendQueryParameter("scope", scopeWithOffline)
             .appendQueryParameter("state", state)
             .appendQueryParameter("code_challenge", challenge)
             .appendQueryParameter("code_challenge_method", "S256")
-            .build()
-        if (!freshLogin) return authorize
-
-        return Uri.parse(OAuthConfig.LOGOUT_URL).buildUpon()
-            .appendQueryParameter("to", authorize.toString())
             .build()
     }
 

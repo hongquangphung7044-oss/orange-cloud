@@ -15,9 +15,11 @@ import ActivityKit
 struct Orange_CloudApp: App {
 
     @State private var authManager: AuthManager
+    @UIApplicationDelegateAdaptor(PushAppDelegate.self) private var pushDelegate
     @Environment(\.scenePhase) private var scenePhase
 
     @AppStorage(AppAppearance.storageKey) private var appearanceRaw = AppAppearance.system.rawValue
+    @AppStorage(AppMotion.storageKey) private var reduceAnimations = false
 
     let sharedModelContainer = CacheContainer.shared
 
@@ -25,17 +27,30 @@ struct Orange_CloudApp: App {
         // 最先安装崩溃捕获，让启动期任意一步崩溃都能被记录、随下次反馈带出。
         CrashReporter.install()
         CrashReporter.recordBreadcrumb("AppStart begin")
+        // BGTask 处理器必须在 didFinishLaunching 返回前登记，且不依赖任何业务对象——
+        // 越早越好，AuthManager 稍后用 setAuthManager 回填。
+        BackgroundRefresh.register()
+        #if DEBUG
+        MockCloudflare.activateIfRequested()   // 诊断 mock：仅 ORANGE_MOCK=1 时生效
+        #endif
         let manager = AuthManager()
         _authManager = State(initialValue: manager)
         CrashReporter.recordBreadcrumb("AppStart auth manager created")
+        // 串行预热缓存库实体解析（iOS 17.x 冷启动首次并发 fetch 竞态，Sentry APPLE-IOS-Y）
+        CacheContainer.warmUp()
         WhatsNewGate.wasLoggedInAtLaunch = manager.isLoggedIn
-        BackgroundRefresh.register(authManager: manager)
+        // 参与度信号：只把「已登录启动」计入，用于稍后主动邀请评分（每版本至多一次）
+        if manager.isLoggedIn { RatingPrompt.registerEngagedLaunch() }
+        BackgroundRefresh.setAuthManager(manager)
         // iOS 26 连续后台任务（R2 大对象 copy/move 续传），须在启动时注册处理器
         if #available(iOS 26.0, *) {
             ContinuedTaskRunner.register()
         }
         WatchSessionManager.shared.start(authManager: manager)
         EntitlementStore.shared.start()
+        // 体验者计划：仅当用户此前已同意才会真正拉起 Sentry（默认不初始化）。
+        // 须在 CrashReporter.install() 之后，让 Sentry 链式保留我们的崩溃 handler。
+        _ = TelemetryStore.shared
         Self.reapOrphanTailActivities()
         try? Tips.configure()
         AppLog.logLaunch(
@@ -52,6 +67,13 @@ struct Orange_CloudApp: App {
                 .environment(EntitlementStore.shared)
                 .tint(.ocOrange)   // 全局品牌橙（Cloudflare #F48120）
                 .preferredColorScheme(AppAppearance(rawValue: appearanceRaw)?.colorScheme)
+                // 「减少动画」：全局抹掉隐式与 withAnimation 过渡，让界面变化即时生效
+                .transaction { txn in
+                    if reduceAnimations {
+                        txn.disablesAnimations = true
+                        txn.animation = nil
+                    }
+                }
                 .onContinueUserActivity(CSSearchableItemActionType) { activity in
                     handleSpotlightTap(activity)
                 }

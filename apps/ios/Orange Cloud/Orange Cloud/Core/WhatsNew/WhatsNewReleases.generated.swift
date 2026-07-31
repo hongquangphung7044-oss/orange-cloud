@@ -10,6 +10,204 @@ import Foundation
 
 nonisolated enum WhatsNewGenerated {
     static let releases: [WhatsNewRelease] = [
+        WhatsNewRelease(version: "1.9.2", items: [
+            WhatsNewItem(
+                icon:   "person.crop.circle.badge.checkmark",
+                title:  String(localized: "记住你的默认账号", table: "WhatsNew"),
+                detail: String(localized: "有多个 Cloudflare 账号时，App 会记住你上次选中的那一个，下次打开直接进入它，不再固定回到列表里的第一个。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.9.1", items: [
+            WhatsNewItem(
+                icon:   "magnifyingglass",
+                title:  String(localized: "一处搜遍所有资源", table: "WhatsNew"),
+                detail: String(localized: "概览页顶栏的放大镜可一次搜索域名、Worker、R2 存储桶、D1 数据库、KV 命名空间与隧道，点一下直达；任意资源都能星标固定到概览页。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "bell.badge",
+                title:  String(localized: "告警中心", table: "WhatsNew"),
+                detail: String(localized: "概览页新增告警卡片，汇总需要注意的资源——未启用的域名、状态异常的隧道等，点一下直达。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "text.magnifyingglass",
+                title:  String(localized: "实时日志更好用", table: "WhatsNew"),
+                detail: String(localized: "Worker 实时日志支持关键词搜索与级别筛选；长按复制整行，轻点展开完整详情并选取片段。「暂停」现在只冻结画面、日志照常接收，恢复后能看到完整记录。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "clock.arrow.circlepath",
+                title:  String(localized: "SQL 历史与收藏", table: "WhatsNew"),
+                detail: String(localized: "D1 查询自动记录最近 12 条，常用语句可收藏（按数据库分别保存）；查询结果一键导出 CSV，表详情还能查看索引。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "photo.artframe",
+                title:  String(localized: "Workers AI 文生图", table: "WhatsNew"),
+                detail: String(localized: "模型试运行新增文生图：输入提示词直接出图，可分享保存。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.8.7", items: [
+            WhatsNewItem(
+                icon:   "globe",
+                title:  String(localized: "workers.dev 子域直达", table: "WhatsNew"),
+                detail: String(localized: "Worker 开启 workers.dev 子域后，直接显示完整访问地址，点一下即可打开。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "cube.fill",
+                title:  String(localized: "快速绑定 D1 / KV", table: "WhatsNew"),
+                detail: String(localized: "在变量与密钥页直接把现有 D1 数据库或 KV 命名空间绑定到 Worker，也能一键解除。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "shippingbox.fill",
+                title:  String(localized: "快速绑定 R2 存储桶", table: "WhatsNew"),
+                detail: String(localized: "资源绑定新增 R2：可把现有存储桶直接绑定到 Worker，与 D1 / KV 一样支持一键解除。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.8.5", items: [
+            WhatsNewItem(
+                icon:   "clock.arrow.circlepath",
+                title:  String(localized: "Worker 部署历史", table: "WhatsNew"),
+                detail: String(localized: "查看每个 Worker 的历次部署记录，并可删除不再需要的旧部署。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "square.and.pencil",
+                title:  String(localized: "就地编辑与删除 Worker", table: "WhatsNew"),
+                detail: String(localized: "直接载入线上源码修改后重新部署，变量、密钥与绑定自动保留；也可从 .js 文件导入，或删除整个 Worker。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "tablecells",
+                title:  String(localized: "删除 D1 数据表", table: "WhatsNew"),
+                detail: String(localized: "在查询控制台长按任意表即可删除，需输入表名二次确认。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.8.4", items: [
+            WhatsNewItem(
+                icon:   "shield.lefthalf.filled",
+                title:  String(localized: "编辑 WAF 规则", table: "WhatsNew"),
+                detail: String(localized: "WAF 自定义防火墙规则现在支持编辑：点按任意规则即可修改动作、表达式、名称与启用状态，无需再删除后重建。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "wrench.and.screwdriver.fill",
+                title:  String(localized: "稳定性修复", table: "WhatsNew"),
+                detail: String(localized: "进一步收敛 iOS 17 上由缓存数据库引发的偶发闪退：缓存读写全部加上异常兜底并在启动时预热，个别设备上残留的启动崩溃不再发生。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.8.2", items: [
+            WhatsNewItem(
+                icon:   "arrow.triangle.branch",
+                title:  String(localized: "规则中心", table: "WhatsNew"),
+                detail: String(localized: "域名详情新增「规则」统一入口：单条重定向、源站、配置、压缩与自定义错误五类规则支持查看、启停、新建、编辑与删除；Page Rules 与 URL 正规化支持查看与启停。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "globe",
+                title:  String(localized: "Pages 自定义域名", table: "WhatsNew"),
+                detail: String(localized: "Pages 项目现可直接管理自定义域名：添加、删除、重新验证并检查解析状态；域名在当前账号时，还能一键添加指向项目的 CNAME 记录。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "arrow.up.arrow.down",
+                title:  String(localized: "列表排序", table: "WhatsNew"),
+                detail: String(localized: "Workers 与 Pages 列表新增排序：默认（名称）、创建日期、最近更新，选择会被记住。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "person.badge.key.fill",
+                title:  String(localized: "登录更稳定", table: "WhatsNew"),
+                detail: String(localized: "根治部分用户「自动退出账号」的问题：授权流程补齐长期凭证，登录状态不再随令牌到期而失效；若授权仍失效，概览页会提供「一键重新授权」引导。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "waveform.path.ecg",
+                title:  String(localized: "体验者计划", table: "WhatsNew"),
+                detail: String(localized: "新增可随时开关的体验者计划：默认关闭，加入后才会匿名上报诊断信息，帮助我们更快定位闪退与登录问题；不收集任何个人身份数据。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "textformat.123",
+                title:  String(localized: "数据单位显示", table: "WhatsNew"),
+                detail: String(localized: "存储与流量单位在所有语言下统一显示为国际通用符号（KB / MB / GB），不再随语言翻译。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "wrench.and.screwdriver.fill",
+                title:  String(localized: "稳定性修复", table: "WhatsNew"),
+                detail: String(localized: "根治 iOS 17.0 上概览页、资源列表与域名详情的多处闪退与冻结；同时修复 Tunnel 页面卡死与冷启动请求翻倍的问题。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "speedometer",
+                title:  String(localized: "滑动更流畅", table: "WhatsNew"),
+                detail: String(localized: "重做玻璃卡片的渲染方式：观感不变，滚动开销大幅下降，列表与概览页滑动明显更顺滑，旧机型尤其受益。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.8.0", items: [
+            WhatsNewItem(
+                icon:   "bell.badge.fill",
+                title:  String(localized: "推送中心", table: "WhatsNew"),
+                detail: String(localized: "内置推送服务：拿到一个专属端点，用 curl 或脚本就能把消息推到这台设备，支持标题、分组、铃声与端到端加密。无需登录 Cloudflare 即可使用。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "wrench.and.screwdriver.fill",
+                title:  String(localized: "免登录开发者工具箱", table: "WhatsNew"),
+                detail: String(localized: "无需登录即可使用一组常用网络工具：DNS 查询、SSL 证书检查、HTTP 头、WHOIS、IP 归属、CIDR 计算与 Cloudflare trace。打开 App 在登录页就能直接进入。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "exclamationmark.bubble.fill",
+                title:  String(localized: "把 Cloudflare 告警推到手机", table: "WhatsNew"),
+                detail: String(localized: "登录后可直接管理 Cloudflare 告警策略：选择想关注的告警类型（DDoS、健康检查、证书到期、Workers 错误率等），一键接到推送中心，事件发生时直推到这台设备。需账号下有 Pro 及以上套餐的域名。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "rectangle.3.group.fill",
+                title:  String(localized: "开发者平台更进一步", table: "WhatsNew"),
+                detail: String(localized: "Queues 现可暂停/恢复投递、清空消息、调整保留期与延迟；Hyperdrive 可编辑查询缓存与源数据库连接；Durable Objects 可浏览对象实例；Workers AI 能直接在 App 内试运行文本生成模型，缺权限时可一键补授权、无需退出登录。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.7.0", items: [
+            WhatsNewItem(
+                icon:   "rectangle.3.group.fill",
+                title:  String(localized: "全新「开发者平台」", table: "WhatsNew"),
+                detail: String(localized: "把 Workers、Pages、Queues、Durable Objects、Hyperdrive、Workers AI、AI Gateway 收进一个按「计算 / 数据与消息 / AI」分组的 Tab，对齐 Cloudflare 的产品布局。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "plus.circle.fill",
+                title:  String(localized: "创建资源，不止于查看", table: "WhatsNew"),
+                detail: String(localized: "直接新建 R2 存储桶、KV 命名空间、Pages 项目、Queues、Hyperdrive 与 AI Gateway，并可删除。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "square.and.arrow.up.fill",
+                title:  String(localized: "部署 Pages 与 Workers", table: "WhatsNew"),
+                detail: String(localized: "Pages 支持「直接上传」部署（粘贴代码或选取文件 / ZIP）；Workers 可新建并整体更新代码，变量与密钥支持 JSON 批量导入。受 OAuth 限制无法读取源码，更新为整体替换。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "lock.shield.fill",
+                title:  String(localized: "Zero Trust 编辑器", table: "WhatsNew"),
+                detail: String(localized: "可视化增删改 Access 自托管应用与策略，以及 Gateway 的 DNS / HTTP / 网络策略，内置带选择器调色板的表达式编辑器。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "shield.lefthalf.filled",
+                title:  String(localized: "WAF 可视化规则构建器", table: "WhatsNew"),
+                detail: String(localized: "新建自定义防护规则时，可在「书写规则」与「表达式编辑器」之间随时切换，更快写出想要的条件。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "checklist",
+                title:  String(localized: "授权更省心", table: "WhatsNew"),
+                detail: String(localized: "授权页新增「全部只读 / 全部读写 / 仅必选」快捷预设。本版新增 Queues、AI Gateway、Workers AI 等模块，需重新授权才会点亮对应入口。", table: "WhatsNew")
+            )
+        ]),
+        WhatsNewRelease(version: "1.6.0", items: [
+            WhatsNewItem(
+                icon:   "folder.badge.gearshape",
+                title:  String(localized: "在「文件」App 中打开 R2", table: "WhatsNew"),
+                detail: String(localized: "把 R2 存储桶挂进系统「文件」App，像 iCloud 云盘一样浏览、上传、下载、重命名，并用任意 App 直接打开。Pro 功能。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "sparkles",
+                title:  String(localized: "设备端 AI 助手", table: "WhatsNew"),
+                detail: String(localized: "用一句话生成 DNS 记录，或为流量分析生成一句话要点摘要——全部在设备上离线完成，不出设备。需 iOS 26 及支持 Apple 智能的机型，Pro 功能。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "globe.americas",
+                title:  String(localized: "全球流量地图", table: "WhatsNew"),
+                detail: String(localized: "在世界地图上按国家/地区查看请求量与威胁分布，一眼看清流量来自哪里。Pro 功能。", table: "WhatsNew")
+            ),
+            WhatsNewItem(
+                icon:   "wrench.and.screwdriver",
+                title:  String(localized: "体验与稳定性改进", table: "WhatsNew"),
+                detail: String(localized: "新增「减少动画」开关让界面更跟手，优化多账号切换的稳定性，并在后台预热数据，切回前台更快看到最新内容。", table: "WhatsNew")
+            )
+        ]),
         WhatsNewRelease(version: "1.5.0", items: [
             WhatsNewItem(
                 icon:   "bolt.horizontal",

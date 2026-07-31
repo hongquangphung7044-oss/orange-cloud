@@ -44,9 +44,22 @@ struct ZoneDetailView: View {
         ))
     }
 
+    /// 跨资源类型的置顶存储（域名的固定状态以它为准，CachedZone.pinned 仅作镜像）
+    private let pinnedStore = PinnedResourceStore.shared
+
+    private var isPinned: Bool {
+        pinnedStore.isPinned(PinnedResource(type: .zone, resourceId: zone.id), accountId: zone.accountId)
+    }
+
     private var canReadSettings: Bool { auth.hasScope("zone-settings.read") }
     private var canEditSettings: Bool { auth.hasScope("zone-settings.write") }
     private var canPurge: Bool { auth.hasScope("cache.purge") }
+
+    /// DNS 记录数：本地已同步过记录用实时缓存计数；否则用 Dashboard/入页回写的
+    /// total_count（CachedZone.dnsRecordCount），避免首进详情页默认显示 0 条。
+    private var dnsRecordDisplayCount: Int {
+        records.isEmpty ? (zone.dnsRecordCount ?? 0) : records.count
+    }
 
     private var statusText: String {
         switch zone.status {
@@ -80,6 +93,9 @@ struct ZoneDetailView: View {
                     }
                 }
 
+                // 本卡内 eager 门控行的保留判据：目的页是叶子（内部只开 sheet、不再 push）。
+                // 「规则」「负载均衡」的目的页还要继续 push，已改值式（ZoneRoute + 栈根 navdest）；
+                // 其余若日后加内层 push，必须同步改值式。
                 sectionCard(String(localized: "管理")) {
                     PermissionGatedNavigationLink(
                         label: String(localized: "DNS 记录"),
@@ -89,7 +105,7 @@ struct ZoneDetailView: View {
                     ) {
                         DNSListView(zoneId: zone.id, zoneName: zone.name, session: session)
                     }
-                    .listRowStyleValue(String(localized: "\(records.count) 条"))
+                    .listRowStyleValue(String(localized: "\(dnsRecordDisplayCount) 条"))
 
                     ProGatedNavigationLink(
                         label: String(localized: "WAF 防火墙"),
@@ -113,27 +129,16 @@ struct ZoneDetailView: View {
                         RateLimitRulesView(zoneId: zone.id, zoneName: zone.name, session: session)
                     }
 
-                    ProGatedNavigationLink(
-                        label: String(localized: "Snippets"),
-                        systemImage: "curlybraces",
-                        requiredScope: "snippets.read",
-                        feature: .snippets,
-                        tint: .indigo,
-                        showsChevron: true
-                    ) {
-                        SnippetsListView(zoneId: zone.id, zoneName: zone.name, session: session)
-                    }
-
-                    ProGatedNavigationLink(
-                        label: String(localized: "缓存规则"),
-                        systemImage: "bolt.horizontal",
-                        requiredScope: "cache-settings.read",
-                        feature: .cacheRules,
-                        tint: .cyan,
-                        showsChevron: true
-                    ) {
-                        CacheRulesListView(zoneId: zone.id, session: session)
-                    }
+                    // 规则族（Transform / 缓存 / Snippets / 重定向 / 源站 / 配置 / 压缩 /
+                    // 自定义错误 / Page Rules / URL 规范化）统一收进「规则」二级入口
+                    PermissionGatedValueLink(
+                        label: String(localized: "规则"),
+                        systemImage: "list.bullet.rectangle",
+                        requiredScope: "zone.read",
+                        tint: .orange,
+                        showsChevron: true,
+                        value: ZoneRoute.rulesHub(zoneId: zone.id, zoneName: zone.name)
+                    )
 
                     ProGatedNavigationLink(
                         label: "Email Routing",
@@ -177,16 +182,6 @@ struct ZoneDetailView: View {
                     }
 
                     PermissionGatedNavigationLink(
-                        label: "Transform Rules",
-                        systemImage: "arrow.triangle.branch",
-                        requiredScope: "zone-transform-rules.read",
-                        tint: .indigo,
-                        showsChevron: true
-                    ) {
-                        ZoneTransformRulesView(zoneId: zone.id, session: session)
-                    }
-
-                    PermissionGatedNavigationLink(
                         label: String(localized: "IP 访问规则"),
                         systemImage: "hand.raised",
                         requiredScope: "firewall-services.read",
@@ -196,16 +191,15 @@ struct ZoneDetailView: View {
                         ZoneAccessRulesView(zoneId: zone.id, session: session)
                     }
 
-                    ProGatedNavigationLink(
+                    ProGatedValueLink(
                         label: String(localized: "负载均衡"),
                         systemImage: "arrow.left.arrow.right",
                         requiredScope: "load-balancers.read",
                         feature: .loadBalancing,
                         tint: .pink,
-                        showsChevron: true
-                    ) {
-                        LoadBalancerListView(zoneId: zone.id, zoneName: zone.name, session: session)
-                    }
+                        showsChevron: true,
+                        value: ZoneRoute.loadBalancers(zoneId: zone.id, zoneName: zone.name)
+                    )
                 }
 
                 sectionCard(String(localized: "操作")) {
@@ -302,12 +296,18 @@ struct ZoneDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button(zone.pinned ? String(localized: "取消固定") : String(localized: "固定到首页"),
-                       systemImage: zone.pinned ? "pin.fill" : "pin") {
+                // 置顶以 PinnedResourceStore 为准（跨资源类型统一）；同时把旧的
+                // CachedZone.pinned 字段镜像写回，老数据/其它入口读它时不至于分裂。
+                Button(isPinned ? String(localized: "取消固定") : String(localized: "固定到首页"),
+                       systemImage: isPinned ? "pin.fill" : "pin") {
+                    let nowPinned = pinnedStore.toggle(
+                        PinnedResource(type: .zone, resourceId: zone.id),
+                        accountId: zone.accountId
+                    )
                     withAnimation(.smooth) {
-                        zone.pinned.toggle()
+                        zone.pinned = nowPinned
                     }
-                    try? modelContext.save()
+                    SafeCache.perform("pin 状态保存") { try modelContext.save() }
                 }
                 .contentTransition(.symbolEffect(.replace))
             }
@@ -317,6 +317,15 @@ struct ZoneDetailView: View {
         .task {
             if canReadSettings {
                 await actionsViewModel.loadSettings()
+            }
+        }
+        .task {
+            // 该 zone 尚未统计过记录数（前 50 个之外 / Dashboard 未加载完就进来）：
+            // 入页轻量拉一次 total_count 回写缓存，首屏不显示 0 条
+            if zone.dnsRecordCount == nil, records.isEmpty, auth.hasScope("dns.read"),
+               let count = try? await session.dnsService.recordCount(zoneId: zone.id) {
+                zone.dnsRecordCount = count
+                SafeCache.perform("dnsRecordCount 保存") { try modelContext.save() }
             }
         }
         .refreshable {
@@ -548,6 +557,36 @@ private extension View {
                 .foregroundStyle(.secondary)
                 .padding(.trailing, 24)
                 .allowsHitTesting(false)
+        }
+    }
+}
+
+// MARK: - 域名子树的值式路由
+
+/// 域名详情子树里「目的页自身还要继续 push」的入口路由。
+/// ZoneDetailView 有三个宿主栈（Dashboard 栈 / 网域 compact 栈 / iPad split detail 栈），
+/// 本路由的 navdest 必须在三处栈根都注册——统一走 `zoneRouteDestinations(session:)`。
+enum ZoneRoute: Hashable {
+    case rulesHub(zoneId: String, zoneName: String)
+    case loadBalancers(zoneId: String, zoneName: String)
+    case snippets(zoneId: String, zoneName: String)
+    case bulkRedirects
+}
+
+extension View {
+    /// 在宿主栈根注册域名子树路由（挂栈根直接子级、`.id()` 内侧，铁律见 DashboardView 外壳注释）
+    func zoneRouteDestinations(session: SessionStore) -> some View {
+        navigationDestination(for: ZoneRoute.self) { route in
+            switch route {
+            case .rulesHub(let zoneId, let zoneName):
+                ZoneRulesHubView(zoneId: zoneId, zoneName: zoneName, session: session)
+            case .loadBalancers(let zoneId, let zoneName):
+                LoadBalancerListView(zoneId: zoneId, zoneName: zoneName, session: session)
+            case .snippets(let zoneId, let zoneName):
+                SnippetsListView(zoneId: zoneId, zoneName: zoneName, session: session)
+            case .bulkRedirects:
+                BulkRedirectListsView(session: session)
+            }
         }
     }
 }

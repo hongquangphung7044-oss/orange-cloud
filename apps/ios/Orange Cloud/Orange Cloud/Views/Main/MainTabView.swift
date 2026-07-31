@@ -37,8 +37,8 @@ struct MainTabView: View {
                 Tab("域名", systemImage: "globe", value: AppTab.zones) {
                     zonesTab
                 }
-                Tab("Workers", systemImage: "bolt.fill", value: AppTab.workers) {
-                    workersTab
+                Tab("开发者", systemImage: "chevron.left.forwardslash.chevron.right", value: AppTab.developer) {
+                    developerTab
                 }
                 Tab("存储", systemImage: "externaldrive", value: AppTab.storage) {
                     storageTab
@@ -57,9 +57,9 @@ struct MainTabView: View {
                 zonesTab
                     .tabItem { Label("域名", systemImage: "globe") }
                     .tag(AppTab.zones)
-                workersTab
-                    .tabItem { Label("Workers", systemImage: "bolt.fill") }
-                    .tag(AppTab.workers)
+                developerTab
+                    .tabItem { Label("开发者", systemImage: "chevron.left.forwardslash.chevron.right") }
+                    .tag(AppTab.developer)
                 storageTab
                     .tabItem { Label("存储", systemImage: "externaldrive") }
                     .tag(AppTab.storage)
@@ -72,38 +72,27 @@ struct MainTabView: View {
 
     // MARK: - Tab 内容（两套 TabView 写法共用）
 
-    // 各资源 Tab 用 .id(selectedAccount) 绑定当前账号：账号切换时整页重建，
-    // 让按账号过滤的 @Query 谓词刷新、列表数据重新拉取（资源跟着选中账号走）。
+    // 账号维度的重建（.id(selectedAccount)）一律在各 Tab 视图内部、导航容器之内完成，
+    // **这里不允许出现任何 .id**：ensureAccounts 可能在任意 Tab 可见时才完成或重试成功
+    // （启动拉取失败后各页 load 都会重试），selectedAccount nil→账号翻转若重建可见
+    // NavigationStack，iOS 17.0.x 导航栏硬断言必崩——1.8.2(24) 复发的根因就是
+    // zones/developer/storage 三个 Tab 在此处残留的外层 .id（详见 DashboardView 注释）。
 
     @ViewBuilder private var dashboardTab: some View {
         DashboardView(session: session)
-            .id(session.selectedAccount?.id)
     }
 
     @ViewBuilder private var zonesTab: some View {
         ZoneListView(session: session)
-            .id(session.selectedAccount?.id)
     }
 
-    @ViewBuilder private var workersTab: some View {
-        // Tab 恒显示（可发现性），无权限时整页锁定态
-        if auth.hasScope("workers-scripts.read") {
-            WorkerListView(session: session)
-                .id(session.selectedAccount?.id)
-        } else {
-            NavigationStack {
-                PermissionDeniedView(
-                    featureName: "Workers",
-                    requiredScope: "workers-scripts.read"
-                )
-                .navigationTitle("Workers")
-            }
-        }
+    @ViewBuilder private var developerTab: some View {
+        // 开发者平台聚合入口：Workers / Queues / Durable Objects / Hyperdrive / Workers AI / AI Gateway
+        DeveloperHubView(session: session)
     }
 
     @ViewBuilder private var storageTab: some View {
         StorageView(session: session)
-            .id(session.selectedAccount?.id)
     }
 
     @ViewBuilder private var settingsTab: some View {
@@ -117,13 +106,13 @@ struct MainTabView: View {
         selectedTab = switch module {
         case .dashboard: .dashboard
         case .zones:     .zones
-        case .workers:   .workers
+        case .workers:   .developer    // Workers 现归入「开发者」聚合 Tab
         case .storage:   .storage
         case .settings:  .settings
         }
     }
 
     enum AppTab: Hashable {
-        case dashboard, zones, workers, storage, settings
+        case dashboard, zones, developer, storage, settings
     }
 }

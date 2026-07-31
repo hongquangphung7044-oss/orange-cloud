@@ -177,6 +177,80 @@ nonisolated enum PagesDeployStatus: String, Sendable {
     }
 }
 
+// MARK: - 自定义域名
+
+/// 项目自定义域名。GET /accounts/{id}/pages/projects/{name}/domains
+nonisolated struct PagesDomain: Codable, Identifiable, Sendable {
+    let id:                   String
+    let name:                 String
+    let status:               String?   // initializing | pending | active | deactivated | blocked | error
+    let zoneTag:              String?   // 域名所在 Zone（在当前 Cloudflare 上才有意义）
+    let createdOn:            String?
+    let certificateAuthority: String?
+    let validationData:       PagesDomainValidationData?
+    let verificationData:     PagesDomainVerificationData?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, status
+        case zoneTag              = "zone_tag"
+        case createdOn            = "created_on"
+        case certificateAuthority = "certificate_authority"
+        case validationData       = "validation_data"
+        case verificationData     = "verification_data"
+    }
+
+    var statusValue: PagesDomainStatus { PagesDomainStatus(rawValue: status ?? "") ?? .unknown }
+}
+
+/// 证书验证信息（method == txt 时给出待添加的 TXT 记录）
+nonisolated struct PagesDomainValidationData: Codable, Sendable {
+    let status:       String?
+    let method:       String?    // http | txt
+    let txtName:      String?
+    let txtValue:     String?
+    let errorMessage: String?
+
+    enum CodingKeys: String, CodingKey {
+        case status, method
+        case txtName      = "txt_name"
+        case txtValue     = "txt_value"
+        case errorMessage = "error_message"
+    }
+}
+
+/// 域名归属验证信息
+nonisolated struct PagesDomainVerificationData: Codable, Sendable {
+    let status:       String?
+    let errorMessage: String?
+
+    enum CodingKeys: String, CodingKey {
+        case status
+        case errorMessage = "error_message"
+    }
+}
+
+nonisolated enum PagesDomainStatus: String, Sendable {
+    case initializing, pending, active, deactivated, blocked, error
+    case unknown = ""
+
+    var label: String {
+        switch self {
+        case .active:       String(localized: "生效中")
+        case .pending:      String(localized: "验证中")
+        case .initializing: String(localized: "初始化")
+        case .deactivated:  String(localized: "已停用")
+        case .blocked:      String(localized: "已封锁")
+        case .error:        String(localized: "错误")
+        case .unknown:      String(localized: "未知")
+        }
+    }
+}
+
+/// POST .../domains 请求体
+nonisolated struct PagesDomainAddRequest: Codable, Sendable {
+    let name: String
+}
+
 // MARK: - 写入载荷
 
 /// PATCH 项目：仅传要改的字段（顶层合并，省略字段不变）。环境变量不在此（脱敏风险，App 内只读）。
@@ -190,5 +264,81 @@ nonisolated struct PagesProjectUpdate: Codable, Sendable {
     }
 }
 
+/// POST /accounts/{id}/pages/projects 请求体。仅建一个 Direct Upload 空项目
+/// （手机端无法上传构建产物 / 连 Git，建后需用 Wrangler 或 Dashboard 部署）。
+nonisolated struct PagesCreateRequest: Codable, Sendable {
+    let name:             String
+    let productionBranch: String
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case productionBranch = "production_branch"
+    }
+}
+
 /// retry / rollback 的空 POST 体
 nonisolated struct PagesEmptyBody: Codable, Sendable {}
+
+// MARK: - 直接上传部署（Direct Upload）
+
+/// GET .../upload-token 的 result（资源上传用的短期 JWT）
+nonisolated struct PagesUploadToken: Codable, Sendable {
+    let jwt: String
+}
+
+/// POST /pages/assets/upload 的单条载荷（key=资源哈希，value=base64 内容）
+nonisolated struct PagesAssetUpload: Codable, Sendable {
+    let key:      String
+    let value:    String
+    let metadata: PagesAssetMetadata
+    let base64:   Bool
+}
+
+nonisolated struct PagesAssetMetadata: Codable, Sendable {
+    let contentType: String     // CF 期望 camelCase contentType
+}
+
+/// check-missing / upsert-hashes 的请求体
+nonisolated struct PagesHashesBody: Codable, Sendable {
+    let hashes: [String]
+}
+
+/// 待部署的单个文件。path 以 / 开头（如 /index.html）；contentType 按扩展名推断。
+nonisolated struct PagesDeployFile: Sendable, Identifiable {
+    let path: String
+    let data: Data
+
+    var id: String { path }
+    var contentType: String { PagesMime.type(forPath: path) }
+}
+
+/// 按扩展名推断 MIME（覆盖常见静态资源，其余回退 octet-stream）
+nonisolated enum PagesMime {
+    static func type(forPath path: String) -> String {
+        switch (path as NSString).pathExtension.lowercased() {
+        case "html", "htm":   "text/html"
+        case "css":           "text/css"
+        case "js", "mjs":     "application/javascript"
+        case "json":          "application/json"
+        case "map":           "application/json"
+        case "webmanifest":   "application/manifest+json"
+        case "svg":           "image/svg+xml"
+        case "png":           "image/png"
+        case "jpg", "jpeg":   "image/jpeg"
+        case "gif":           "image/gif"
+        case "webp":          "image/webp"
+        case "avif":          "image/avif"
+        case "ico":           "image/x-icon"
+        case "txt":           "text/plain"
+        case "md":            "text/markdown"
+        case "xml":           "application/xml"
+        case "pdf":           "application/pdf"
+        case "wasm":          "application/wasm"
+        case "woff":          "font/woff"
+        case "woff2":         "font/woff2"
+        case "ttf":           "font/ttf"
+        case "otf":           "font/otf"
+        default:              "application/octet-stream"
+        }
+    }
+}

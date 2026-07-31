@@ -60,6 +60,26 @@
     <string name="perm_ip_rules_desc">查看与管理 IP / ASN / 国家或地区访问规则</string>
     <string name="perm_analytics">流量分析</string>
     <string name="perm_analytics_desc">查看流量与用量统计</string>
+    <string name="perm_cache_rules">缓存规则</string>
+    <string name="perm_cache_rules_desc">查看与编辑缓存规则</string>
+    <string name="perm_email_routing">电子邮件路由</string>
+    <string name="perm_email_routing_desc">查看与管理目标地址、路由规则</string>
+    <string name="perm_bulk_redirects">批量重定向</string>
+    <string name="perm_bulk_redirects_desc">查看与编辑批量重定向列表</string>
+    <string name="perm_load_balancer">负载均衡</string>
+    <string name="perm_load_balancer_desc">查看负载均衡器、源池与健康监控</string>
+    <string name="perm_zero_trust">Zero Trust</string>
+    <string name="perm_zero_trust_desc">查看与编辑 Access 应用、Gateway 规则</string>
+    <string name="perm_pages">Pages</string>
+    <string name="perm_pages_desc">查看项目与部署、触发重新部署</string>
+    <string name="perm_workers_ai">Workers AI</string>
+    <string name="perm_workers_ai_desc">浏览模型、运行推理</string>
+    <string name="perm_ai_gateway">AI Gateway</string>
+    <string name="perm_ai_gateway_desc">查看网关与用量</string>
+    <string name="perm_queues">队列</string>
+    <string name="perm_queues_desc">查看队列与消费者</string>
+    <string name="perm_hyperdrive">Hyperdrive</string>
+    <string name="perm_hyperdrive_desc">查看 Hyperdrive 配置</string>
 
     <!-- 导航 -->
     <string name="nav_zones">域名</string>
@@ -385,6 +405,7 @@
     <string name="dash_quick">快捷操作</string>
     <string name="dash_refresh">刷新状态</string>
     <string name="dash_switch_account">切换账号</string>
+    <string name="dash_switch_identity">登录身份</string>
     <string name="dash_add_account">添加账号</string>
 
     <!-- WAF -->
@@ -408,6 +429,9 @@
     <string name="waf_deleted">已删除</string>
     <string name="waf_delete_confirm_title">删除此规则？</string>
     <string name="waf_delete_confirm_msg">此操作不可撤销，规则将立即停止生效。</string>
+    <string name="waf_edit_title">编辑规则</string>
+    <string name="waf_edit_unsupported_title">暂不支持编辑</string>
+    <string name="waf_edit_unsupported_msg">「跳过」等带额外参数的规则暂不支持在 App 内编辑，请在 Cloudflare Dashboard 中修改。</string>
 
     <!-- Tunnel -->
     <string name="tunnel_title">隧道</string>
@@ -484,9 +508,13 @@
     <string name="identity_logout_confirm_title">退出此账号？</string>
     <string name="identity_logout_confirm_msg">将从本机移除此账号的登录状态，可随时重新登录。</string>
     <string name="identity_logout_confirm_msg_last">这是最后一个账号，退出后将返回登录页。</string>
+    <string name="identity_rename">重命名</string>
+    <string name="identity_rename_title">修改账号名称</string>
+    <string name="identity_rename_hint">输入新的账号名称</string>
 
     <!-- 通用 -->
     <string name="common_cancel">取消</string>
+    <string name="common_confirm">确定</string>
 
     <!-- Cloudflare 状态页 -->
     <string name="status_title">Cloudflare 状态</string>
@@ -625,6 +653,10 @@
     <string name="d1_delete_warn">此操作将永久删除数据库 %1$s 及其全部表和数据，无法撤销，也无法恢复。</string>
     <string name="d1_delete_confirm_label">输入数据库名称以确认</string>
     <string name="d1_delete_button">永久删除</string>
+    <string name="d1_drop_table_title">删除表</string>
+    <string name="d1_drop_table_warn">此操作将永久删除表 %1$s 及其全部数据，无法撤销，也无法恢复。</string>
+    <string name="d1_drop_table_confirm_label">输入表名以确认</string>
+    <string name="d1_table_dropped">表已删除</string>
 
     <!-- Worker 管理：变量与密钥 / 触发器 / 域名 -->
     <string name="worker_manage_secrets">变量与密钥</string>
@@ -649,6 +681,21 @@
     <string name="worker_secret_value">值（保存后不可读取）</string>
     <string name="worker_other_section">其它绑定（只读）</string>
     <string name="worker_other_footer">KV / D1 / R2 等资源绑定在此查看，编辑请用 Wrangler 或 Dashboard。</string>
+    <string name="worker_bind_footer">可绑定既有 D1 数据库 / KV 命名空间 / R2 存储桶；队列、Durable Object 等其它资源仍为只读，请用 Wrangler 或 Dashboard。</string>
+    <string name="worker_bind_empty">暂无资源绑定</string>
+    <string name="worker_bind_remove">解除绑定</string>
+    <string name="worker_bind_add">绑定 D1 / KV / R2</string>
+    <string name="worker_bind_no_kv">该账号暂无 KV 命名空间</string>
+    <string name="worker_bind_no_d1">该账号暂无 D1 数据库</string>
+    <string name="worker_bind_pick">请选择</string>
+    <string name="worker_bind_kv_ns">KV 命名空间</string>
+    <string name="worker_bind_d1_db">D1 数据库</string>
+    <string name="worker_bind_no_r2">该账号暂无 R2 存储桶</string>
+    <string name="worker_bind_r2_bucket">R2 存储桶</string>
+    <string name="worker_bind_var_name">绑定变量名</string>
+    <string name="worker_bind_var_name_hint">代码中通过 env 访问。字母、数字、下划线，且不以数字开头。</string>
+    <string name="worker_bind_dup">已存在同名绑定。</string>
+    <string name="worker_bind_confirm">绑定</string>
     <string name="worker_bind_var">变量</string>
     <string name="worker_bind_secret">密钥</string>
     <string name="worker_bind_queue">队列</string>
@@ -742,4 +789,565 @@
     <string name="widget_description">账号总览：今日请求合计的晨昏天窗卡</string>
     <string name="widget_today_requests">今日请求</string>
     <string name="widget_footer">%1$s 域名 · %2$s</string>
+
+    <!-- 1.4 域名工具入口 -->
+    <string name="zone_tool_cache">缓存规则</string>
+    <string name="zone_tool_rate_limit">速率限制</string>
+    <string name="zone_tool_email_routing">电子邮件路由</string>
+    <string name="zone_tool_load_balancer">负载均衡</string>
+
+    <!-- 缓存规则 -->
+    <string name="cache_title">缓存规则</string>
+    <string name="cache_readonly">只读访问，无法编辑（缺少写权限）</string>
+    <string name="cache_empty">暂无缓存规则</string>
+    <string name="cache_saved">已保存</string>
+    <string name="cache_deleted">已删除</string>
+    <string name="cache_add_title">新建缓存规则</string>
+    <string name="cache_edit_title">编辑缓存规则</string>
+    <string name="cache_delete_confirm_title">删除此缓存规则？</string>
+    <string name="cache_delete_confirm_msg">删除后将不再按此规则缓存，操作不可撤销。</string>
+    <string name="cache_advanced_readonly">含高级设置，仅可查看</string>
+    <string name="cache_summary_default">默认缓存设置</string>
+    <string name="cache_summary_bypass">绕过缓存</string>
+    <string name="cache_summary_eligible">可缓存</string>
+    <string name="cache_field_description">描述</string>
+    <string name="cache_field_expression">匹配表达式</string>
+    <string name="cache_field_eligible">可缓存</string>
+    <string name="cache_field_enabled">启用</string>
+    <string name="cache_field_edge_ttl">边缘缓存 TTL</string>
+    <string name="cache_field_edge_ttl_seconds">边缘 TTL（秒）</string>
+    <string name="cache_field_browser_ttl">浏览器缓存 TTL</string>
+    <string name="cache_field_browser_ttl_seconds">浏览器 TTL（秒）</string>
+    <string name="cache_ttl_respect">遵循源站</string>
+    <string name="cache_ttl_override">覆盖为固定值</string>
+    <string name="cache_ttl_bypass">源站无指令则不缓存</string>
+
+    <!-- 速率限制 -->
+    <string name="rl_title">速率限制</string>
+    <string name="rl_readonly">只读访问，无法编辑（缺少写权限）</string>
+    <string name="rl_empty">暂无速率限制规则</string>
+    <string name="rl_saved">已保存</string>
+    <string name="rl_deleted">已删除</string>
+    <string name="rl_add_title">新建速率限制</string>
+    <string name="rl_edit_title">编辑速率限制</string>
+    <string name="rl_delete_confirm_title">删除此速率限制规则？</string>
+    <string name="rl_delete_confirm_msg">删除后将不再限流，操作不可撤销。</string>
+    <string name="rl_summary">%1$d 次 / %2$d 秒</string>
+    <string name="rl_field_description">描述</string>
+    <string name="rl_field_expression">匹配表达式</string>
+    <string name="rl_field_requests">请求次数上限</string>
+    <string name="rl_field_period">统计时间窗</string>
+    <string name="rl_field_action">超限动作</string>
+    <string name="rl_field_mitigation">封禁时长</string>
+    <string name="rl_field_enabled">启用</string>
+    <string name="rl_action_block">阻止</string>
+    <string name="rl_action_managed_challenge">托管质询</string>
+    <string name="rl_action_js_challenge">JS 质询</string>
+    <string name="rl_action_log">仅记录</string>
+    <string name="rl_period_10s">10 秒</string>
+    <string name="rl_period_1m">1 分钟</string>
+    <string name="rl_period_10m">10 分钟</string>
+    <string name="rl_period_1h">1 小时</string>
+
+    <!-- 电子邮件路由 -->
+    <string name="email_title">电子邮件路由</string>
+    <string name="email_saved">已保存</string>
+    <string name="email_deleted">已删除</string>
+    <string name="email_address_added">已添加，请查收验证邮件</string>
+    <string name="email_enable">启用电子邮件路由</string>
+    <string name="email_rules_section">转发规则</string>
+    <string name="email_rules_empty">暂无转发规则</string>
+    <string name="email_add_rule">添加转发规则</string>
+    <string name="email_addresses_section">目的地址</string>
+    <string name="email_addresses_empty">暂无目的地址</string>
+    <string name="email_add_address">添加目的地址</string>
+    <string name="email_catch_all">全部邮件</string>
+    <string name="email_verified">已验证</string>
+    <string name="email_unverified">待验证</string>
+    <string name="email_delete_rule_title">删除此转发规则？</string>
+    <string name="email_delete_rule_msg">删除后该地址的邮件将不再转发。</string>
+    <string name="email_delete_address_title">删除此目的地址？</string>
+    <string name="email_field_match">收件地址</string>
+    <string name="email_field_destination">转发到</string>
+    <string name="email_field_name">规则名称（可选）</string>
+    <string name="email_field_address">邮箱地址</string>
+    <string name="email_destination_hint">已验证地址：%1$s</string>
+    <string name="email_add_address_hint">添加后 Cloudflare 会向该邮箱发送验证邮件，验证通过后方可作为转发目标。</string>
+
+    <!-- 审计日志 -->
+    <string name="audit_title">审计日志</string>
+    <string name="audit_empty">最近 30 天暂无审计记录</string>
+    <string name="audit_unknown_action">未知操作</string>
+
+    <!-- 批量重定向 -->
+    <string name="redirect_title">批量重定向</string>
+    <string name="redirect_empty">暂无重定向列表</string>
+    <string name="redirect_created">已创建</string>
+    <string name="redirect_deleted">已删除</string>
+    <string name="redirect_item_count">%1$d 条重定向</string>
+    <string name="redirect_create_title">新建重定向列表</string>
+    <string name="redirect_field_name">列表名称</string>
+    <string name="redirect_name_hint">只能用小写字母、数字、下划线，且以字母开头</string>
+    <string name="redirect_field_description">描述（可选）</string>
+    <string name="redirect_delete_list_title">删除此列表？</string>
+    <string name="redirect_items_empty">此列表暂无重定向</string>
+    <string name="redirect_add_item">添加重定向</string>
+    <string name="redirect_field_source">源 URL</string>
+    <string name="redirect_field_target">目标 URL</string>
+    <string name="redirect_field_status">状态码</string>
+    <string name="redirect_preserve_query">保留查询字符串</string>
+    <string name="redirect_subpath_matching">匹配子路径</string>
+    <string name="redirect_status_code">状态码 %1$d</string>
+    <string name="redirect_delete_item_title">删除此重定向？</string>
+    <string name="redirect_301">301 永久</string>
+    <string name="redirect_302">302 临时</string>
+    <string name="redirect_307">307 临时（保留方法）</string>
+    <string name="redirect_308">308 永久（保留方法）</string>
+
+    <!-- 负载均衡 -->
+    <string name="lb_title">负载均衡</string>
+    <string name="lb_empty">此域名暂无负载均衡器</string>
+    <string name="lb_steering_off">默认（按池顺序故障转移）</string>
+    <string name="lb_steering_geo">地理位置</string>
+    <string name="lb_steering_random">随机</string>
+    <string name="lb_steering_dynamic">动态延迟</string>
+    <string name="lb_steering_proximity">就近</string>
+    <string name="lb_steering_least_requests">最少未完成请求</string>
+    <string name="lb_steering_least_conn">最少连接</string>
+    <string name="lb_pool_count">%1$d 个源池</string>
+    <string name="lb_pools">源站池</string>
+    <string name="lb_pools_sub">查看源站池与健康状态</string>
+    <string name="lb_pools_empty">暂无源站池</string>
+    <string name="lb_monitors">健康监测</string>
+    <string name="lb_monitors_sub">查看健康监测配置</string>
+    <string name="lb_monitors_empty">暂无健康监测</string>
+    <string name="lb_origins_count">%1$d / %2$d 源站在线</string>
+    <string name="lb_monitor_port">端口 %1$d</string>
+    <!-- 负载均衡 写操作 -->
+    <string name="lb_create">新建负载均衡器</string>
+    <string name="lb_edit">编辑</string>
+    <string name="lb_field_name">名称</string>
+    <string name="lb_field_steering">流量调度策略</string>
+    <string name="lb_field_pools">默认源池（可多选）</string>
+    <string name="lb_field_fallback">回退源池</string>
+    <string name="lb_pool_create">新建源池</string>
+    <string name="lb_pool_edit">编辑源池</string>
+    <string name="lb_field_monitor">健康监测</string>
+    <string name="lb_monitor_none">不绑定</string>
+    <string name="lb_field_origins">源站</string>
+    <string name="lb_field_enabled">启用</string>
+    <string name="lb_origin_name">源站名称</string>
+    <string name="lb_origin_address">地址（IP 或主机名）</string>
+    <string name="lb_origin_weight">权重</string>
+    <string name="lb_origin_add">添加源站</string>
+    <string name="lb_monitor_create">新建健康监测</string>
+    <string name="lb_monitor_edit">编辑健康监测</string>
+    <string name="lb_field_type">类型</string>
+    <string name="lb_field_method">方法</string>
+    <string name="lb_field_path">路径</string>
+    <string name="lb_field_codes">期望状态码</string>
+    <string name="lb_field_interval">间隔（秒）</string>
+    <string name="lb_field_timeout">超时（秒）</string>
+    <string name="lb_field_retries">重试次数</string>
+    <string name="lb_field_port">端口</string>
+
+    <!-- Zero Trust -->
+    <string name="zt_title">Zero Trust</string>
+    <string name="zt_access_apps">Access 应用</string>
+    <string name="zt_access_sub">查看受 Access 保护的应用</string>
+    <string name="zt_access_empty">暂无 Access 应用</string>
+    <string name="zt_gateway">Gateway 策略</string>
+    <string name="zt_gateway_sub">查看与启停 DNS / HTTP / 网络策略</string>
+    <string name="zt_gateway_empty">暂无 Gateway 策略</string>
+    <string name="zt_readonly">只读访问，无法启停（缺少写权限）</string>
+    <string name="zt_type_self_hosted">自托管</string>
+    <string name="zt_type_saas">SaaS</string>
+    <string name="zt_type_ssh">SSH</string>
+    <string name="zt_type_vnc">VNC</string>
+    <string name="zt_type_launcher">应用启动台</string>
+    <string name="zt_type_warp">WARP</string>
+    <string name="zt_type_bookmark">书签</string>
+    <string name="zt_type_app">应用</string>
+    <string name="zt_kind_dns">DNS</string>
+    <string name="zt_kind_http">HTTP</string>
+    <string name="zt_kind_network">网络</string>
+    <string name="zt_kind_egress">出口</string>
+    <string name="zt_kind_resolver">解析器</string>
+    <string name="zt_kind_gateway">Gateway</string>
+    <string name="zt_action_allow">允许</string>
+    <string name="zt_action_block">阻止</string>
+    <string name="zt_action_isolate">隔离</string>
+    <string name="zt_action_override">覆盖</string>
+    <string name="zt_action_safesearch">安全搜索</string>
+    <string name="zt_action_off">关闭</string>
+    <string name="zt_action_on">开启</string>
+    <string name="zt_action_other">其它</string>
+    <!-- Zero Trust 写操作 -->
+    <string name="zt_app_create">新建 Access 应用</string>
+    <string name="zt_app_edit">编辑 Access 应用</string>
+    <string name="zt_field_name">名称</string>
+    <string name="zt_field_domain">域名</string>
+    <string name="zt_field_type">应用类型</string>
+    <string name="zt_field_session">会话时长</string>
+    <string name="zt_field_decision">策略决定</string>
+    <string name="zt_field_include">包含规则（满足其一即放行）</string>
+    <string name="zt_rule_kind">规则类型</string>
+    <string name="zt_rule_value">值</string>
+    <string name="zt_rule_add">添加规则</string>
+    <string name="zt_gw_create">新建 Gateway 策略</string>
+    <string name="zt_gw_edit">编辑 Gateway 策略</string>
+    <string name="zt_field_gw_type">策略类型</string>
+    <string name="zt_field_action">动作</string>
+    <string name="zt_field_traffic">流量表达式（可选）</string>
+    <string name="zt_traffic_hint">如 any(dns.domains[*] == &quot;example.com&quot;)；留空匹配全部。保存时 Cloudflare 会校验。</string>
+
+    <!-- Cloudflare Pages -->
+    <string name="pages_title">Pages</string>
+    <string name="pages_empty">暂无 Pages 项目</string>
+    <string name="pages_retried">已触发重新部署</string>
+    <string name="pages_rolled_back">已回滚</string>
+    <string name="pages_deployment_deleted">已删除部署</string>
+    <string name="pages_deployment_delete_title">删除部署</string>
+    <string name="pages_deployment_delete_msg">将永久删除部署 %1$s，无法恢复。当前生产部署无法删除。</string>
+    <string name="pages_deployments">部署记录</string>
+    <string name="pages_production">生产</string>
+    <string name="pages_preview">预览</string>
+    <string name="pages_prod_branch">生产分支：%1$s</string>
+    <string name="pages_build_cmd">构建命令：%1$s</string>
+    <string name="pages_retry">重新部署</string>
+    <string name="pages_rollback">回滚</string>
+    <string name="pages_status_success">成功</string>
+    <string name="pages_status_idle">排队中</string>
+    <string name="pages_status_active">进行中</string>
+    <string name="pages_status_failure">失败</string>
+    <string name="pages_status_canceled">已取消</string>
+    <string name="pages_status_unknown">未知</string>
+
+    <!-- 开发者平台 -->
+    <string name="nav_dev_platform">开发者平台</string>
+    <string name="dev_workers_sub">Worker 脚本、实时日志、变量与触发器</string>
+    <string name="dev_workers_ai">Workers AI</string>
+    <string name="dev_workers_ai_sub">浏览模型、运行文本生成</string>
+    <string name="dev_workers_ai_empty">暂无可用模型</string>
+    <string name="dev_ai_gateway">AI Gateway</string>
+    <string name="dev_ai_gateway_sub">查看网关与缓存配置</string>
+    <string name="dev_ai_gateway_empty">暂无 AI 网关</string>
+    <string name="dev_queues">队列</string>
+    <string name="dev_queues_sub">查看队列与生产者/消费者</string>
+    <string name="dev_queues_empty">暂无队列</string>
+    <string name="dev_hyperdrive">Hyperdrive</string>
+    <string name="dev_hyperdrive_sub">查看数据库连接加速配置</string>
+    <string name="dev_hyperdrive_empty">暂无 Hyperdrive 配置</string>
+    <string name="dev_durable_objects">Durable Objects</string>
+    <string name="dev_durable_objects_sub">查看命名空间</string>
+    <string name="dev_durable_objects_empty">暂无 Durable Object 命名空间</string>
+    <string name="dev_pages_sub">站点项目与部署</string>
+    <string name="dev_queue_sub">%1$d 生产者 · %2$d 消费者</string>
+    <string name="dev_gateway_sub">缓存 TTL %1$d 秒</string>
+    <string name="dev_ai_prompt">输入提示词</string>
+    <string name="dev_ai_run">运行</string>
+    <string name="dev_ai_task_other">其它</string>
+    <string name="dev_ai_info_task">任务</string>
+    <string name="dev_ai_info_model">模型</string>
+    <string name="dev_ai_playground">试运行</string>
+    <string name="dev_ai_run_note">发送一条用户消息并显示模型回复，会消耗账号的 Workers AI 用量（每天 1 万 Neuron 免费额度）。</string>
+    <string name="dev_ai_needs_write">试运行文本生成模型需要 Workers AI 写权限（ai.write）。请退出登录后重新授权并勾选该权限。</string>
+    <string name="dev_ai_unsupported">该模型的输入/输出格式与文本生成不同，暂不支持在 App 内试运行。</string>
+    <!-- 开发者平台 写操作 -->
+    <string name="dev_action_do">执行</string>
+    <string name="dev_delete_confirm">确认删除？</string>
+    <string name="dev_queue_create">新建队列</string>
+    <string name="dev_queue_name">队列名称</string>
+    <string name="dev_queue_pause">暂停投递</string>
+    <string name="dev_queue_resume">恢复投递</string>
+    <string name="dev_queue_purge">清空消息</string>
+    <string name="dev_gateway_create">新建 AI 网关</string>
+    <string name="dev_gateway_id">网关 ID（小写字母/数字/连字符）</string>
+    <string name="dev_gateway_cache_ttl">缓存 TTL（秒，0 关闭）</string>
+    <string name="dev_gateway_rate_limit">速率上限（每分钟，0 不限）</string>
+    <string name="dev_gateway_collect_logs">收集日志</string>
+    <string name="dev_hyperdrive_create">新建 Hyperdrive</string>
+    <string name="dev_hd_name">名称</string>
+    <string name="dev_hd_scheme">数据库类型</string>
+    <string name="dev_hd_host">主机</string>
+    <string name="dev_hd_port">端口</string>
+    <string name="dev_hd_database">数据库名</string>
+    <string name="dev_hd_user">用户名</string>
+    <string name="dev_hd_password">密码</string>
+    <string name="dev_hd_caching">查询缓存</string>
+    <!-- 新建 Worker -->
+    <string name="worker_create_title">新建 Worker</string>
+    <string name="worker_create_name">Worker 名称</string>
+    <string name="worker_create_name_hint">小写字母/数字开头，可含连字符、下划线</string>
+    <string name="worker_create_compat">兼容性日期</string>
+    <string name="worker_create_code">代码（ES module）</string>
+    <string name="worker_create_note">提示：新建或整体覆盖都需提供完整代码。绑定（变量/密钥/KV 等）请在 Worker 详情里单独管理。</string>
+    <string name="worker_create_deploy">部署</string>
+    <string name="worker_create_ok">已部署</string>
+
+    <!-- Worker 原地编辑 / 删除（issue #55） -->
+    <string name="worker_edit_title">编辑代码</string>
+    <string name="worker_edit_ok">已部署</string>
+    <string name="worker_edit_loading">正在读取源码…</string>
+    <string name="worker_edit_multimodule">这是多模块打包 Worker，暂不支持在应用内原地编辑（会丢失其它模块）。</string>
+    <string name="worker_edit_note">已载入当前线上源码，可直接修改后部署。现有变量 / 密钥 / 绑定会自动保留。</string>
+    <string name="worker_manage_edit">编辑代码</string>
+    <string name="worker_manage_deployments">部署历史</string>
+    <string name="worker_deployments_title">部署历史</string>
+    <string name="worker_deployments_empty">暂无部署记录</string>
+    <string name="worker_deployments_note">首项为当前活跃部署，不可删除。</string>
+    <string name="worker_deployment_active">活跃</string>
+    <string name="worker_deployment_deleted">已删除部署</string>
+    <string name="worker_deployment_delete_title">删除部署</string>
+    <string name="worker_deployment_delete_msg">将永久删除部署 %1$s，无法恢复。当前活跃部署无法删除。</string>
+    <string name="worker_delete_button">删除 Worker</string>
+    <string name="worker_delete_title">删除 Worker</string>
+    <string name="worker_delete_warn">此操作将永久删除 Worker %1$s 及其部署与路由绑定，无法撤销，也无法恢复。</string>
+    <string name="worker_delete_confirm_label">输入 Worker 名称以确认</string>
+
+    <!-- KV 命名空间 / R2 桶 增删（issue #55） -->
+    <string name="kv_create_title">创建命名空间</string>
+    <string name="kv_create">创建</string>
+    <string name="kv_title_label">名称</string>
+    <string name="kv_created">已创建</string>
+    <string name="kv_deleted">已删除</string>
+    <string name="kv_delete_title">删除命名空间</string>
+    <string name="kv_delete_warn">此操作将永久删除命名空间 %1$s 及其全部键值，无法撤销，也无法恢复。</string>
+    <string name="kv_delete_confirm_label">输入命名空间名称以确认</string>
+    <string name="kv_delete_button">永久删除</string>
+    <string name="r2_create_title">创建存储桶</string>
+    <string name="r2_create">创建</string>
+    <string name="r2_name">名称</string>
+    <string name="r2_name_hint">小写字母、数字与连字符，3–63 位。</string>
+    <string name="r2_created">已创建</string>
+    <string name="r2_delete_title">删除存储桶</string>
+    <string name="r2_delete_warn">此操作将永久删除存储桶 %1$s，无法撤销。桶必须为空才能删除。</string>
+    <string name="r2_delete_confirm_label">输入存储桶名称以确认</string>
+    <string name="r2_delete_button">永久删除</string>
+
+    <!-- WAF 可视化表达式构建器 -->
+    <string name="wafb_open">可视化构建表达式</string>
+    <string name="wafb_title">构建匹配表达式</string>
+    <string name="wafb_apply">应用到表达式</string>
+    <string name="wafb_preview_empty">填写条件后这里预览表达式</string>
+    <string name="wafb_add_condition">添加条件</string>
+    <string name="wafb_remove">移除</string>
+    <string name="wafb_and">且</string>
+    <string name="wafb_or">或</string>
+    <string name="wafb_field">字段</string>
+    <string name="wafb_operator">运算符</string>
+    <string name="wafb_value">值</string>
+    <string name="wafb_field_ip">来源 IP</string>
+    <string name="wafb_field_country">国家/地区</string>
+    <string name="wafb_field_path">URI 路径</string>
+    <string name="wafb_field_host">主机</string>
+    <string name="wafb_field_method">请求方法</string>
+    <string name="wafb_field_ua">User-Agent</string>
+    <string name="wafb_field_uri">完整 URI</string>
+    <string name="wafb_field_threat">威胁分数</string>
+    <string name="wafb_op_eq">等于</string>
+    <string name="wafb_op_ne">不等于</string>
+    <string name="wafb_op_contains">包含</string>
+    <string name="wafb_op_gt">大于</string>
+    <string name="wafb_op_lt">小于</string>
+
+    <!-- 流量地图（按国家/地区）-->
+    <string name="analytics_top_countries">流量来源（按国家/地区）</string>
+
+    <!-- NL→WAF（自然语言生成规则）-->
+    <string name="wafb_ai_label">用自然语言生成</string>
+    <string name="wafb_ai_hint">例如：拦截来自某国家、访问 /admin 的请求</string>
+    <string name="wafb_ai_generate">AI 生成表达式</string>
+    <string name="wafb_or_manual">或手动添加条件</string>
+
+    <!-- AI 助手 -->
+    <string name="assistant_title">AI 助手</string>
+    <string name="assistant_clear">清空对话</string>
+    <string name="assistant_hint">向助手询问 Cloudflare 相关问题，由 Workers AI 云端推理驱动。</string>
+    <string name="assistant_need_ai">需在账号中开启 Workers AI（授权时勾选 Workers AI 读写）。</string>
+    <string name="assistant_input_hint">输入消息…</string>
+    <string name="assistant_thinking">正在思考…</string>
+    <string name="assistant_send">发送</string>
+    <string name="dev_assistant_sub">由 Workers AI 驱动的 Cloudflare 助手</string>
+
+    <!-- R2 接入文件 App（DocumentsProvider）-->
+    <string name="r2_provider_root">Orange Cloud R2</string>
+
+    <!-- Pages 写操作 -->
+    <string name="pages_create">新建项目</string>
+    <string name="pages_delete_title">删除此项目？</string>
+    <string name="pages_field_name">项目名称</string>
+    <string name="pages_name_hint">只能用小写字母、数字、连字符</string>
+    <string name="pages_field_branch">生产分支</string>
+    <string name="pages_edit_build">编辑构建配置</string>
+    <string name="pages_build_command">构建命令</string>
+    <string name="pages_dest_dir">输出目录</string>
+    <string name="pages_root_dir">根目录</string>
+    <!-- Pages 直接上传部署 -->
+    <string name="pages_deploy_code">部署代码</string>
+    <string name="pages_deploy_hint">选择要部署的静态站点：单个文件，或包含整站的 ZIP。直接上传到 Pages（无需连接 Git）。</string>
+    <string name="pages_deploy_single">上传单个文件</string>
+    <string name="pages_deploy_zip">上传 ZIP（整站）</string>
+    <string name="pages_deploy_preparing">正在准备文件…</string>
+    <string name="pages_deploy_progress">正在上传 %1$d / %2$d</string>
+    <string name="pages_deployed">已部署</string>
+    <string name="pages_deploy_empty">未找到可部署的文件</string>
+    <string name="pages_deploy_too_big">文件 %1$s 超过 25 MB 上限</string>
+
+    <!-- 免登录工具箱（toolbox / 推送中心入口）-->
+    <string name="tool_run">运行</string>
+    <string name="tool_copy">复制</string>
+    <string name="tool_copied">已复制</string>
+    <string name="tool_err_input">请输入有效内容</string>
+    <string name="tool_err_network">网络错误，请重试</string>
+    <string name="tool_err_unsupported">该顶级域暂不支持 RDAP 查询</string>
+    <string name="tool_err_not_found">未找到结果</string>
+    <string name="toolbox_title">开发者工具箱</string>
+    <string name="toolbox_subtitle">无需登录即可使用的网络工具</string>
+    <string name="toolbox_login_cta">免登录 · 开发者工具箱</string>
+    <string name="tool_dns_title">DNS 查询</string>
+    <string name="tool_dns_sub">A / AAAA / CNAME / MX / TXT / NS / CAA</string>
+    <string name="tool_dns_hint">域名，如 example.com</string>
+    <string name="tool_dns_blurb">查询某个域名的 DNS 记录</string>
+    <string name="tool_dns_empty">无此类型记录</string>
+    <string name="tool_ssl_title">SSL 证书</string>
+    <string name="tool_ssl_sub">证书链 / 到期 / 签发者</string>
+    <string name="tool_ssl_hint">主机名，如 example.com</string>
+    <string name="tool_ssl_blurb">检查站点的 SSL 证书</string>
+    <string name="tool_ssl_expired">证书已过期</string>
+    <string name="tool_ssl_expiring">%1$d 天后过期</string>
+    <string name="tool_ssl_valid">有效，剩余 %1$d 天</string>
+    <string name="tool_ssl_subject">主体</string>
+    <string name="tool_ssl_issuer">签发者</string>
+    <string name="tool_ssl_not_before">生效</string>
+    <string name="tool_ssl_not_after">到期</string>
+    <string name="tool_ssl_sig_alg">签名算法</string>
+    <string name="tool_ssl_key">公钥</string>
+    <string name="tool_ssl_trusted">信任</string>
+    <string name="tool_ssl_trusted_yes">是</string>
+    <string name="tool_ssl_trusted_no">否</string>
+    <string name="tool_ssl_chain">证书链长度</string>
+    <string name="tool_ssl_sans">备用名称 (SAN)</string>
+    <string name="tool_http_title">HTTP 请求</string>
+    <string name="tool_http_sub">状态 / 响应头 / 耗时</string>
+    <string name="tool_http_hint">https:// 网址</string>
+    <string name="tool_http_blurb">发起 HTTPS 请求，查看响应</string>
+    <string name="tool_http_headers">响应头</string>
+    <string name="tool_http_body">响应正文</string>
+    <string name="tool_whois_title">WHOIS</string>
+    <string name="tool_whois_sub">域名注册信息</string>
+    <string name="tool_whois_hint">域名，如 example.com</string>
+    <string name="tool_whois_blurb">查询域名的注册信息</string>
+    <string name="tool_whois_domain">域名</string>
+    <string name="tool_whois_registrar">注册商</string>
+    <string name="tool_whois_created">注册时间</string>
+    <string name="tool_whois_expires">到期时间</string>
+    <string name="tool_whois_updated">更新时间</string>
+    <string name="tool_whois_status">状态</string>
+    <string name="tool_whois_nameservers">名称服务器</string>
+    <string name="tool_geoip_title">IP 归属</string>
+    <string name="tool_geoip_sub">IP 地理位置与归属</string>
+    <string name="tool_geoip_hint">IP 地址（留空查本机）</string>
+    <string name="tool_geoip_blurb">查询任意 IP 的归属地</string>
+    <string name="tool_geoip_location">位置</string>
+    <string name="tool_geoip_isp">运营商</string>
+    <string name="tool_geoip_timezone">时区</string>
+    <string name="tool_geoip_coords">坐标</string>
+    <string name="tool_cidr_title">CIDR 计算器</string>
+    <string name="tool_cidr_sub">网络 / 主机数 / 地址范围</string>
+    <string name="tool_cidr_hint">如 192.168.1.0/24</string>
+    <string name="tool_cidr_blurb">计算 IPv4/IPv6 网段（完全离线）</string>
+    <string name="tool_cidr_network">网络地址</string>
+    <string name="tool_cidr_broadcast">广播地址</string>
+    <string name="tool_cidr_first">首个主机</string>
+    <string name="tool_cidr_last">末个主机</string>
+    <string name="tool_cidr_total">地址总数</string>
+    <string name="tool_cidr_usable">可用主机</string>
+    <string name="tool_trace_title">Cloudflare Trace</string>
+    <string name="tool_trace_sub">经过哪个 CF 数据中心</string>
+    <string name="tool_trace_hint">主机（留空走 1.1.1.1）</string>
+    <string name="tool_trace_blurb">看请求经过的 Cloudflare 数据中心</string>
+
+    <!-- 推送中心（Push Center / FCM）-->
+    <string name="push_title">推送中心</string>
+    <string name="push_subtitle">拿到专属端点，用 curl 或脚本把消息推到这台设备</string>
+    <string name="push_flagship_sub">Bark 兼容端点，curl 一下就能收到通知</string>
+    <string name="push_unavailable">此版本未配置推送服务，无法启用。</string>
+    <string name="push_enable_title">启用推送</string>
+    <string name="push_enable_sub">注册本设备并领取专属端点</string>
+    <string name="push_endpoint_label">你的端点</string>
+    <string name="push_test">测试推送</string>
+    <string name="push_copy_curl">复制 curl</string>
+    <string name="push_failed">操作失败，请重试</string>
+    <string name="push_inbox_open">收件箱（%1$d）</string>
+    <string name="push_test_title">测试推送</string>
+    <string name="push_test_body">来自 Orange Cloud 的测试消息</string>
+    <string name="push_inbox_title">收件箱</string>
+    <string name="push_inbox_empty">还没有消息</string>
+    <string name="push_clear">清空</string>
+    <string name="push_delete">删除</string>
+    <string name="push_channel_name">推送中心</string>
+    <string name="push_channel_desc">来自你的端点的推送消息</string>
+
+    <!-- CF 告警推送（Alerting）-->
+    <string name="alerting_title">Cloudflare 告警</string>
+    <string name="alerting_subtitle">把所选告警推送到这台设备</string>
+    <string name="alerting_missing_scope">需要通知权限，请重新登录并勾选「通知」。</string>
+    <string name="alerting_no_endpoint">请先在推送中心启用推送。</string>
+    <string name="alerting_empty">该账号暂无可用告警类型。</string>
+    <string name="perm_notifications">通知</string>
+    <string name="perm_notifications_desc">把 Cloudflare 告警推到设备</string>
+    <!-- Pages 自定义域名 + 列表排序 -->
+    <string name="pages_domains_section">自定义域名</string>
+    <string name="pages_domain_add">添加域名</string>
+    <string name="pages_domain_add_hint">挂载后需将域名解析指向本项目才能生效。</string>
+    <string name="pages_domain_empty">暂无自定义域名</string>
+    <string name="pages_domain_delete_title">删除域名？</string>
+    <string name="pages_domain_delete_msg">将从该 Pages 项目移除 %1$s，不影响已有 DNS 记录。</string>
+    <string name="pages_domain_retry">重新验证</string>
+    <string name="pages_domain_added">已添加域名</string>
+    <string name="pages_domain_deleted">已删除域名</string>
+    <string name="pages_cname_created">已添加 CNAME 记录</string>
+    <string name="pages_domain_status_active">生效中</string>
+    <string name="pages_domain_status_pending">验证中</string>
+    <string name="pages_domain_status_initializing">初始化</string>
+    <string name="pages_domain_status_deactivated">已停用</string>
+    <string name="pages_domain_status_blocked">已封锁</string>
+    <string name="pages_domain_status_error">错误</string>
+    <string name="pages_txt_title">验证 TXT 记录</string>
+    <string name="pages_txt_name">记录名</string>
+    <string name="pages_txt_value">记录值</string>
+    <string name="pages_dns_resolved">已指向本项目</string>
+    <string name="pages_dns_conflicting">未指向本项目</string>
+    <string name="pages_dns_missing">尚无解析记录</string>
+    <string name="pages_dns_add_cname">添加 CNAME 记录</string>
+    <string name="pages_dns_add_cname_hint">将在该域名所在的区域添加一条已代理的 CNAME 记录，指向 %1$s。</string>
+    <string name="pages_dns_external">该域名不在当前账号的 Cloudflare 区域内，请在域名服务商处添加指向 %1$s 的 CNAME 记录。</string>
+    <string name="sort_label">排序</string>
+    <string name="sort_default">默认（名称）</string>
+    <string name="sort_created">创建日期</string>
+    <string name="sort_modified">最近更新</string>
+    <!-- Dashboard 用量模块 -->
+    <string name="usage_title">用量</string>
+    <string name="usage_locked">需要「流量分析」权限才能展示账号用量</string>
+    <string name="usage_unavailable_title">此账号暂无账户级数据查询权限</string>
+    <string name="usage_unavailable_body">Workers / R2 / D1 / KV 用量通常需要付费版 Cloudflare 账号；域名流量分析不受影响。</string>
+    <string name="usage_failed">用量加载失败，点此重试</string>
+    <string name="usage_period_month">本月</string>
+    <string name="usage_period_cycle">账期</string>
+    <string name="usage_today">今日</string>
+    <string name="usage_plan_workers">Workers 套餐</string>
+    <string name="usage_plan_r2">R2 套餐</string>
+    <string name="usage_ctx_requests">请求 · %1$s</string>
+    <string name="usage_ctx_cpu">CPU · %1$s</string>
+    <string name="usage_ctx_r2a">A 类 · %1$s</string>
+    <string name="usage_ctx_r2b">B 类 · %1$s</string>
+    <string name="usage_ctx_storage">存储</string>
+    <string name="usage_ctx_rows_read">行读取 · %1$s</string>
+    <string name="usage_ctx_rows_write">行写入 · %1$s</string>
+    <string name="usage_ctx_reads">读取 · %1$s</string>
+    <string name="usage_ctx_writes">写入 · %1$s</string>
+    <string name="usage_billing_day">账单日</string>
+    <string name="usage_billing_natural">自然月</string>
+    <string name="usage_billing_day_n">%1$d 日</string>
 </resources>
