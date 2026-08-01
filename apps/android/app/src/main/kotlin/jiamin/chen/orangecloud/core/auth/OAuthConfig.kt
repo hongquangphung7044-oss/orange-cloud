@@ -10,10 +10,11 @@ import jiamin.chen.orangecloud.BuildConfig
 object OAuthConfig {
     /** 官方 Client 为 PKCE 公开客户端（非机密）；oss 风味默认空串。 */
     val clientId: String = BuildConfig.OAUTH_CLIENT_ID
+    /** 回调中转的 https URL；play/direct 用官方 o-c.do，oss 自编译者改为自部署域名。 */
+    val REDIRECT_URI: String = BuildConfig.OAUTH_REDIRECT_URI
 
     const val CALLBACK_SCHEME = "orangecloud"
     const val CALLBACK_HOST = "oauth"
-    const val REDIRECT_URI = "https://o-c.do/oauth/callback"
 
     const val AUTHORIZATION_URL = "https://dash.cloudflare.com/oauth2/auth"
     /** 网页登出端点：添加账号时先登出再续跳授权页，避免复用上一个登录态（支持 ?to= 续跳）。 */

@@ -38,8 +38,18 @@ jobs:
         with:
           packages: "platforms;android-36 build-tools;36.0.0 platform-tools"
 
+      # oss 自编译者把自建的 OAuth 凭证存为仓库 secret；构建时写入 local.properties。
+      # 缺省（未设 secret）时 OAUTH_CLIENT_ID 为空 → 登录不可用，但 APK 仍能构建。
+      # 自建步骤：1) 在 Cloudflare 创建 OAuth 应用；2) 部署自己的 apps/web 回调中转；
+      #          3) 把 client_id 填入 secret OAUTH_CLIENT_ID，把中转 URL 填入 OAUTH_REDIRECT_URI。
       - name: Create local.properties
-        run: echo "sdk.dir=" > local.properties
+        env:
+          OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
+          OAUTH_REDIRECT_URI: ${{ secrets.OAUTH_REDIRECT_URI }}
+        run: |
+          echo "sdk.dir=" > local.properties
+          [ -n "$OAUTH_CLIENT_ID" ] && echo "OAUTH_CLIENT_ID=$OAUTH_CLIENT_ID" >> local.properties
+          [ -n "$OAUTH_REDIRECT_URI" ] && echo "OAUTH_REDIRECT_URI=$OAUTH_REDIRECT_URI" >> local.properties
 
       - name: Build OSS Debug APK
         run: ./gradlew :app:assembleOssDebug --no-daemon
